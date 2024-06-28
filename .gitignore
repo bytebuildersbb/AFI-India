@@ -9,11 +9,11 @@
 *.zip
 .well-known
 /admin/membershippdf/temp_pdf/*
-/admin/connect.php/*
+/admin/connect.php
 /connection.php
-/ayushinayushman/connection.php/*
-/Health-Ambassador-Course/connection.php/*
-/upgrade-medical-practice/connection.php/*
+/ayushinayushman/connection.php
+/Health-Ambassador-Course/connection.php
+/upgrade-medical-practice/connection.php
 
 # OS generated files #
 ######################
