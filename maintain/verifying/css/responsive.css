@@ -1,0 +1,164 @@
+ @media (max-width: 360px)
+ {
+
+ }
+
+ @media (max-width: 768px) {
+
+.pt-md-3.pb-md-3 {
+    padding: 20px 15px !important;
+}
+.header-top {
+    background-color: #a8d5fe;
+    display: flex;
+    padding: 7px 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.top-left p {
+    margin: 2px 5px;
+}
+.navbar {
+    padding: 5px 20px;
+}
+.middle-header {
+    background-color: #f3f3f3;
+    display: flex;
+    padding: 7px 20px;
+    justify-content: center;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #202021;
+    font-size: 15px;
+    padding: 5px 4px;
+}
+.banner-text h1 {
+    font-weight: 600;
+    font-size: 26px;
+}
+.banner-text {
+    position: initial;   
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    background-color: #a8d5fe;
+}
+.banner-text h5 {
+    font-size: 16px;
+    text-align: center;
+}
+.heads h2 {
+    font-size: 22px;
+}
+.achieves-box {
+    margin-bottom: 15px;
+}
+.register-box{
+   margin-bottom: 15px;
+}
+.copyright p {
+    text-align: center;
+}
+.footer-box h4,.footer-box h5 {
+    padding-top: 6px;
+    font-weight: 600;
+    font-size: 22px;
+}
+.subscribe {
+    width: 80%;
+    margin: 10px auto;
+}
+form.example input[type=text] {
+    padding: 6px 20px;
+ }
+ form.example button {
+    float: left;
+    width: 30%;
+    padding: 6px 8px;
+}
+
+.achieves {
+    padding: 20px 0px;
+}
+.jnts {
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 56%);
+    padding: 18px 30px 18px;
+    border-radius: 5px;
+    margin: 20px 10px 10px;
+}
+.mem-d {
+    text-align: center;
+    padding-bottom: 10px;
+}
+.pht-upd {
+    position: inherit;
+    right: 15%;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.afi-form {
+    width: 100%;
+}
+.member {
+    width: 100%;
+}
+.mem-data-list p {
+    margin-bottom: 6px;
+    padding-top: 6px;
+    text-align: justify;
+}
+.joter {
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 56%);
+    padding: 18px 18px 18px;
+    border-radius: 5px;
+    margin: 20px 10px 10px;
+}
+.member h4, .members h4 {
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 0px;
+}
+ol.A {
+    padding-left: 24px;
+}
+.afis {
+    margin-bottom: 15px;
+}
+.headers h2 {
+    font-weight: 600;
+    font-size: 24px;
+    padding-top: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+.about-box {
+    padding-right: 15px;
+    text-align: center;
+}
+.vide {
+    margin-top: 20px;
+}
+.headers {
+    width: 100%;
+    padding: 20px 10px;
+}
+.about-box1 {
+    background-color: #e8f6f6;
+    padding: 30px;
+    text-align: center;
+}
+.about-box1 p{
+ text-align: justify;
+}
+.news {
+    padding: 20px 0px 10px;
+}
+.mhds {
+    justify-content: center !important;
+    padding: 20px 20px !important;
+}
+.card-body {
+    padding: 10px 0px;
+}
+}

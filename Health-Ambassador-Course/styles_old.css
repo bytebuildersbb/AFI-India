@@ -1,0 +1,288 @@
+.health_ambasador_section{padding:50px 0; background:#eaf5f9;}
+.health_ambasador_section .health_ambasador_area .title_main{text-align: center;}
+.health_ambasador_section .health_ambasador_area .title_main h1{font-weight: 600;}
+.health_ambasador_section .health_ambasador_area .title_main .heading_area{position: relative;}
+.health_ambasador_section .health_ambasador_area .title_main h1::before{content: "";position: absolute;bottom: -4px;width: 145px;height: 3px;background: #ed5217;border-radius: 20px;margin-left: 92px;}
+.health_ambasador_section .health_ambasador_area .title_main h2.sub_heading{margin-top: 25px;margin-bottom: 10px;}
+.health_ambasador_section .health_ambasador_area .title_main h3.sub_desc{color: #ed5217;}
+.health_ambasador_section .health_ambasador_area .title_main img.text_image{width: 497px;border-radius: 10px;box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;}
+.health_ambasador_section .health_ambasador_area .health_ambasador_area{display: flex;align-items: center;margin: 0 auto;justify-content: center;}
+.health_ambasador_section .health_ambasador_area .health_ambasador_area img.health_ambasador_img{margin-top: 46px;}
+.coach_section{background: #FAF9F6;padding: 70px 0;}
+.coach_section .coach_area .title_main h3.coach{font-weight: 600;font-size: 40px;text-align: center;position: relative;}
+.coach_section .coach_area .title_main h3.coach::before{content: "";position: absolute;bottom: -4px;width: 145px;height: 3px;background: #ed5217;border-radius: 20px;margin-left: 220px;}
+.coach_section .coach_area .cocah_desc_area .coach_img img.dr_image{width: 500px;height: 570px;border-radius: 20px;}
+.coach_img {margin-top: -100px;}
+.coach_section .coach_area .cocah_desc_area{margin-top: 60px;}
+img.health_ambasador_img {height: 577px;width: 850px;box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;border-radius: 20px;}
+.coach_section .coach_area .cocah_desc_area .dr_title h2.dr_name{font-weight: 700;margin-bottom: 20px;}
+.coach_section .coach_area .cocah_desc_area h4, h5{color: #ed5217;}
+.coach_section .coach_area .about_dr{margin-top: 60px;}
+.coach_section .coach_area .about_dr p{margin-top: 30px;line-height: 30px;}
+.workshoptime_section{background: #EDF9D7;padding: 60px 0;}
+.workshoptime_section .workshoptime_area .title_main {position: relative;}
+span.fees_text {text-decoration-line: line-through;}
+strong.discount_text {color: #ed5217;}
+.workshoptime_section .workshoptime_area .title_main h3.coach{font-weight: 700;text-align: center;font-size: 40px;}
+.workshoptime_section .workshoptime_area .title_main h3.coach::before{content: "";position: absolute;bottom: -4px;width: 180px;height: 3px;background: #ed5217;border-radius: 20px;margin-left: 250px;}
+.workshoptime_section .workshoptime_area .work_desc_area{background-color: white;box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;width: 60%;display: flex;align-items: center;margin: 0 auto;justify-content: center;padding:30px 0;margin-top: 30px;border-radius: 10px;}
+.workshoptime_section .workshoptime_area .work_desc_area .list_main ul li{margin-bottom: 10px;font-size: 18px;}
+.workshoptime_section .workshoptime_area .work_desc_area .list_main ul li a.coupon_code{color: black;font-weight: 500;text-decoration: none;}
+.workshoptime_section .workshoptime_area .work_desc_area .list_main ul li a.coupon_code span.register_btn{background-color: #ed5217;padding: 10px 18px;border-radius: 8px;color: white;box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;margin-left: 10px;}
+.workshoptime_section .workshoptime_area .work_desc_area .list_main ul li::marker{color: #ed5217;font-size: 24px;}
+.as_youknow_section{margin-bottom: 30px;background: #fafbfe;padding: 50px 0;}
+.as_youknow_section .as_youknow_area .title_main{display: flex;align-items: center;margin: 0 auto;justify-content: center;}
+.as_youknow_section .as_youknow_area .title_main h3.coach{font-size: 40px;font-weight: 700;width: 54%;max-width: 100%;text-align: center;line-height: 54px;}
+.as_youknow_section .as_youknow_area .workshop_detail_area{display: flex;align-items: center;margin: 0 auto;justify-content: center;}
+.as_youknow_section .as_youknow_area .workshop_detail_area .card{margin-top: 22px;border-radius: 14px;box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;margin-bottom: 14px;}
+.as_youknow_section .as_youknow_area .workshop_detail_area .card.card1{height: 737px;max-height: 100%;}
+.as_youknow_section .as_youknow_area .workshop_detail_area .card img.card-img-top {border-top-left-radius: 14px;border-top-right-radius: 14px;overflow: hidden;}
+.demo_plan_section{margin-top: 110px;margin-bottom: 40px;}
+.demo_plan_section .demo_plan_area .title_main h3.coach{font-weight: 700;font-size: 40px;width: 70%;max-width: 100%;text-align: center;line-height: 54px;}
+.demo_plan_section .demo_plan_area .title_main{display: flex;align-items: center;margin: 0 auto;justify-content: center;}
+.as_youknow_section .as_youknow_area .title_main h3.coach ::before{content: "";position: absolute;bottom: -4px;width: 145px;height: 3px;background: #ed5217;border-radius: 20px;margin-left: 92px;}
+.as_youknow_section .as_youknow_area .title_main{position: relative;}
+.demo_plan_section .demo_plan_area .sub_title h4{color: #ed5217;text-align: center;font-weight: 600;}
+.demo_plan_section .demo_plan_area .demo_image_area{display: flex;align-items: center;margin: 0 auto;justify-content: center;text-align: center;}
+.demo_plan_section .demo_plan_area .graduate_main h4.graduate_text{text-align: center;color: #ed5217;font-weight: 600;}
+.demo_plan_section .demo_plan_area .graduate_main h5.certificate_text{font-weight: 600;font-size: 26px;text-align: center;}
+.demo_plan_section .demo_plan_area .certificate_img_area{display: flex;align-items: center;margin: 0 auto;justify-content: center;}
+.demo_plan_section .demo_plan_area .certificate_img_area img.certificate_img{height: 680px;width: 770px;border-radius: 12px;margin-top: 20px;box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;}
+.demo_plan_section .demo_plan_area .qualified_title h5.certificate_text{text-align: center;margin-top: 30px;font-weight: 600;width: 80%;max-width: 100%;line-height: 34px;}
+.demo_plan_section .demo_plan_area .qualified_title{display: flex;align-items: center;margin: 0 auto;justify-content: center;}
+.video_section{margin-top: 90px;background: #EDFBF4;padding: 50px 0;}
+.video_section .video_area .title_main h3.coach{font-weight: 700;font-size: 40px;text-align: center;}
+.video_section .video_area .video_play_area{display: flex;align-items: center;justify-content: center;margin-top: 30px;}
+.video_section .video_area .health_help{display: flex;align-items: center;justify-content: center;margin: 0 auto;}
+.video_section .video_area .health_help h4.health_help_text{width: 70%;max-width: 100%;color: #ed5217;text-align: center;line-height: 34px;margin-top: 28px;font-weight: 600;}
+
+.video_section .video_area .work_desc_area{background-color: white;box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;width: 60%;display: flex;align-items: center;margin: 0 auto;justify-content: center;padding:30px 0;margin-top: 30px;border-radius: 10px;}
+.video_section .video_area .work_desc_area .list_main ul li{margin-bottom: 10px;font-size: 18px;}
+.video_section .video_area .work_desc_area .list_main ul li a.coupon_code{color: black;font-weight: 500;text-decoration: none;}
+.video_section .video_area .work_desc_area .list_main ul li a.coupon_code span.register_btn{background-color: #ed5217;padding: 10px 18px;border-radius: 8px;color: white;box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;margin-left: 10px;}
+.video_section .video_area .work_desc_area .list_main ul li::marker{color: #ed5217;font-size: 24px;}
+.modal-title {font-size: 26px;font-weight: 800;color: black;}
+.form-label{color: black;font-size: 15px;}
+.modal-content {padding: 10px 16px;box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;border-radius: 14px;}
+.modal-header{border-bottom: 2px solid #ed5217;}
+.modal-footer{border-top: none;justify-content: center;align-items: center;}
+.modal-footer .note_area{margin-top: 13px;text-align: center;}
+.modal-footer .note_area p a{font-weight: 700;color: #00a61b !important;}
+.modal-footer button.btn{background-color: #ed5217 !important;border: none;box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;width: 24% !important;max-width: 100%;}
+.demo_img1 {margin-top: -42px;}
+
+
+/* media query start here */
+
+@media (max-width: 1368px){
+    .workshoptime_section .workshoptime_area .work_desc_area{width: 70%;}
+    .as_youknow_section .as_youknow_area .title_main h3.coach{width: 70%;}
+    .demo_plan_section .demo_plan_area .title_main h3.coach{width: 80%;}
+    .demo_plan_section{margin-top: 80px;}
+    .video_section .video_area .health_help h4.health_help_text {width: 100%;line-height: 44px;}
+    .video_section .video_area .work_desc_area {width: 70%;}
+    .coach_section .coach_area .cocah_desc_area .coach_img img.dr_image{height: 540px !important;}
+}
+
+@media (max-width: 1366px){
+    .workshoptime_section .workshoptime_area .work_desc_area{width: 70%;}
+    .workshoptime_section{margin-top: 90px;}
+    .as_youknow_section{margin-top: 90px;}
+    .as_youknow_section .as_youknow_area .title_main h3.coach{width: 80%;}
+    .demo_plan_section .demo_plan_area .title_main h3.coach{width: 80%;}
+    .demo_plan_section {margin-top: 78px;}
+    .demo_plan_section .demo_plan_area .certificate_img_area img.certificate_img{width: 870px;}
+    .video_section .video_area .health_help h4.health_help_text{width: 100%;line-height: 44px;}
+    .video_section .video_area .work_desc_area{width: 70%;}
+    .coach_section .coach_area .cocah_desc_area .coach_img img.dr_image{height: 540px !important;}
+}
+
+@media (max-width: 1024px){
+    .coach_section .coach_area .cocah_desc_area .coach_img img.dr_image {width: 432px;height: 510px;}
+    .coach_section .coach_area .about_dr {margin-top: 12px !important;}
+    .workshoptime_section{margin-top: 80px;}
+    .workshoptime_section .workshoptime_area .work_desc_area{width: 100%;}
+    .as_youknow_section{margin-top: 90px;}
+    .as_youknow_section .as_youknow_area .title_main h3.coach {font-size: 30px;width: 80%;line-height: 47px;}
+    .demo_plan_section {margin-top: 65px;}
+    .demo_plan_section .demo_plan_area .title_main h3.coach{width: 90%;font-size: 30px;line-height: 45px;}
+    img.demo_img {width: 930px;}
+    .demo_plan_section .demo_plan_area .graduate_main h4.graduate_text{font-weight: 500;}
+    .demo_plan_section .demo_plan_area .certificate_img_area img.certificate_img {height: 714px; width: 868px;}
+    .demo_plan_section .demo_plan_area .qualified_title h5.certificate_text{width: 100%;}
+    .video_section{margin-top: 70px;}
+    .video_section .video_area .title_main h3.coach{font-size: 30px;}
+    .video_section .video_area .health_help h4.health_help_text{width: 100%;}
+    .video_section .video_area .work_desc_area{width: 80%;}
+}
+
+@media (max-width: 768px){
+    body, html{width: 100%; overflow-x: hidden;}
+    .coach_section .coach_area .title_main h3.coach{font-size: 30px;}
+    .coach_section .coach_area .cocah_desc_area .coach_img img.dr_image{width: 335px;height: 513px;}
+    .coach_section .coach_area .about_dr {margin-top: 6px;}
+    .workshoptime_section{margin-top: 80px;}
+    .workshoptime_section .workshoptime_area .title_main h3.coach{font-size: 30px;}
+    .workshoptime_section .workshoptime_area .work_desc_area{width: 100%;}
+    .as_youknow_section .as_youknow_area .title_main h3.coach{width: 100%;font-size: 30px;line-height: 43px;}
+    .as_youknow_section{margin-top: 85px;}
+    .as_youknow_section .as_youknow_area .workshop_detail_area .card.card1{height: 820px;width: 227px;}
+    .demo_plan_section .demo_plan_area .title_main h3.coach{font-size: 30px;width: 100%;line-height: 46px;}
+    .demo_plan_section{margin-top: 70px;}
+    img.demo_img {width: 750px;}
+    .demo_plan_section .demo_plan_area .graduate_main h4.graduate_text{font-weight: 500;}
+    .video_section{margin-top: 50px;}
+    .video_section .video_area .title_main h3.coach{font-size: 30px;}
+    .video_section .video_area .health_help h4.health_help_text{width: 100%;}
+    .video_section .video_area .work_desc_area{width: 100%;padding-left: 10px;padding-right: 12px;}
+    .demo_plan_section .demo_plan_area .qualified_title h5.certificate_text{width: 100%;}
+    .coach_section .coach_area .cocah_desc_area .dr_title h2.dr_name{font-size: 21px !important;}
+    .coach_section .coach_area .cocah_desc_area h4, h5 {font-size: 18px !important;}
+}
+
+@media (max-width: 430px){
+    body, html{width: 100%; overflow-x: hidden;}
+    img.health_ambasador_img{height: 420px;width: 409px;border-radius: 12px;}
+    .coach_section .coach_area .title_main h3.coach{font-size: 26px;}
+    .coach_section .coach_area .title_main h3.coach::before{margin-left: 130px;}
+    .coach_section {padding: 60px 0;}
+    .coach_section .coach_area .cocah_desc_area .coach_img img.dr_image{width: 405px;height: 436px;}
+    .coach_section .coach_area .cocah_desc_area {margin-top: 48px;}
+    .coach_section .coach_area .about_dr {margin-top: 43px;}
+    .workshoptime_section {margin-top: 50px;}
+    .workshoptime_section .workshoptime_area .title_main h3.coach{font-size: 26px;}
+    .workshoptime_section .workshoptime_area .title_main h3.coach::before {margin-left: 135px;}
+    .workshoptime_section .workshoptime_area .work_desc_area{width: 100%;padding-left: 10px;padding-right: 10px;}
+    .as_youknow_section .as_youknow_area .title_main h3.coach{width: 100%;line-height: 38px;font-size: 22px;}
+    .as_youknow_section{margin-top: 70px;}
+    .demo_plan_section .demo_plan_area .title_main h3.coach{width: 100%;font-size: 20px;line-height: 36px;}
+    .demo_plan_section{margin-top: 50px;}
+    img.demo_img {width: 444px;}
+    .demo_plan_section .demo_plan_area .graduate_main h4.graduate_text{font-weight: 500;}
+    .demo_plan_section .demo_plan_area .graduate_main h5.certificate_text{line-height: 38px;}
+    .demo_plan_section .demo_plan_area .certificate_img_area img.certificate_img{height: 480px;width: 409px;}
+    .demo_plan_section .demo_plan_area .qualified_title h5.certificate_text {width: 100%;}
+    .video_section .video_area .title_main h3.coach{font-size: 26px;}
+    .video_section {margin-top: 50px;}
+    .video_section .video_area .health_help h4.health_help_text{width: 100%;}
+    .video_section .video_area .work_desc_area {width: 100%;padding-left: 12px;padding-right: 12px;}
+    .health_ambasador_section .health_ambasador_area .title_main img.text_image{width: 350px;margin-top: 10px;}
+    .health_ambasador_section .health_ambasador_area .health_ambasador_area img.health_ambasador_img{margin-top: 38px;}
+    .as_youknow_section .as_youknow_area .workshop_detail_area .card.card1{width: 100% !important;}
+    .demo_plan_section .demo_plan_area .graduate_main h5.certificate_text{font-size: 24px;}
+    .as_youknow_section .as_youknow_area .workshop_detail_area .card.card1 {height: 730px !important;}
+}
+
+@media (max-width: 414px) {
+    body, html{width: 100%; overflow-x: hidden;}
+    img.health_ambasador_img{height: 420px;width: 394px;border-radius: 14px;}
+    .coach_section .coach_area .title_main h3.coach {font-size: 26px;}
+    .coach_section .coach_area .title_main h3.coach::before{margin-left: 148px;}
+    .coach_section{padding: 60px 0;}
+    .coach_section .coach_area .cocah_desc_area .coach_img img.dr_image{width: 389px;height: 400px;}
+    .workshoptime_section .workshoptime_area .title_main h3.coach{font-size: 26px;}
+    .workshoptime_section .workshoptime_area .title_main h3.coach::before{margin-left: 111px;bottom: -8px;width: 160px;}
+    .workshoptime_section .workshoptime_area .work_desc_area {width: 100%;padding-right: 10px;padding-left: 10px;}
+    .list_main ul li a.coupon_code span.register_btn{padding: 8px 8px !important;font-size: 16px;}
+    .as_youknow_section .as_youknow_area .title_main h3.coach{font-size: 22px;width: 100%;line-height: 37px;}
+    .as_youknow_section {margin-top: 70px;}
+    .demo_plan_section .demo_plan_area .title_main h3.coach {font-size: 22px;width: 100%;line-height: 36px;}
+    .demo_plan_section{margin-top: 60px;}
+    img.demo_img {width: 428px;}
+    .demo_plan_section .demo_plan_area .graduate_main h4.graduate_text{font-weight: 500;}
+    .demo_plan_section .demo_plan_area .certificate_img_area img.certificate_img{height: 484px;width: 393px;}
+    .demo_plan_section .demo_plan_area .qualified_title h5.certificate_text {width: 100%;}
+    .video_section{margin-top: 60px;}
+    .video_section .video_area .title_main h3.coach{font-size: 26px;}
+    .video_section .video_area .health_help h4.health_help_text{width: 100%;}
+    .video_section .video_area .work_desc_area{width: 100%;padding-left: 10px;padding-right: 10px;}
+    .health_ambasador_section .health_ambasador_area .title_main img.text_image{width: 340px;margin-top: 14px;}
+    .health_ambasador_section .health_ambasador_area .health_ambasador_area img.health_ambasador_img{margin-top: 38px;}
+    .coach_section .coach_area .cocah_desc_area .dr_title h2.dr_name {font-size: 22px;}
+    .coach_section .coach_area .cocah_desc_area h4, h5{font-size: 18px;}
+    .as_youknow_section .as_youknow_area .workshop_detail_area .card.card1{width: 100% !important;}
+    .as_youknow_section .as_youknow_area .workshop_detail_area .card.card1{height: 747px !important;}
+}
+
+@media (max-width: 412px){
+    img.health_ambasador_img {height: 395px; width: 392px;}
+    .coach_section .coach_area .cocah_desc_area .coach_img img.dr_image{width: 387px;}
+    img.demo_img {width: 426px;}
+    .demo_plan_section {margin-top: 40px;}
+    .demo_plan_section .demo_plan_area .certificate_img_area img.certificate_img {height: 448px;width: 390px;}
+    .video_section {margin-top: 30px;padding: 40px 0;}
+}
+
+@media (max-width: 390px) {
+    img.health_ambasador_img{height: 370px;width: 370px;border-radius: 10px;} 
+    .coach_section .coach_area .title_main h3.coach::before {margin-left: 98px;}
+    .coach_section {padding: 50px 0;} 
+    .coach_section .coach_area .cocah_desc_area .coach_img img.dr_image {width: 365px;height: 380px;}  
+    .coach_section .coach_area .cocah_desc_area {margin-top: 44px;}  
+    .coach_section .coach_area .about_dr {margin-top: 38px;}
+    .workshoptime_section {margin-top: 40px;}
+    .as_youknow_section {margin-top: 40px;}
+    .demo_plan_section {margin-top: 44px;}
+    img.demo_img {width: 400px;}
+    .demo_plan_section .demo_plan_area .graduate_main h5.certificate_text{font-size: 24px !important;line-height: 35px;}
+    .demo_plan_section .demo_plan_area .certificate_img_area img.certificate_img {height: 430px;width: 369px;}
+    .video_section {margin-top: 39px;}
+    .demo_plan_section .demo_plan_area .title_main h3.coach{font-size: 20px;line-height: 34px;}
+    .demo_plan_section .demo_plan_area .sub_title h4{font-size: 16px;}
+    .as_youknow_section .as_youknow_area .workshop_detail_area .card.card1 {height: 712px !important;}
+}
+
+@media (max-width: 375px) {
+    body, html{width: 100%; overflow-x: hidden;}
+    .health_ambasador_section .health_ambasador_area img.health_ambasador_img{width: 355px;border-radius: 12px;height: 380px;margin-top: 38px !important;}
+    .coach_section .coach_area .title_main h3.coach{font-size: 26px;}
+    .coach_section{padding: 50px 0;}
+    .coach_section .coach_area .title_main h3.coach::before{margin-left: 124px;}
+    .coach_section .coach_area .cocah_desc_area .coach_img img.dr_image{width: 350px;height: 350px;}
+    .coach_section .coach_area .about_dr{margin-top: 40px;}
+    .workshoptime_section .workshoptime_area .title_main h3.coach{font-size: 26px;}
+    .workshoptime_section .workshoptime_area .title_main h3.coach::before {margin-left: 115px;bottom: -7px;width: 145px;}
+    .workshoptime_section .workshoptime_area .work_desc_area{width: 100%;}
+    .workshoptime_section .workshoptime_area .work_desc_area .list_main ul li a.coupon_code span.register_btn{padding: 8px 10px;font-size: 14px;border-radius: 6px;}
+
+    .as_youknow_section .as_youknow_area .title_main h3.coach{width: 100%;font-size: 26px;line-height: 36px;}
+    .demo_plan_section{margin-top: 50px;}
+    .demo_plan_section .demo_plan_area .title_main h3.coach{font-size: 26px;width: 100%;line-height: 37px;}
+    img.demo_img {width: 384px;}
+    .demo_img1 {margin-top: 0;}
+    .demo_plan_section .demo_plan_area .graduate_main h4.graduate_text{font-weight: 500;}
+    .demo_plan_section .demo_plan_area .certificate_img_area img.certificate_img{height: 350px;width: 354px;}
+    .demo_plan_section .demo_plan_area .qualified_title h5.certificate_text{width: 100%;}
+    .video_section{margin-top: 50px;}
+    .video_section .video_area .title_main h3.coach{font-size: 26px;}
+    .video_section .video_area .health_help h4.health_help_text{width: 100%;line-height: 33px;font-size: 18px;}
+    .video_section .video_area .work_desc_area {width: 100%;}
+    .video_section .video_area .work_desc_area .list_main ul li a.coupon_code span.register_btn{padding: 8px 10px;font-size: 14px;border-radius: 6px;}
+    .workshoptime_section .workshoptime_area .work_desc_area .list_main ul li{font-size: 17px;}
+    .health_ambasador_section .health_ambasador_area .title_main img.text_image{width: 290px;margin-top: 10px;}
+    .coach_section .coach_area .cocah_desc_area .dr_title h2.dr_name{font-size: 20px;}
+    .coach_section .coach_area .cocah_desc_area h4, h5{font-size: 16px;}
+    .as_youknow_section .as_youknow_area .workshop_detail_area .card.card1{width: 100% !important;}
+    .as_youknow_section .as_youknow_area .workshop_detail_area .card.card1 {height: 740px !important;}
+}
+
+@media (max-width: 360px){
+    .health_ambasador_section .health_ambasador_area img.health_ambasador_img{width: 342px;height: 360px;}
+    .coach_section {padding: 40px 0;}
+    .coach_section .coach_area .title_main h3.coach::before {margin-left: 99px;}
+    .coach_section .coach_area .cocah_desc_area .coach_img img.dr_image {width: 336px;height: 370px;}
+    .coach_section .coach_area .cocah_desc_area {margin-top: 38px;}
+    .coach_section .coach_area .about_dr {margin-top: 38px;}
+    .workshoptime_section .workshoptime_area .title_main h3.coach::before {margin-left: 94px;}
+    .workshoptime_section .workshoptime_area .work_desc_area .list_main ul li{font-size: 16px;}
+    .as_youknow_section {margin-top: 53px;}
+    img.demo_img {width: 370px;}
+    .demo_plan_section .demo_plan_area .certificate_img_area img.certificate_img {height: 426px;width: 337px;}
+    .video_section .video_area .work_desc_area .list_main ul li{font-size: 16px;}
+    .as_youknow_section .as_youknow_area .title_main h3.coach {font-size: 22px;line-height: 34px;}
+    .as_youknow_section .as_youknow_area .workshop_detail_area .card.card1{height: 730px;}
+    .demo_plan_section .demo_plan_area .title_main h3.coach {font-size: 20px;line-height: 32px;}
+    .demo_plan_section .demo_plan_area .graduate_main h5.certificate_text {font-size: 22px !important;line-height: 33px;}
+}
+
+/* media query end here */

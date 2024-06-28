@@ -1,0 +1,12 @@
+[28-May-2022 07:31:15 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home1/afiinsd/public_html/admin/form/data1.php:75
+Stack trace:
+#0 {main}
+  thrown in /home1/afiinsd/public_html/admin/form/data1.php on line 75
+[28-May-2022 07:31:44 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home1/afiinsd/public_html/admin/form/data1.php:163
+Stack trace:
+#0 {main}
+  thrown in /home1/afiinsd/public_html/admin/form/data1.php on line 163
+[09-Jun-2022 11:04:34 UTC] PHP Fatal error:  Uncaught Error: Call to a member function fetch_assoc() on bool in /home1/afiinsd/public_html/admin/form/data1.php:163
+Stack trace:
+#0 {main}
+  thrown in /home1/afiinsd/public_html/admin/form/data1.php on line 163
