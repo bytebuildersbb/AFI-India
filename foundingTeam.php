@@ -1,6 +1,6 @@
 <?php include "layouts/main-header.php"; 
 
-    $query = "SELECT * FROM tbl_foundingteam where t_id NOT IN (2,3) order by t_id ASC";
+    $query = "SELECT * FROM tbl_foundingteam where t_id NOT IN (2,3) order by t_title ASC";
     $runQuery   =  $connect->query($query);
 ?>
 
@@ -166,27 +166,20 @@
                 </div>
 
 
-                <div class="col-lg-12 col-md-12 col-12">
-                    <div class="team_members mb-3">
-						
-						<?php while($row = $runQuery->fetch_object()){ ?>
-						
-                        <div class="teams2 p-4  text-center ">
+
+             	<?php while($row = $runQuery->fetch_object()){ ?>
+                        <div class="col-sm-6 col-md-4 col-lg-3 mb-4 text-center">
+                            <div class="teams2 p-3 h-100">
 							<img src="admin/uploads/foundingteam/<?php echo $row->t_thumbnail; ?>" class="img-responsive rounded-circle" alt="Team">
                             <h5 class="pt-3"><?php echo $row->t_title; ?></h5>
-                            <!--p class="text-success"><?php echo $row->t_designation; ?></p-->
-							<div class="btns">
-                                <div class="btn-style"><a href="f_teamDetail.php?mid=<?php echo urlencode(base64_encode($row->t_id)); ?>" >View More !</a></div>
-                            </div>
-                        </div>
-						
-						<?php } ?>						
-                        
+                            <p class="text-success"><?php echo $row->t_qual; ?></p>
+                                <a class="team-btn" href="f_teamDetail.php?mid=<?php echo urlencode(base64_encode($row->t_id)); ?>" >View More !</a>
+                           </div>
                     </div>
-
-
-                </div>
-               
+             	<?php } ?>	
+     
+                
+      
               </div>
         </div>
     </div>

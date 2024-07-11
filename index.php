@@ -41,7 +41,7 @@
 	
 
 
-	<div class="join_india ptb-100-70">
+	<div class="join_india ptb-100-70 py-5">
         <div class="container">
             <div class="row d-flex justify-content-center">
                 <div class="col-l2">
@@ -76,17 +76,17 @@
     </div>
 	
 	
-	<div class="hx-blog-area ptb-100-70">
-        <div class="testimonial">
+	<div class="hx-blog-area ptb-100-70 py-5">
+        <div class="testimonials">
             <div class="container">
-                <div class="col-l2">
+                <div class="col-12">
                     <div class="hx-site-title-1 text-center">
-                        <h2>Events</h2>
+                        <h2 class="mb-4">Events</h2>
                     </div>
                 </div>
                 <div class="testimonial__inner">
                     <div class="testimonial-slider_latest">
-                        <div class="col-md-12">
+                  
 						<?php
 							$current_date = date('Y-m-d');
 							$event_query = "SELECT * FROM tbl_events where event_end_date >= '".$current_date."' ORDER BY id DESC";
@@ -99,6 +99,7 @@
 								$enddate =  date_format($enddate,"d M Y");
 								$created_at = date_format(date_create($row['created_at']), "M d, Y");
 						?>
+						      <div class="col-md-12">
                             <div class="hx-blog-item">
                                 <div class="hx-blog-img">
                                     <div class="testimonial__inner">
@@ -126,10 +127,10 @@
                                     </ul>
                                 </div>
                             </div>
-						
+						    </div>
 						<?php } ?>
 						
-                        </div>
+                    
                         
                         
 
@@ -143,58 +144,58 @@
     </div>
 	
 	
-	<section>
-        <div class="testimonial">
-            <div class="container">
-                <div class="col-l2">
-                    <div class="hx-site-title-1 text-center">
-                        <h2>Activities</h2>
-                    </div>
-                </div>
-                <div class="testimonial__inner">
-                    <div class="testimonial-slider">
-                        <div class="testimonial-slide">
-                            <div class="testimonial_box">
-                                <div class="testimonial_box-inner">
-                                    <div class="cases-wrapper2">
-                                        <img src="assets/images/blog/1.jpg" alt="">
-                                        <h5 class="fs-20 text-heding3 font-weight-bold pt-3">Activity 1</h5>
+	<!--<section>-->
+ <!--       <div class="testimonials py-5">-->
+ <!--           <div class="container">-->
+ <!--               <div class="col-l2">-->
+ <!--                   <div class="hx-site-title-1 text-center">-->
+ <!--                       <h2 class="mb-3">Activities</h2>-->
+ <!--                   </div>-->
+ <!--               </div>-->
+ <!--               <div class="testimonial__inner">-->
+ <!--                   <div class="testimonial-slider">-->
+ <!--                       <div class="testimonial-slide">-->
+ <!--                           <div class="testimonial_box">-->
+ <!--                               <div class="testimonial_box-inner">-->
+ <!--                                   <div class="cases-wrapper2">-->
+ <!--                                       <img src="assets/images/blog/1.jpg" alt="">-->
+ <!--                                       <h5 class="fs-20 text-heding3 font-weight-bold pt-3">Activity 1</h5>-->
 
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="testimonial-slide">
-                            <div class="testimonial_box">
-                                <div class="testimonial_box-inner">
-                                    <div class="cases-wrapper2">
-                                        <img src="assets/images/blog/2.jpg" alt="">
-                                        <h5 class="fs-20 text-heding3 font-weight-bold pt-3">Activity 2</h5>
+ <!--                                   </div>-->
+ <!--                               </div>-->
+ <!--                           </div>-->
+ <!--                       </div>-->
+ <!--                       <div class="testimonial-slide">-->
+ <!--                           <div class="testimonial_box">-->
+ <!--                               <div class="testimonial_box-inner">-->
+ <!--                                   <div class="cases-wrapper2">-->
+ <!--                                       <img src="assets/images/blog/2.jpg" alt="">-->
+ <!--                                       <h5 class="fs-20 text-heding3 font-weight-bold pt-3">Activity 2</h5>-->
 
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="testimonial-slide">
-                            <div class="testimonial_box">
-                                <div class="testimonial_box-inner">
-                                    <div class="cases-wrapper2">
-                                        <img src="assets/images/blog/3.jpg" alt="">
-                                        <h5 class="fs-20 text-heding3 font-weight-bold pt-3">Activity 3</h5>
+ <!--                                   </div>-->
+ <!--                               </div>-->
+ <!--                           </div>-->
+ <!--                       </div>-->
+ <!--                       <div class="testimonial-slide">-->
+ <!--                           <div class="testimonial_box">-->
+ <!--                               <div class="testimonial_box-inner">-->
+ <!--                                   <div class="cases-wrapper2">-->
+ <!--                                       <img src="assets/images/blog/3.jpg" alt="">-->
+ <!--                                       <h5 class="fs-20 text-heding3 font-weight-bold pt-3">Activity 3</h5>-->
                                         
 
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="btns pt-5 text-center">
-                    <div class="btn-style"><a href="#">View More !</a></div>
-                </div>
-            </div>
-        </div>
-    </section>
+ <!--                                   </div>-->
+ <!--                               </div>-->
+ <!--                           </div>-->
+ <!--                       </div>-->
+ <!--                   </div>-->
+ <!--               </div>-->
+ <!--               <div class="btns pt-5 text-center">-->
+ <!--                   <div class="btn-style"><a href="#">View More !</a></div>-->
+ <!--               </div>-->
+ <!--           </div>-->
+ <!--       </div>-->
+ <!--   </section>-->
 
 
 	<div class="hx-blog-area ptb-100-70">

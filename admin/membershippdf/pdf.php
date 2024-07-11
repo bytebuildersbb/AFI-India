@@ -36,7 +36,7 @@ if ($type == 'STUDENT') {
     ];
 
 }
-elseif($type == 'DOCTOR' ||  $type == 'PATRON'){
+elseif($type == 'LIFETIME' ||  $type == 'PATRON'){
      $doc1 = [
         'name' => 'Dr. Sanjay Jakhar',
         'des' => 'National President',
@@ -221,8 +221,7 @@ $html = '
    </html>
 ';
 
-// echo $html;
-// die;
+
 // Load HTML content into Dompdf
 $dompdf->loadHtml($html);
 $dompdf->set_option('isRemoteEnabled', TRUE);
@@ -236,7 +235,7 @@ $dompdf->render();
 $pdfContent = $dompdf->output();
 
 // Output PDF to browser
- $dompdf->stream('certificate.pdf', ['Attachment' => 0]);
+//  $dompdf->stream('certificate.pdf', ['Attachment' => 0]);
 
 $temp_file_path = './temp_pdf/'.time().'_temp_file.pdf';
 file_put_contents($temp_file_path, $pdfContent);    

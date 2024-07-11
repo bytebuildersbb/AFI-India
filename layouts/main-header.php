@@ -191,11 +191,11 @@ if(isset($_POST["subscribe"])){
                             <a class="navbar-brand" href="<?php echo BASEPATH;?>index.php">
 								<img src="<?php echo BASEPATH;?>assets/images/logo/logo.png" alt="">
 							</a>
-                            <div class="header_img-2"> 
-								<a class="navbar-brand  pl-3 ml-0" href="<?php echo BASEPATH;?>index.php">
-									<img src="<?php echo BASEPATH;?>assets/images/Asset 2-8.png" alt="">
-								</a>
-							</div>
+       <!--                     <div class="header_img-2"> -->
+							<!--	<a class="navbar-brand  pl-3 ml-0" href="<?php echo BASEPATH;?>index.php">-->
+							<!--		<img src="<?php echo BASEPATH;?>assets/images/Asset 2-8.png" alt="">-->
+							<!--	</a>-->
+							<!--</div>-->
 							<div class="header_img-2"> 
 								<a class="navbar-brand  pl-3 ml-0" href="<?php echo BASEPATH;?>index.php">
 									<img src="<?php echo BASEPATH;?>assets/images/logo3header.png" alt="">

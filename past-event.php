@@ -1,7 +1,7 @@
 <?php include "layouts/main-header.php"; 
     
     $current_date = date('Y-m-d');
-    $event_query = "SELECT * FROM tbl_events where event_end_date < '".$current_date."' ORDER BY id DESC";
+    $event_query = "SELECT * FROM tbl_events  ORDER BY id DESC";
     $runQuerys   =  $connect->query($event_query);
     
    
@@ -46,7 +46,7 @@
                 <div class="col-lg-4 col-md-6 col-12 mb-3">
                    <div class="cases-wrapper2">
                         <img src="<?= IMG_PATH; ?>events/<?php echo $row['event_thumbnail'];?>" alt="">
-                        <h6 class="mt-3">Event strat: <?php echo $startdate; ?></h6>
+                        <h6 class="mt-3">Event start: <?php echo $startdate; ?></h6>
                         <h5 class="fs-20 text-heding3 font-weight-bold"><?php echo $row['event_title']; ?></h5>
                         <p><?php echo $row['event_description'];?></p>                        
                     </div>

@@ -12,6 +12,7 @@ $data = $runQuery->fetch_object();
 
 $title          = $data->t_title;
 $designation    = $data->t_designation;
+$qual           = $data->t_qual;
 $city           = $data->t_city;
 $desc           = base64_decode($data->t_desc);
 $profileImage   = $data->t_thumbnail;
@@ -50,7 +51,7 @@ $img            = $img_path.$profileImage;
                             <img src="<?php echo $img; ?>" alt="team" class="img-responsive rounded-circle pb-3">
                             <h5><strong><?php echo $title; ?></strong></h5>
                             <h6 class="text-success"><?= $designation; ?></h6>
-                            <h4><span>City: </span><?= $city; ?></h4>
+                            <!--<h4><span>City: </span><?= $city; ?></h4>-->
 
                             <ul class="mb-4 text-left pt-3">
                                 <li class="mb-3"><a href="mailto:ayurvedafederation@gmail.com" class="text-dark"><i class="fa fa-envelope text-success fa-lg"></i> ayurvedafederation@gmail.com</a></li>
@@ -68,6 +69,7 @@ $img            = $img_path.$profileImage;
                             <div class="post">
                                <h2><?php echo $title; ?></h2>
                                <h5><?= $designation; ?></h5>
+                               <h5><?= $qual; ?></h5>
 								<?= $desc; ?>
                             </div>
 

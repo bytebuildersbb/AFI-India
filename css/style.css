@@ -5528,10 +5528,11 @@ position: relative;
 }
 
 .teams2 img {
-    width: 100%;
-    max-width: 100px;
+    min-width: 80px;
+    height: 80px;
+    object-fit: cover;
+    max-width: 80px;
 }
-
 .teams2 h5 {
     font-size: 15px;
     line-height: 1.5;
@@ -5540,16 +5541,26 @@ position: relative;
 .teams2 {
     background-color: white;
     border-radius: 8px;
-    flex: 0 0 18.33%;
-    max-width: 18.33%;
-    min-height: 270px;
     box-shadow: 0px 0px 20px 0.801px #577bf945;
-    position: relative;
-    z-index: 212;
-    /* background-image: radial-gradient( #ed52174d #f8f8f8 15%, #577bf961 64%) */
+     background-image: radial-gradient( #ed52174d #f8f8f8 15%, #577bf961 64%) 
+    background-image: linear-gradient(#b3e7f5b8, #f8f8f8);
+        box-shadow: 0px 0px 20px 0.801px #577bf945;
     background-image: linear-gradient(#b3e7f5b8, #f8f8f8);
 }
 
+.team-btn{
+font-size: 14px;
+    font-weight: 300;
+    color: #ed5217;
+    text-transform: capitalize;
+    display: inline-block;
+    margin-top: 3px;
+    border-radius: 25px;
+    width: 100%;
+    padding: 0.5rem;
+    box-shadow: 2px 2px 3px #ed521752;
+    background: white;
+    }
 .btn-style a {
     color: white;
 }
@@ -5608,10 +5619,6 @@ position: relative;
 
 
 @media screen and (max-width:767px) {
-    .teams2 {
-        flex: 0 0 100% !important;
-        max-width: 100% !important;
-    }
 
     .newsletter-content h2 {
         font-size: 21px;
@@ -5634,26 +5641,6 @@ position: relative;
 
 }
 
-/* @media screen and (max-width:767px){
-    .teams2 {
-        flex: 0 0 48%;
-        max-width: 48%;
-    }
-} */
-/* @media screen and (max-width:767px){
- .teams2 {
-    flex: 0 0 48% !important;
-    max-width: 48% !important;
-}
-}  */
-@media screen and (max-width:991px) {
-    .teams2 {
-        flex: 0 0 31.33%;
-        max-width: 31.33%;
-    }
- 
-    
-}
 
 
 @media screen and (max-width:424px) {
