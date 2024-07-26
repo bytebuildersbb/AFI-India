@@ -1,4 +1,15 @@
 <?php
+
+	 ob_start();
+   require_once './vendor/autoload.php';
+   
+   use PHPMailer\PHPMailer\PHPMailer;
+   use PHPMailer\PHPMailer\Exception;
+   
+   require './vendor/phpmailer/phpmailer/src/Exception.php';
+   require './vendor/phpmailer/phpmailer/src/PHPMailer.php';
+   require './vendor/phpmailer/phpmailer/src/SMTP.php';
+
     include "layouts/main-header.php";
     
     if (isset($_GET['page_no']) && $_GET['page_no']!="") {
@@ -185,6 +196,78 @@ $runQuery   =  $connect->query($getMetas);
         </div>	
 		
     </div>
+
+
+<div class="py-5">
+	<div class="container">
+			<form method="post" id="manuscriptform" enctype="multipart/form-data" 
+		action="manuscript.php">
+		
+		<div class="hx-site-title-1 text-center">
+		<h2 class="text-center mb-6">Submit Manuscript Here</h2>
+                </div>
+		<div class="card p-4">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="form-group">
+						<label>Your Full Name</label>
+						<input type="text" class="form-control" placeholder="Full Name" name="name" id="name" required="">
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="form-group">
+						<label>Your Email</label>
+						<input type="email" class="form-control" placeholder="Your Email" name="email" id="email" required="">
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="form-group">
+						<label>Your Contact Number</label>
+						<input type="tel" class="form-control" placeholder="Your Contact Number" name="phone" id="phone"
+							required="">
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="form-group">
+						<label>Your Title of Article</label>
+						<input type="text" class="form-control" placeholder="Your Title of Article" name="title" id="title" required="">
+					</div>
+				</div>
+				<div class="col-md-12">
+					<div class="form-group">
+						<label>Your Subject</label>
+						<div>
+							<input type="text" class="form-control w-100" placeholder="Write something..." name="message" id="message" required="">
+							
+						</div>
+					</div>
+				</div>
+				<div class="col-md-12">
+					<div class="form-group">
+			     	<div class="upload-content">
+						<div class="upload-file h-100">
+						<img src="./assets/images/cloud-computing.png" alt="cloud computing" width="25" height="25" class="ml-2">
+					    	<input type="file" name="uploaded_file" class="form-control p-1 shadow-none w-30"id="file" required>
+						</div>
+					
+						</div>
+						 <label for="file" style="color:red;">Please upload files that are under 2 mb* </label>
+					</div>
+				</div>
+
+				<div class="col-md-12 text-right">
+					<input type="submit" class="theme-btn" value="Sumbit">
+				</div>
+			</div>
+		</div>
+			
+		</form>
+	</div>
+</div>
+
+
+
+
 
 
 <?php include "layouts/main-footer.php"; ?>

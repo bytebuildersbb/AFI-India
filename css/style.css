@@ -7,7 +7,7 @@
 /*--------------------------------------------------------------
 #0.1    Theme Reset Style
 --------------------------------------------------------------*/
-@font-face {
+/* @font-face {
     font-family: 'Now';
     src: url(../fonts/text-fonts/now-regular.otf) format("truetype");
     font-weight: normal;
@@ -20,6 +20,7 @@
     font-weight: 600;
     font-style: normal;
 }
+
 
 @font-face {
     font-family: 'Now';
@@ -40,14 +41,125 @@
     src: url("../fonts/text-fonts/segoe-ui.html") format("truetype");
     font-weight: normal;
     font-style: normal;
+} */
+
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/text-fonts/Inter-ExtraLight.eot');
+    src: url('../fonts/text-fonts/Inter-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/text-fonts/Inter-ExtraLight.woff2') format('woff2'),
+        url('../fonts/text-fonts/Inter-ExtraLight.woff') format('woff'),
+        url('../fonts/text-fonts/Inter-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
 }
 
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/text-fonts/Inter-Bold.eot');
+    src: url('../fonts/text-fonts/Inter-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/text-fonts/Inter-Bold.woff2') format('woff2'),
+        url('../fonts/text-fonts/Inter-Bold.woff') format('woff'),
+        url('../fonts/text-fonts/Inter-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/text-fonts/Inter-ExtraBold.eot');
+    src: url('../fonts/text-fonts/Inter-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/text-fonts/Inter-ExtraBold.woff2') format('woff2'),
+        url('../fonts/text-fonts/Inter-ExtraBold.woff') format('woff'),
+        url('../fonts/text-fonts/Inter-ExtraBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/text-fonts/Inter-Black.eot');
+    src: url('../fonts/text-fonts/Inter-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/text-fonts/Inter-Black.woff2') format('woff2'),
+        url('../fonts/text-fonts/Inter-Black.woff') format('woff'),
+        url('../fonts/text-fonts/Inter-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/text-fonts/Inter-Light.eot');
+    src: url('../fonts/text-fonts/Inter-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/text-fonts/Inter-Light.woff2') format('woff2'),
+        url('../fonts/text-fonts/Inter-Light.woff') format('woff'),
+        url('../fonts/text-fonts/Inter-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/text-fonts/Inter-SemiBold.eot');
+    src: url('../fonts/text-fonts/Inter-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/text-fonts/Inter-SemiBold.woff2') format('woff2'),
+        url('../fonts/text-fonts/Inter-SemiBold.woff') format('woff'),
+        url('../fonts/text-fonts/Inter-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/text-fonts/Inter-Medium.eot');
+    src: url('../fonts/text-fonts/Inter-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/text-fonts/Inter-Medium.woff2') format('woff2'),
+        url('../fonts/text-fonts/Inter-Medium.woff') format('woff'),
+        url('../fonts/text-fonts/Inter-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/text-fonts/Inter-Regular.eot');
+    src: url('../fonts/text-fonts/Inter-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/text-fonts/Inter-Regular.woff2') format('woff2'),
+        url('../fonts/text-fonts/Inter-Regular.woff') format('woff'),
+        url('../fonts/text-fonts/Inter-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/text-fonts/Inter-Thin.eot');
+    src: url('../fonts/text-fonts/Inter-Thin.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/text-fonts/Inter-Thin.woff2') format('woff2'),
+        url('../fonts/text-fonts/Inter-Thin.woff') format('woff'),
+        url('../fonts/text-fonts/Inter-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+
 body {
-    font-family: 'Now';
+    /*font-family: 'Now';*/
     font-size: 16px;
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
     color: #333;
+      font-family: 'Inter';
 }
 
 @media (max-width: 767px) {
@@ -68,8 +180,8 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Now';
     color: #353535;
+      font-family: 'Inter';
 }
 
 h1,
@@ -404,7 +516,7 @@ a:focus {
 
 .hx-header-contact .hx-account-item h5 {
     font-size: 16px;
-    font-family: 'Now';
+ font-family: 'Inter';  
     font-weight: 600;
     position: relative;
     margin-bottom: 0;
@@ -413,7 +525,7 @@ a:focus {
 .hx-header-contact .hx-account-item h5 span {
     font-size: 13px;
     display: block;
-    font-family: 'Now';
+    font-family: 'Inter';
     margin-top: 15px;
 }
 
@@ -978,7 +1090,7 @@ mobile menu
     animation: fadeInLeftSlow 1.5s 0.8s forwards;
     font-weight: 400;
     font-size: 18px;
-    font-family: 'Now';
+    font-family: 'Inter';
 }
 
 .hero .hero-slider .slick-list .slick-current .hx-slide-caption>h2 {
@@ -1054,7 +1166,7 @@ mobile menu
     display: inline-block;
     font-size: 30px;
     font-weight: 400;
-    font-family: 'Now';
+   font-family: 'Inter';
     color: #fff;
 }
 
@@ -1394,7 +1506,7 @@ mobile menu
 .hx-pricing-text span {
     font-size: 30px;
     font-weight: 600;
-    font-family: 'Now';
+ font-family: 'Inter';
     color: #ed5117;
 }
 
@@ -2662,7 +2774,7 @@ ul.post-meta {
     font-size: 24px;
     color: #555;
     padding-top: 10px;
-    font-family: 'Now';
+    font-family: 'Inter';
 }
 
 .hx-testimonial-item span {
@@ -2861,7 +2973,7 @@ ul.post-meta {
 }
 
 .hx-service-dt-right blockquote {
-    font-family: 'Now';
+  font-family: 'Inter';
     font-size: 19px;
     font-weight: 600;
     color: #777;
@@ -5597,7 +5709,7 @@ font-size: 14px;
 }
 
 .middle-header .navbar-light .navbar-nav .nav-link {
-
+font-size: 20px;
     border-bottom: 4px solid #fff;
 }
 
@@ -5670,10 +5782,9 @@ font-size: 14px;
         display: block;
     }
     .navbar-nav{flex-direction: row;}
-    li.nav-item.dropdown{font-size: 18px !important;text-wrap: nowrap;}
-    li.nav-item.dropdown {margin-right: 20px;}
-    a.nav-link.dropdown-toggle {font-size: 18px !important;}
-    li.nav-item.dropdown {margin-right: 30px !important;}
+    li.nav-item.dropdown{font-size: 18px;margin-right: 20px;text-wrap: nowrap;}
+    .nav-link.dropdown-toggle,.nav-item.dropdown a {font-size: 18px;}
+    /*li.nav-item.dropdown {margin-right: 30px !important;}*/
     .navbar-nav .dropdown-menu {position: absolute;}
     .patron_section{width: 100% !important;}
 }
@@ -5721,16 +5832,16 @@ button.navbar-toggler {
     display: block;
 }
 .navbar-nav{flex-direction: row;}
-li.nav-item.dropdown{font-size: 18px !important;text-wrap: nowrap;}
-li.nav-item.dropdown {margin-right: 20px;}
+/*li.nav-item.dropdown{font-size: 18px !important;text-wrap: nowrap;}*/
+/*li.nav-item.dropdown {margin-right: 20px;}*/
 a.nav-link.dropdown-toggle {font-size: 18px !important;}
-li.nav-item.dropdown {margin-right: 30px !important;}
+/*li.nav-item.dropdown {margin-right: 30px !important;}*/
 .navbar-nav .dropdown-menu {position: absolute;}
 .patron_section{width: 100% !important;}
  }
  @media screen and (max-width:375px) {
     a.nav-link.dropdown-toggle {font-size: 16px !important;}
-    li.nav-item.dropdown {font-size: 16px !important;}
+    /*li.nav-item.dropdown {font-size: 16px !important;}*/
     .patron_section{width: 100% !important;}
  }
 
@@ -5781,8 +5892,8 @@ button.download_btn {
 .testimonial__inner2 .cases-wrapper2 a{font-size: 12px;font-weight: 700;}
 
 
-li.nav-item.dropdown {font-size: 20px;font-weight: 600;}
-li.nav-item.dropdown {margin-right: 40px;}
+/*li.nav-item.dropdown {font-size: 20px;font-weight: 600;}*/
+/*li.nav-item.dropdown {margin-right: 40px;}*/
 a.nav-link.dropdown-toggle {font-size: 20px;}
 
 .patron_section .profile_main{text-align: center !important;display: flex;align-items: center !important;justify-content: center !important;}
@@ -5999,3 +6110,4 @@ input#mobile {
 .btn-style a.vaidya:hover {
     color: white !important;
 }
+

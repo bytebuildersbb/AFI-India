@@ -33,28 +33,19 @@
                     </div>
                     <div class="col-lg-3 col-md-6 col-sm-6 footer-t">
                         <div class="hx-site-footer-link">
-                            <h3>Recent post</h3>
+                            <h3>Vaidya's Tattva Private Limited</h3>
                             <div class="hx-latest-section">
                                 <div class="posts">
-									<?php 
-										$getMetass   =  "SELECT * FROM tbl_blog where type='1' order by blog_id_pk Desc LIMIT 2";
-										$runQuerys   =  $connect->query($getMetass);
-									?>
-									
-									<?php if(mysqli_num_rows($runQuerys) >= 1 ){
-        
-										while($rows = $runQuerys->fetch_object()) { 
-										?>
-									
+								
 										<div class="post">
 											<div class="img-holder">
-												<img src="<?php echo BASEPATH;?>admin/uploads/blogs/<?php echo $rows->blogImg; ?>" alt>
+												<img src="<?php echo BASEPATH;?>assets/images/logo3header.png" alt="">
 											</div>
 											<div class="details">
 												<h4><a href="detail.php?q=<?php echo $rows->urlSlug; ?>"><?php echo $rows->blogTitle; ?></a></h4>
 											</div>
 										</div>
-										<?php } } ?>
+										
 								
                                     
                                 </div>

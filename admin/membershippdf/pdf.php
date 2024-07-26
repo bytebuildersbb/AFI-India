@@ -1,5 +1,5 @@
 <?php
-// print_r($_GET['type']);die;
+// print_r($_GET['mailid']);die;
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 ob_start();
@@ -155,7 +155,7 @@ $html = '
            <div class="header">
                
                <p style="font-size:13px;">A constituent body of ‘Ayurveda vigyan forum’ reg. with Ministry of corporate affairs, Government of India</p>
-               <p style="font-size:13px;">Admn. Off.: D-50, First Floor, Sector 122, Noida, District Gautambudh </p>
+               
            </div>
            <div class="title">
               ' . htmlspecialchars($type) . ' MEMBERSHIP CERTIFICATE
@@ -204,7 +204,7 @@ $html = '
                         <p
                            style="margin-top:0; text-align: center;font-size: 12px; line-height: 15px;   font-weight: 400;  color: #000;">
                            A Leading Organization, working tirelessly for Ayurveda Practitioners, Students, Researchers. Pioneers of Ayurveda on Global scale.</p>
-                       <p
+                        <p
                            style="padding: 0 20px;text-align: center;font-size: 12px; line-height: 15px; font-weight: 400;  color: #000;">
                            Admn. Off.: D-50, First Floor, Sector 122, Noida, District Gautambudh Nagar, Uttar Pradesh-201316</p>
                            </div>
@@ -235,7 +235,7 @@ $dompdf->render();
 $pdfContent = $dompdf->output();
 
 // Output PDF to browser
-//  $dompdf->stream('certificate.pdf', ['Attachment' => 0]);
+//  $dompdf->stream('certificate.pdf', ['Attachment' => 0]);die;
 
 $temp_file_path = './temp_pdf/'.time().'_temp_file.pdf';
 file_put_contents($temp_file_path, $pdfContent);    
@@ -257,29 +257,32 @@ $msg= "<p>Hello $name,</p>
 ";
 $mailDetails = $mailid;
 
+
+
 echo smtp_mailer($mailDetails,$subject,$msg, $temp_file_path);
 function smtp_mailer($to,$subject, $msg, $attachment_path){
+
 	$mail = new PHPMailer(); 
-	$mail->IsSMTP(); 
-	$mail->SMTPAuth = true; 
-	$mail->SMTPSecure = 'tls'; 
-	$mail->Host = "smtp.gmail.com";
-	$mail->Port = 587; 
-	$mail->IsHTML(true);
-	$mail->CharSet = 'UTF-8';
-	$mail->SMTPDebug = 2; 
-	$mail->Username = "ayurvedafederation@gmail.com";
-	$mail->Password = "qbjpsszvqjsizzfs";
- $mail->addAttachment($attachment_path);
-	$mail->SetFrom("ayurvedafederation@gmail.com");
-	$mail->Subject = $subject;
-	$mail->Body =$msg;
-	$mail->AddAddress($to);
-	$mail->SMTPOptions=array('ssl'=>array(
-		'verify_peer'=>false,
-		'verify_peer_name'=>false,
-		'allow_self_signed'=>false
-	));
+   	$mail->IsSMTP(); 
+   	$mail->SMTPAuth = true; 
+   	$mail->SMTPSecure = false; 
+   	$mail->Host = "mail.jeenasikho.co.in";
+   	$mail->Port = 2525; 
+   	$mail->IsHTML(true);
+   	$mail->CharSet = 'UTF-8';
+   	$mail->SMTPDebug = 2; 
+   	$mail->Username = "contact@afi-india.in";
+   	$mail->Password = "Admin@7788";
+    $mail->addAttachment($attachment_path);
+   	$mail->SetFrom("contact@afi-india.in");
+   	$mail->Subject = $subject;
+   	$mail->Body =$msg;
+   	$mail->AddAddress($to);
+   	$mail->SMTPOptions=array('ssl'=>array(
+   		'verify_peer'=>false,
+   		'verify_peer_name'=>false,
+   		'allow_self_signed'=>false
+   	));
 	if(!$mail->Send()){
 		echo $mail->ErrorInfo;
 		unlink($attachment_path);

@@ -185,8 +185,7 @@ if(isset($_POST["subscribe"])){
 
 		<div class="middle-header">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
+
                         <nav class="navbar navbar-expand-lg navbar-light p-0">
                             <a class="navbar-brand" href="<?php echo BASEPATH;?>index.php">
 								<img src="<?php echo BASEPATH;?>assets/images/logo/logo.png" alt="">
@@ -196,22 +195,20 @@ if(isset($_POST["subscribe"])){
 							<!--		<img src="<?php echo BASEPATH;?>assets/images/Asset 2-8.png" alt="">-->
 							<!--	</a>-->
 							<!--</div>-->
-							<div class="header_img-2"> 
-								<a class="navbar-brand  pl-3 ml-0" href="<?php echo BASEPATH;?>index.php">
-									<img src="<?php echo BASEPATH;?>assets/images/logo3header.png" alt="">
-									<p style="
-                                        font-size: 11px;
-                                        font-weight: 700;
-                                    ">Partner Organisation: Vaidya's Tattva Private Limited</p>
-								</a>
-							</div>
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                            <div class="collapse navbar-collapse" id="main_nav">
-
-                                <ul class="navbar-nav ml-auto">
-                                    
+							<!--<div class="header_img-2"> -->
+							<!--	<a class="navbar-brand  pl-3 ml-0" href="<?php echo BASEPATH;?>index.php">-->
+							<!--		<img src="<?php echo BASEPATH;?>assets/images/logo3header.png" alt="">-->
+							<!--		<p style="-->
+       <!--                                 font-size: 11px;-->
+       <!--                                 font-weight: 700;-->
+       <!--                             ">Partner Organisation: Vaidya's Tattva Private Limited</p>-->
+							<!--	</a>-->
+							<!--</div>-->
+                            <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav">-->
+                            <!--    <span class="navbar-toggler-icon"></span>-->
+                            <!--</button>-->
+                            <!--<div class="collapse navbar-collapse" id="main_nav">-->
+                                <ul class="navbar-nav ml-auto d-flex flex-row align-items-center">
                                     <li class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"> Events</a>
                                         <ul class="dropdown-menu new-menu">
@@ -259,23 +256,15 @@ if(isset($_POST["subscribe"])){
                                             <li><a class="dropdown-item" href="<?php echo BASEPATH;?>public-course.php">For Public</a></li>
                                         </ul>
                                     </li>
-
                                 </ul>
-
-
-
-                            </div> <!-- navbar-collapse.// -->
-
+                            <!--</div> <!-- navbar-collapse.// -->
                         </nav>
-
-                    </div>
-                </div>
             </div>
 
         </div>
         <div class="header-area" id="sticky-header">
             <div class="container-fluid">
-                <div class="row">
+                <div class="row align-items-center">
                     <div class="col-lg-11 d-none d-lg-block">
                         <div class="main-menu">
                             <nav class="nav_mobile_menu">

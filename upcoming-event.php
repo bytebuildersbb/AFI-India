@@ -1,7 +1,7 @@
 <?php include "layouts/main-header.php"; 
     
     $current_date = date('Y-m-d');
-    $event_query = "SELECT * FROM tbl_events where event_end_date >= '".$current_date."' ORDER BY id DESC";
+    $event_query = "SELECT * FROM tbl_events where event_end_date >= '".$current_date."' AND id != 7 ORDER BY id DESC";
     $runQuerys   =  $connect->query($event_query);
     $runQueryss   =  $connect->query($event_query);
     

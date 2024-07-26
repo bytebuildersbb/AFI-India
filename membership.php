@@ -151,33 +151,66 @@
     <!--End project area--> 
 
 
-    <div class="join_india ptb-100-70">
-        <div class="container">
-            <div class="row d-flex justify-content-center">
-                <div class="col-l2">
-                    <div class="hx-site-title-1 text-center">
-                        <span>Join with Us</span>
-                        <h2>Join Ayurveda Federation of India</h2>
-                    </div>
-                </div>
+    <!--<div class="join_india ptb-100-70">-->
+    <!--    <div class="container">-->
+    <!--        <div class="row d-flex justify-content-center">-->
+    <!--            <div class="col-l2">-->
+    <!--                <div class="hx-site-title-1 text-center">-->
+    <!--                    <span>Join with Us</span>-->
+    <!--                    <h2>Join Ayurveda Federation of India</h2>-->
+    <!--                </div>-->
+    <!--            </div>-->
 
+    <!--            <div class="col-12">-->
+    <!--                <div class="ayurveda">-->
+    <!--                    <div class="row">-->
+    <!--                        <div class="col-md-4 col-12 mb-3 ">-->
+    <!--                            <a href="member-id-card.php"><img src="assets/images/afi1.png"-->
+    <!--                                    class="img-fluid afilift"></a>-->
+    <!--                        </div>-->
+    <!--                        <div class="col-md-4 col-12 mb-3 ">-->
+    <!--                            <img src="assets/images/afi2.png" class="img-fluid afilift">-->
+    <!--                        </div>-->
+    <!--                        <div class="col-md-4 col-12 mb-3 ">-->
+    <!--                            <a href="membership.php"><img src="assets/images/afi3.png"-->
+    <!--                                    class="img-fluid afilift"></a>-->
+    <!--                        </div>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <!--    </div>-->
+    <!--</div>-->
+		<div class="join_india py-5">
+        <div class="container">
+            <div class="hx-site-title-1 text-center">
+                <span>Join with Us</span>
+                <h2>Join Ayurveda Federation of India</h2>
+            </div>
+            <div class="row d-flex justify-content-center">
                 <div class="col-12">
                     <div class="ayurveda">
                         <div class="row">
-                            <div class="col-md-4 col-12 mb-3 ">
-                                <a href="member-id-card.php"><img src="assets/images/afi1.png"
-                                        class="img-fluid afilift"></a>
+                            <div class="col-md-4 mb-3">
+                                <a href="member-id-card.php">
+									<img src="assets/images/afi1.png" class="img-fluid afilift">
+								</a>
                             </div>
-                            <div class="col-md-4 col-12 mb-3 ">
+                            <div class="col-md-4 mb-3">
+                                <a href="certificate-page.php">
                                 <img src="assets/images/afi2.png" class="img-fluid afilift">
+								</a>
                             </div>
-                            <div class="col-md-4 col-12 mb-3 ">
-                                <a href="membership.php"><img src="assets/images/afi3.png"
-                                        class="img-fluid afilift"></a>
+                        
+                            <div class="col-md-4 mb-3">
+                                <a href="membership.php">
+									<img src="assets/images/afi3.png" class="img-fluid afilift">
+								</a>
                             </div>
                         </div>
                     </div>
                 </div>
+				
             </div>
         </div>
     </div>

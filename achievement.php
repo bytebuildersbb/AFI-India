@@ -1,7 +1,13 @@
-<?php include "layouts/main-header.php"; ?>
+<?php include "layouts/main-header.php"; 
+    
+    $current_date = date('Y-m-d');
+    $event_query = "SELECT * FROM tbl_events WHERE event_start_date <= '".$current_date."' ORDER BY id DESC";
+    $runQuerys   =  $connect->query($event_query);
+    
+   
+?>
 
-
-	<div class="breadcumb-area">
+<div class="breadcumb-area">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -17,44 +23,46 @@
         </div>
     </div>
     <!-- .breadcumb-area end -->
-    <!-- .hx-team-area start -->
-    <div class="team-area clear-fix  bg-light pt-5 pb-5">
+   
+   <!-- Upcoming events start -->
+
+	<div class="hx-event-area ptb-100-70">
         <div class="container">
-            <div class="col-12">
+            <div class="col-l2">
                 <div class="hx-site-title-1 text-center">
                     <span>Achievments</span>
                     <h2>AFI Achievments</h2>
                 </div>
             </div>
-            <div class="row justify-content-center">
-				
-				<?php 
-					$query = "SELECT * FROM tbl_doctor_info WHERE type = '1' ORDER BY doctor_info_id_pk DESC";
-					$runQuery   =  $connect->query($query);
-					while($row = $runQuery->fetch_object()){
-						//echo "<pre>";print_R($row);
-				?>
-                <div class="col-lg-3 col-md-6 col-12">
-                    <div class="teams p-3 achievements ">
-                         <span class="badge badge-warning"><?php if($row->type==0){echo "Dr";}else{echo "Achievment"; }?></span>
-                            <img src="admin/uploads/PDF/<?php echo $row->pdf_image; ?>" class="img-responsive" alt="Team">
-                           <h4 style="font-size: 18px; margin-top: 10px; text-align: justify;"><?= substr($row->title,0,55); ?></h4>
-                           <p><?php echo date("d-F-Y", strtotime($row->upload_on));  ?></p>
-                       <div class="btns text-center">
-                            <div class="btn-style"><a href="q.php?Find=<?php echo $row->doctor_info_id_pk; ?>&type=1" >Read More !</a></div>
-                         </div>
+            <div class="row d-flex justify-content-center">
+			
+				<?php while($row = $runQuerys->fetch_assoc()){ 
+                        $startdate=date_create($row['event_start_date']);
+                        $startdate =  date_format($startdate,"d M Y");
+                        $enddate=date_create($row['event_end_date']);
+                        $enddate =  date_format($enddate,"d M Y");
+                ?>
+					
+                <div class="col-lg-4 col-md-6 col-12 mb-3">
+                   <div class="cases-wrapper2">
+                        <img src="<?= IMG_PATH; ?>events/<?php echo $row['event_thumbnail'];?>" alt="">
+                        <h6 class="mt-3">Event start: <?php echo $startdate; ?></h6>
+                        <h5 class="fs-20 text-heding3 font-weight-bold"><?php echo $row['event_title']; ?></h5>
+                        <p><?php echo $row['event_description'];?></p>                        
                     </div>
                 </div>
 				
 				<?php } ?>
 				
-            </div>
+             </div>
         </div>
     </div>
-    <!-- .hx-team-area end -->
 
-   
-    <div class="join_india ptb-100-70">
+      <!-- Upcoming events end-->
+
+
+
+      <div class="join_india ptb-100-70">
         <div class="container">
             <div class="row d-flex justify-content-center">
                 <div class="col-l2">
@@ -84,6 +92,6 @@
             </div>
         </div>
     </div>
-
+</div>
 
 <?php include "layouts/main-footer.php"; ?>

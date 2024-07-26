@@ -41,28 +41,62 @@
 	
 
 
-	<div class="join_india ptb-100-70 py-5">
-        <div class="container">
-            <div class="row d-flex justify-content-center">
-                <div class="col-l2">
-                    <div class="hx-site-title-1 text-center">
-                        <span>Join with Us</span>
-                        <h2>Join Ayurveda Federation of India</h2>
-                    </div>
-                </div>
+	<!--<div class="join_india ptb-100-70">-->
+ <!--       <div class="container">-->
+ <!--           <div class="row d-flex justify-content-center">-->
+ <!--               <div class="col-l2">-->
+ <!--                   <div class="hx-site-title-1 text-center">-->
+ <!--                       <span>Join with Us</span>-->
+ <!--                       <h2>Join Ayurveda Federation of India</h2>-->
+ <!--                   </div>-->
+ <!--               </div>-->
 
+ <!--               <div class="col-12">-->
+ <!--                   <div class="ayurveda">-->
+ <!--                       <div class="row">-->
+ <!--                           <div class="col-md-4 col-12 mb-3 ">-->
+ <!--                               <a href="member-id-card.php">-->
+	<!--								<img src="assets/images/afi1.png" class="img-fluid afilift">-->
+	<!--							</a>-->
+ <!--                           </div>-->
+ <!--                           <div class="col-md-4 col-12 mb-3 ">-->
+ <!--                               <img src="assets/images/afi2.png" class="img-fluid afilift">-->
+ <!--                           </div>-->
+ <!--                           <div class="col-md-4 col-12 mb-3 ">-->
+ <!--                               <a href="membership.php">-->
+	<!--								<img src="assets/images/afi3.png" class="img-fluid afilift">-->
+	<!--							</a>-->
+ <!--                           </div>-->
+ <!--                       </div>-->
+ <!--                   </div>-->
+ <!--               </div>-->
+				
+ <!--           </div>-->
+ <!--       </div>-->
+ <!--   </div>-->
+ 
+	<div class="join_india py-5">
+        <div class="container">
+            <div class="hx-site-title-1 text-center">
+                <span>Join with Us</span>
+                <h2>Join Ayurveda Federation of India</h2>
+            </div>
+            <div class="row d-flex justify-content-center">
                 <div class="col-12">
                     <div class="ayurveda">
                         <div class="row">
-                            <div class="col-md-4 col-12 mb-3 ">
+                            <div class="col-md-4 mb-3">
                                 <a href="member-id-card.php">
 									<img src="assets/images/afi1.png" class="img-fluid afilift">
 								</a>
                             </div>
-                            <div class="col-md-4 col-12 mb-3 ">
+                            <div class="col-md-4 mb-3">
+                                <a href="certificate-page.php">
                                 <img src="assets/images/afi2.png" class="img-fluid afilift">
+								</a>
                             </div>
-                            <div class="col-md-4 col-12 mb-3 ">
+                        
+                            <div class="col-md-4 mb-3">
                                 <a href="membership.php">
 									<img src="assets/images/afi3.png" class="img-fluid afilift">
 								</a>
@@ -76,17 +110,17 @@
     </div>
 	
 	
-	<div class="hx-blog-area ptb-100-70 py-5">
+	<div class="hx-blog-area ptb-100-70">
         <div class="testimonials">
             <div class="container">
-                <div class="col-12">
+                <div class="col-l2">
                     <div class="hx-site-title-1 text-center">
-                        <h2 class="mb-4">Events</h2>
+                        <h2>Events</h2>
                     </div>
                 </div>
                 <div class="testimonial__inner">
                     <div class="testimonial-slider_latest">
-                  
+                       
 						<?php
 							$current_date = date('Y-m-d');
 							$event_query = "SELECT * FROM tbl_events where event_end_date >= '".$current_date."' ORDER BY id DESC";
@@ -99,7 +133,7 @@
 								$enddate =  date_format($enddate,"d M Y");
 								$created_at = date_format(date_create($row['created_at']), "M d, Y");
 						?>
-						      <div class="col-md-12">
+                         <div class="col-md-12">
                             <div class="hx-blog-item">
                                 <div class="hx-blog-img">
                                     <div class="testimonial__inner">
@@ -119,7 +153,7 @@
                                     </div>
                                 </div>
                                 <div class="hx-blog-content">
-                                    <h3><a href="#"><?php echo $row['event_title']; ?></a></h3>
+                                    <h3><a href="/upcoming-event.php"><?php echo $row['event_title']; ?></a></h3>
                                     <ul class="post-meta">
                                         <li><img src="assets/images/blog/6.jpg" alt=""></li>
                                         <li>By<a href="#">Admin</a></li>
@@ -127,10 +161,10 @@
                                     </ul>
                                 </div>
                             </div>
-						    </div>
+							
+                        </div>
 						<?php } ?>
-						
-                    
+					
                         
                         
 
@@ -144,58 +178,7 @@
     </div>
 	
 	
-	<!--<section>-->
- <!--       <div class="testimonials py-5">-->
- <!--           <div class="container">-->
- <!--               <div class="col-l2">-->
- <!--                   <div class="hx-site-title-1 text-center">-->
- <!--                       <h2 class="mb-3">Activities</h2>-->
- <!--                   </div>-->
- <!--               </div>-->
- <!--               <div class="testimonial__inner">-->
- <!--                   <div class="testimonial-slider">-->
- <!--                       <div class="testimonial-slide">-->
- <!--                           <div class="testimonial_box">-->
- <!--                               <div class="testimonial_box-inner">-->
- <!--                                   <div class="cases-wrapper2">-->
- <!--                                       <img src="assets/images/blog/1.jpg" alt="">-->
- <!--                                       <h5 class="fs-20 text-heding3 font-weight-bold pt-3">Activity 1</h5>-->
 
- <!--                                   </div>-->
- <!--                               </div>-->
- <!--                           </div>-->
- <!--                       </div>-->
- <!--                       <div class="testimonial-slide">-->
- <!--                           <div class="testimonial_box">-->
- <!--                               <div class="testimonial_box-inner">-->
- <!--                                   <div class="cases-wrapper2">-->
- <!--                                       <img src="assets/images/blog/2.jpg" alt="">-->
- <!--                                       <h5 class="fs-20 text-heding3 font-weight-bold pt-3">Activity 2</h5>-->
-
- <!--                                   </div>-->
- <!--                               </div>-->
- <!--                           </div>-->
- <!--                       </div>-->
- <!--                       <div class="testimonial-slide">-->
- <!--                           <div class="testimonial_box">-->
- <!--                               <div class="testimonial_box-inner">-->
- <!--                                   <div class="cases-wrapper2">-->
- <!--                                       <img src="assets/images/blog/3.jpg" alt="">-->
- <!--                                       <h5 class="fs-20 text-heding3 font-weight-bold pt-3">Activity 3</h5>-->
-                                        
-
- <!--                                   </div>-->
- <!--                               </div>-->
- <!--                           </div>-->
- <!--                       </div>-->
- <!--                   </div>-->
- <!--               </div>-->
- <!--               <div class="btns pt-5 text-center">-->
- <!--                   <div class="btn-style"><a href="#">View More !</a></div>-->
- <!--               </div>-->
- <!--           </div>-->
- <!--       </div>-->
- <!--   </section>-->
 
 
 	<div class="hx-blog-area ptb-100-70">
@@ -277,56 +260,7 @@
     </div>
 
 
-    <section class="hx-project-section hx-section-padding  ">
-        <div class="container">
-            <div class="col-l2">
-                <div class="hx-site-title-1 text-center">
-                    <span>Gallery</span>
-                    <h2>AFI Gallery</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col col-xs-12 sortable-project">
-                    <!-- <div class="hx-project-filters">
-                        <ul>
-                            <li><a data-filter="*" href="#" class="current">All</a></li>
-                            <li><a data-filter=".Tire" href="#">Tire Replacement</a></li>
-                            <li><a data-filter=".Break" href="#">Break Repair</a></li>
-                            <li><a data-filter=".Engine" href="#">Engine</a></li>               
-                            <li><a data-filter=".Transmission" href="#">Transmission</a></li> 
-                            <li><a data-filter=".Baterry" href="#">Baterry</a></li> 
-                        </ul>                                                
-                    </div> -->
-                    <div class="project-container project-fancybox masonry-project">
-                        <?php 
-    						$getSliders     =  "SELECT * FROM tbl_gallery order by g_id asc";
-    						$runGetSliders  =  $connect->query($getSliders);
-    						while($rowz = $runGetSliders->fetch_assoc()){
-    					?>
-                        <div class="grid Break Tire Engine">
-                            <a href="<?= IMG_PATH; ?>gallery/<?php echo $rowz['image'];?>" class="fancybox" data-fancybox-group="gall-1">
-                                <img src="<?= IMG_PATH; ?>gallery/<?php echo $rowz['image'];?>" alt class="img img-responsive">
-                                <div class="hx-project-text">
-                                    <ul>
-                                        <li>
-                                            <i class="fa fa-arrows-alt" aria-hidden="true"></i>
-                                        </li>
-                                    </ul>
-                                    <h4><?php echo $rowz['title'];?></h4>
-                                </div>
-                            </a>
-                        </div>
-					    <?php } ?>	
-                        
-
-                    </div>
-                </div>
-            </div> <!-- end row -->
-            <!--div class="btns text-center mt-4">
-                <div class="btn-style"><a href="#">View More !</a></div>
-            </div-->
-        </div>
-    </section>
+    
 
     </div>
 
