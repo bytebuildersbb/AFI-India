@@ -61,7 +61,8 @@ include "../layouts/main-header.php"; ?>
                               <th>Type</th>
                                <th>Payment Status</th>
                                 <th>Payment Amount</th>
-                                <th>Certificate</th>
+                                <th>Certificate Share</th>
+                                <th>Certificate Download</th>
                               <th>ProfilePic</th>
                               <th>Name</th>
                                 <th>Gender</th>
@@ -104,7 +105,12 @@ include "../layouts/main-header.php"; ?>
                              <td><?php echo $row["paymentStatus"]; ?></td>
                              <td><?php echo $row["payment"]; ?></td>
                                <?php if($row["paymentStatus"] == "SUCCESS"){ ?>
-                              <td>  <a class='text-decoration-none text-xl pl-3' title='Download' href='../membershippdf/pdf.php?image=<?php echo urlencode("https://afi-india.in/uploads/profilePics/" . $row["profile_pic"]); ?>&name=<?php echo urlencode($row["name"]); ?>&address=<?php echo urlencode($row["comaddress"]); ?>&fname=<?php echo urlencode($row["fathername"]);?>&pin=<?php echo urlencode($row["pinncode"]);?>&type=<?php echo urlencode('STUDENT'); ?>&mailid=<?php echo urlencode($row["mailid"]); ?>'><i class='icon-share fa-2x'></i></a></td>
+                              <td>  <a class='text-decoration-none text-xl pl-5' title='Download'  target="_blank" href='../membershippdf/pdf.php?image=<?php echo urlencode("https://afi-india.in/uploads/profilePics/" . $row["profile_pic"]); ?>&name=<?php echo urlencode($row["name"]); ?>&address=<?php echo urlencode($row["comaddress"]); ?>&fname=<?php echo urlencode($row["fathername"]);?>&pin=<?php echo urlencode($row["pinncode"]);?>&type=<?php echo urlencode('STUDENT'); ?>&mailid=<?php echo urlencode($row["mailid"]); ?>'><i class='icon-share fa-2x'></i></a></td>
+                             <?php } else { ?>
+                              <td></td>
+                             <?php }?>
+                              <?php if($row["paymentStatus"] == "SUCCESS"){ ?>
+                              <td>  <a class='text-decoration-none text-xl pl-5' title='Download' target="_blank" href='../membershippdf/down.php?image=<?php echo urlencode("https://afi-india.in/uploads/profilePics/" . $row["profile_pic"]); ?>&name=<?php echo urlencode($row["name"]); ?>&address=<?php echo urlencode($row["comaddress"]); ?>&fname=<?php echo urlencode($row["fathername"]);?>&pin=<?php echo urlencode($row["pinncode"]);?>&type=<?php echo urlencode('STUDENT'); ?>&mailid=<?php echo urlencode($row["mailid"]); ?>'><i class='icon-cloud-download fa-2x'></i></a></td>
                              <?php } else { ?>
                               <td></td>
                              <?php }?>
@@ -173,7 +179,8 @@ include "../layouts/main-header.php"; ?>
                               <th>Type</th>
                                 <th>Payment Status</th>
                                 <th>Payment Amount</th>
-                                <th>Certificate</th>
+                                <th>Certificate Share</th>
+                                <th>Certificate Download</th>
                               <th>ProfilePic</th>
                               <th>Name</th>
                                 <th>Gender</th>
@@ -215,15 +222,19 @@ include "../layouts/main-header.php"; ?>
                            <tr>
                               <td><?= $count; ?></td>
                              <td>Doctor</td>
-                               <td><?php echo $row["paymentStatus"]; ?></td>
+                            <td><?php echo $row["paymentStatus"]; ?></td>
                              <td><?php echo $row["payment"]; ?></td>
-                               <?php if($row["paymentStatus"] == "SUCCESS"){ ?>
-                              <td>  <a class='text-decoration-none text-xl pl-3' title='Download' href='../membershippdf/pdf.php?image=<?php echo urlencode("https://afi-india.in/uploads/profilePics/" . $row["profile_pic"]); ?>&name=<?php echo urlencode($row["name"]); ?>&address=<?php echo urlencode($row["comaddress"]); ?>&fname=<?php echo urlencode($row["fathername"]);?>&pin=<?php echo urlencode($row["pinncode"]);?>&type=<?php echo urlencode('LIFETIME'); ?>&mailid=<?php echo urlencode($row["mailid"]); ?>'><i class='icon-share fa-2x'></i></a></td>
+                            <?php if($row["paymentStatus"] == "SUCCESS"){ ?>
+                              <td>  <a class='text-decoration-none text-xl pl-5' title='Download' target="_blank" href='../membershippdf/pdf.php?image=<?php echo urlencode("https://afi-india.in/uploads/profilePics/" . $row["profile_pic"]); ?>&name=<?php echo urlencode($row["name"]); ?>&address=<?php echo urlencode($row["comaddress"]); ?>&fname=<?php echo urlencode($row["fathername"]);?>&pin=<?php echo urlencode($row["pinncode"]);?>&type=<?php echo urlencode('LIFETIME'); ?>&mailid=<?php echo urlencode($row["mailid"]); ?>'><i class='icon-share fa-2x'></i></a></td>
+                             <?php } else { ?>
+                              <td></td>
+                             <?php }?>
+                             <?php if($row["paymentStatus"] == "SUCCESS"){ ?>
+                              <td>  <a class='text-decoration-none text-xl pl-5' title='Download' target="_blank" href='../membershippdf/down.php?image=<?php echo urlencode("https://afi-india.in/uploads/profilePics/" . $row["profile_pic"]); ?>&name=<?php echo urlencode($row["name"]); ?>&address=<?php echo urlencode($row["comaddress"]); ?>&fname=<?php echo urlencode($row["fathername"]);?>&pin=<?php echo urlencode($row["pinncode"]);?>&type=<?php echo urlencode('LIFETIME'); ?>&mailid=<?php echo urlencode($row["mailid"]); ?>'><i class='icon-cloud-download fa-2x'></i></a></td>
                              <?php } else { ?>
                               <td></td>
                              <?php }?>
                               <td>
-                                  
                               <img src="https://afi-india.in/uploads/profilePics/<?php echo $row["profile_pic"]; ?>" style="width:50px; height:50px;"><a href="https://afi-india.in/uploads/profilePics/<?php echo $row["profile_pic"]; ?>">View</a>
                               </td>
                                  <td><?= substr($row["name"],0,30); ?></td>
@@ -508,7 +519,8 @@ include "../layouts/main-header.php"; ?>
                                  <th>Type</th>
                                    <th>Payment Status</th>
                                 <th>Payment Amount</th>
-                                <th>Certificate</th>
+                                <th>Certificate Share</th>
+                                <th>Certificate Download</th>
                               <th>ProfilePic</th>
                               <th>Name</th>
                                 <th>Gender</th>
@@ -548,12 +560,16 @@ include "../layouts/main-header.php"; ?>
                                <td><?php echo $row["paymentStatus"]; ?></td>
                              <td><?php echo $row["payment"]; ?></td>
                                <?php if($row["paymentStatus"] == "SUCCESS"){ ?>
-                              <td>  <a class='text-decoration-none text-xl pl-3' title='Download' href='../membershippdf/pdf.php?image=<?php echo urlencode("https://afi-india.in/uploads/profilePics/" . $row["profile_pic"]); ?>&name=<?php echo urlencode($row["name"]); ?>&address=<?php echo urlencode($row["comaddress"]); ?>&fname=<?php echo urlencode($row["fathername"]);?>&pin=<?php echo urlencode($row["pinncode"]);?>&type=<?php echo urlencode('PATRON'); ?>&mailid=<?php echo urlencode($row["mailid"]); ?>'><i class='icon-share fa-2x'></i></a></td>
+                              <td>  <a class='text-decoration-none text-xl pl-5' title='Download' target="_blank" href='../membershippdf/pdf.php?image=<?php echo urlencode("https://afi-india.in/uploads/profilePics/" . $row["profile_pic"]); ?>&name=<?php echo urlencode($row["name"]); ?>&address=<?php echo urlencode($row["comaddress"]); ?>&fname=<?php echo urlencode($row["fathername"]);?>&pin=<?php echo urlencode($row["pinncode"]);?>&type=<?php echo urlencode('PATRON'); ?>&mailid=<?php echo urlencode($row["mailid"]); ?>'><i class='icon-share fa-2x'></i></a></td>
+                             <?php } else { ?>
+                              <td></td>
+                             <?php }?>
+                             <?php if($row["paymentStatus"] == "SUCCESS"){ ?>
+                              <td>  <a class='text-decoration-none text-xl pl-5' title='Download' target="_blank" href='../membershippdf/down.php?image=<?php echo urlencode("https://afi-india.in/uploads/profilePics/" . $row["profile_pic"]); ?>&name=<?php echo urlencode($row["name"]); ?>&address=<?php echo urlencode($row["comaddress"]); ?>&fname=<?php echo urlencode($row["fathername"]);?>&pin=<?php echo urlencode($row["pinncode"]);?>&type=<?php echo urlencode('PATRON'); ?>&mailid=<?php echo urlencode($row["mailid"]); ?>'><i class='icon-cloud-download fa-2x'></i></a></td>
                              <?php } else { ?>
                               <td></td>
                              <?php }?>
                               <td>
-                                  
                               <img src="https://afi-india.in/uploads/profilePics/<?php echo $row["profile_pic"]; ?>" style="width:50px; height:50px;"><a href="https://afi-india.in/uploads/profilePics/<?php echo $row["profile_pic"]; ?>">View</a>
                               </td>
                              <td><?= substr($row["name"],0,30); ?></td>

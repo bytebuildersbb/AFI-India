@@ -81,9 +81,9 @@
 					<ul class="nav flex-column sub-menu">
 						<li class="nav-item"> <a class="nav-link" data-url="form" href="../form/index.php">Membership Data</a></li>
 						<!--<li class="nav-item"> <a class="nav-link" data-url="form" href="../form/data2.php">Patron</a></li>-->
-						<li class="nav-item"> <a class="nav-link" data-url="form" href="../form/download.php">Membership Download</a></li>
-						<li class="nav-item"> <a class="nav-link" data-url="form" href="../form/couse.php">Course Data</a></li>
-						<li class="nav-item"> <a class="nav-link" data-url="form" href="../form/couseD.php">Course Data Download</a></li>
+						<!--<li class="nav-item"> <a class="nav-link" data-url="form" href="../form/download.php">Membership Download</a></li>-->
+						<!--<li class="nav-item"> <a class="nav-link" data-url="form" href="../form/couse.php">Course Data</a></li>-->
+						<!--<li class="nav-item"> <a class="nav-link" data-url="form" href="../form/couseD.php">Course Data Download</a></li>-->
 					</ul>
 				</div>
 			</li>

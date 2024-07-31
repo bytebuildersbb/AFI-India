@@ -101,50 +101,52 @@
 
     <!-- Modal -->
   
-    <!--<div class="modal fade bd-example-modal-md" id="exampleModal" tabindex="-1" role="dialog"-->
-    <!--    aria-labelledby="exampleModalLabel" aria-hidden="true">-->
-    <!--    <div class="modal-dialog modal-md" role="document">-->
-    <!--        <div class="modal-content">-->
-    <!--            <div class="modal-header border-0">-->
-    <!--                <button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
-    <!--                    <span aria-hidden="true">&times;</span>-->
-    <!--                </button>-->
-    <!--            </div>-->
-                <!--<div class="modal-body p-0">-->
-                <!--    <div class="newsletter-popup">-->
-                <!--        <div class="newsletter-content">-->
-                <!--            <h2 class="ls-25" style="color:#ed5217;">Upgrade & Grow Your Medical Practice</h2>-->
-                            <!--<h4 class="font-weight-normal ls-25">Get AFI Membership <span class="text-primary">25% Off</span></h4>-->
-                            <!--<h4 class="font-weight-normal ls-25">To Become Part of <br> <span-->
-                                    <!--<h4 class="text-success">To Become Part of Revolution for Ayurveda</h4>-->
+<div class="modal fade bd-example-modal-md" id="exampleModal" tabindex="-1" role="dialog"
+aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-md" role="document">
+<div class="modal-content">
+<div class="modal-header border-0">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+</button>
+</div>
+<div class="modal-body p-0">
+<div class="newsletter-popup">
+<div class="newsletter-content">
+<h2 class="ls-25" style="color:#ed5217; text-align: center;">Welcome To Proctocon - 2024</h2>
+<!--<h4 class="font-weight-normal ls-25">Get AFI Membership <span class="text-primary">25% Off</span></h4>-->
+<!--<h4 class="font-weight-normal ls-25">To Become Part of <br> <span-->
+<!--<h4 class="text-success">To Become Part of Revolution for Ayurveda</h4>-->
                                     
                                     
 
-<!--<section class="slider_container">-->
-<!--    <section class="slider">-->
-<!--      <div class="slide one">-->
-<!--            <img src="/admin/uploads/medical_practice_img/national-clinical-workshop-02.jpg" alt class="slider-bg img-fluid d-md-block" style="height:450px;">-->
-<!--      </div>-->
-<!--      <div class="slide two">-->
-<!--             <img src="/admin/uploads/medical_practice_img/national-clinical-workshop-03.jpg" alt class="slider-bg img-fluid d-md-block" style="height:450px;">-->
-<!--      </div>-->
-<!--      <div class="slide three">-->
-<!--            <img src="/admin/uploads/medical_practice_img/national-clinical-workshop-04-04.jpg" alt class="slider-bg img-fluid d-md-block" style="height:450px;">-->
-<!--      </div>-->
-<!--      <div class="slide four">-->
-<!--         <img src="/admin/uploads/medical_practice_img/national-clinical-workshop-06.jpg" alt class="slider-bg img-fluid d-md-block" style="height:450px;">-->
-<!--      </div>-->
-<!--      <div class="slide four">-->
-<!--         <img src="/admin/uploads/medical_practice_img/national-clinical-workshop-05-05-05 (1).jpg" alt class="slider-bg img-fluid d-md-block" style="height:450px;">-->
-<!--      </div>-->
-<!--    </section>-->
-<!--  </section>-->
+<section class="slider_container">
+    <section class="slider">
+      <div class="slide one">
+            <img src="proctocon/img/banner-img.png" alt class="slider-bg img-fluid d-md-block" style="height:500px;">
+      </div>
+      <div class="slide two">
+             <img src="proctocon/img/banner-img.png" alt class="slider-bg img-fluid d-md-block" style="height:500px;">
+      </div>
+      <div class="slide three">
+             <img src="proctocon/img/banner-img.png" alt class="slider-bg img-fluid d-md-block" style="height:500px;">
+      </div>
+      <div class="slide four">
+           <img src="proctocon/img/banner-img.png" alt class="slider-bg img-fluid d-md-block" style="height:500px;">
+      </div>
+      <div class="slide four">
+           <img src="proctocon/img/banner-img.png" alt class="slider-bg img-fluid d-md-block" style="height:500px;">
+      </div>
+    </section>
+  </section>
 
 
-<!--<div class="btn-style mt-3" style="padding:10px 30px;background-color:#ed5217;"><a href="upgrade-medical-practice">Register Now</a></div>-->
+<div class="button-container" style="text-align: center; margin-top: 20px;">
+    <a href="proctocon/proctocon.html" class="btn-style" style="display: inline-block;padding: 10px 30px;background-color: #ed5217;color: #fff;text-decoration: none;border-radius: 5px;font-size: 16px;">Register Now</a>
+</div>
 
                         <!--<div class="modal-body_img">-->
-                        <!--    <img src="<?php echo BASEPATH;?>assets/images/newsletter_A.png" alt="">-->
+                        <!--    <img src="<?php echo BASEPATH;?>proctocon/img/banner-img.png" alt="">-->
                         <!--</div>-->
                     </div>
                 </div>

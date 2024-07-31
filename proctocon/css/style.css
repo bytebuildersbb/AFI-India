@@ -1,0 +1,278 @@
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+
+/* css for clinic page */
+
+
+
+.fw-700 {
+    font-weight: 700;
+}
+
+h1.h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+}
+
+.light-grey-text {
+    color: #5E5C5C
+}
+
+.grey-text {
+    color: #444444;
+}
+
+.green-text {
+    color: #00A61B;
+}
+
+.orange-text {
+    color: #ED5217;
+}
+
+.light-oragne {
+    background-color: #FFF3EF;
+}
+
+.light-pink {
+    background-color: #faebd782;
+}
+
+.light-green {
+    background-color: #F3FFF5;
+}
+
+.light-yellow-bg {
+    background: #fafacc75;
+}
+
+.heading1 {
+    font-size: 40px;
+}
+
+
+.heading2 {
+    font-size: 36px;
+    line-height: 45px;
+}
+
+.text-xxl {
+    font-size: 26px;
+}
+
+.text-lg {
+    font-size: 20px;
+}
+
+.text-lg2 {
+    font-size: 18px;
+}
+
+.text-md {
+    font-size: 16px;
+}
+
+.text-md-1 {
+    font-size: 15px;
+}
+
+.text-sm {
+    font-size: 14px;
+}
+
+.red-border-bottom:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -24px;
+    max-width: 140px;
+    height: 3px;
+    background: #ed5217;
+    border-radius: 20px;
+    right: 0;
+    margin: 0 auto;
+}
+
+.sky-box {
+    background: #EDF5FF;
+    padding: 25px 60px;
+}
+
+.light-grey-bg {
+    background: #e8d9fb30;
+}
+
+.list-style {
+    column-count: 2;
+}
+
+.orange-icon {
+    background: url(../img/orange-img.png);
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    left: 0;
+    background-size: cover;
+}
+
+.bullet-list {
+    list-style: none;
+}
+
+.bullet-list li {
+    padding-left: 40px;
+}
+
+.two-box {
+    background: #fff;
+    padding: 35px;
+}
+
+.blue-text {
+    color: #202876;
+    text-decoration: none;
+}
+
+.register-btn {
+    min-width: 800px;
+    background: #5899E4;
+    color: #ffffff;
+    font-size: 14px;
+    letter-spacing: .8px;
+    padding: 13px 10px;
+    border-radius: 5px;
+    border: none;
+    font-weight: 500;
+    display: inline-block;
+    text-align: center;
+}
+
+.register-btn:hover{
+     background-color: #4682b4;
+}
+
+
+
+.icon {
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.mail-icon:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 22px;
+    height: 20px;
+    background: url(../img/mail-icon.png);
+    background-size: cover;
+    top: 0;
+}
+
+.phn-icon:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 20px;
+    height: 21px;
+    background: url(../img/call-icon.png);
+    background-size: cover;
+    top: 0;
+}
+
+.whatsapp-icon {
+    background: url(../img/whatsapp-icon.png);
+    background-size: cover;
+    background-position: center;
+    width: 39px;
+    height: 39px;
+}
+
+.whatsapp-icon {
+    background: url(../img/whatsapp-icon.png);
+    background-size: cover;
+    background-position: center;
+    width: 39px;
+    height: 39px;
+}
+
+.twitter-icon {
+    background: url(../img/twitter-icon.png);
+    background-size: cover;
+    background-position: center;
+    width: 39px;
+    height: 39px;
+}
+
+.facebook-icon {
+    background: url(../img/facebook-icon.png);
+    background-size: cover;
+    background-position: center;
+    width: 39px;
+    height: 39px;
+}
+
+.social-list {
+    list-style: none;
+    display: inline-flex;
+}
+
+.social-list li {
+    padding: 0 0;
+}
+
+.max-width {
+    width: 580px;
+    margin: 0 auto;
+}
+
+.key-list {
+    margin-left: 22px;
+}
+
+@media (max-width: 991px) {
+    .register-btn {
+        max-width: 100%;
+        min-width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .heading1 {
+        font-size: 28px;
+    }
+
+    .heading2 {
+        font-size: 26px;
+        line-height: 30px;
+    }
+
+    .text-xxl {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .red-border-bottom:before {
+        bottom: -15px;
+    }
+
+    .sky-box {
+        padding: 25px 10px;
+    }
+
+    .list-style {
+        column-count: 1;
+    }
+
+    .text-lg,
+    .text-lg2 {
+        font-size: 16px;
+    }
+}

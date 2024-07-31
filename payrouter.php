@@ -17,33 +17,14 @@
 
 $razorpay = new Api($api_key, $api_secret);
 
+$email = $_GET['email'];
+$encodedEmail = base64_encode($email);
 
 
 $success = true;
 
-if (empty($_POST['razorpay_payment_id']) === false) {
-    $razorpay_payment_id = $_POST['razorpay_payment_id'];
-    $order_id = $_POST['razorpay_order_id'];
-    $signature = $_POST['razorpay_signature'];
 
-    try {
-        $attributes = array(
-            'razorpay_order_id' => $order_id,
-            'razorpay_payment_id' => $razorpay_payment_id,
-            'razorpay_signature' => $signature
-        );
-
-        $razorpay->utility->verifyPaymentSignature($attributes);
-		
-		
-    } catch (\Razorpay\Api\Errors\SignatureVerificationError $e) {
-        $success = false;
-    }
-} else {
-    $success = false;
-}
-
-if ($success === true) {
+if ($success === 1) {
     if($_GET['memberType'] == 1){
 		
             $tableName = "tbl_if_member_student";           
@@ -143,46 +124,17 @@ if ($success === true) {
 			'payment_capture' => 1 // Auto capture payment
 		]);
 		
-		/*echo '
-		<form action='.$_SERVER['PHP_SELF'] . '?' . $_SERVER['QUERY_STRING'].' method="POST">
-			<script src="https://checkout.razorpay.com/v1/checkout.js"
-					data-key="' . $api_key . '"
-					data-amount="' . $row['amount'] . '"
-					data-currency="' . $order['currency'] . '"
-					data-order_id="' . $order['id'] . '"
-					data-buttontext="Pay with Razorpay"
-					data-name="AFI-India"
-					data-description="Payment for your order"
-					data-image="your_logo_url"
-					data-prefill.name="Your Name"
-					data-prefill.email="'.$row['email'].'"
-					data-prefill.contact="'.$row['phone'].'"
-					data-theme.color="#F37254"></script>
-			        <input type="hidden" custom="Hidden Element" name="hidden">
-		</form>';*/
-        
     }
 ?>
-<!--html>
-    <head>
-        <script type="text/javascript">
-            function redirectRequest() {
-				
-				document.getElementsByClassName("razorpay-payment-button")[0].click();
-				//document.getElementsByClassName("razorpay-payment-button").hide();
-            }
-        </script>
-    </head>
-    <body  onload="redirectRequest();">
-       
-    </body>
-</html-->
 <?php
+
+$url= "https://afi-india.in/payrouter_response.php?email=".urlencode($encodedEmail);
+
 $data = [
     "key"               => $api_key,
     "amount"            => $order['amount'],
-    "contact"           => '+91'.$row['phone'],
-    "name"              => "",
+    "contact"           => $row['phone'],
+    "callback_url"      => $url,  
     "description"       => "Happy to help :)",
     "image"             => "",
 ];
@@ -205,11 +157,9 @@ ondismiss: function() {
 console.log("This code runs when the popup is closed");
 window.location = '/';
 },
-// Boolean indicating whether pressing escape key
-// should close the checkout form. (default: true)
+
 escape: true,
-// Boolean indicating whether clicking translucent blank
-// space outside checkout form should close the form. (default: false)
+
 backdropclose: false
 };
 var rzp = new Razorpay(options);

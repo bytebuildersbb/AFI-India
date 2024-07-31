@@ -861,7 +861,7 @@ img.logo {
 						<div class="form-group required">  
 							<label class="control-label col-12">If you can devote your time to the issues related to the upliftment of Ayurveda of the "Ayurveda Federation of India", then in what form would you like to give your time? - यदि आप अपना समय "आयुर्वेद फेडरेशन ऑफ़ इंडिया" के आयुर्वेद के उत्थान से संबंधित मुद्दों पर लगा सकते हैं, तो आप अपना समय किस रूप में देना चाहेंगे?<span>*</span></label>
 							<div class="col-sm-10">
-								<label class="checkstyle">>As a member of the District or State or Central executive
+								<label class="checkstyle">As a member of the District or State or Central executive
 									<input type="radio" name="nameNew9" value="As a member of the District or State or Central executive" data-id="dsc">
 									<span class="checkmark"></span>
 								</label>
@@ -936,7 +936,7 @@ img.logo {
 									<span class="checkmark"></span>
 								</label>
 								
-								<label for="gender" id="gender2" class="error" generated="true"></label>
+								<label for="gender" id="gender2" class="error" generated="true"></label> 
 							</div>						
 						</div>
 						
@@ -948,9 +948,9 @@ img.logo {
 						</div>
 						
 						<div class="form-group required">
-							<label class="control-label col-12">Parmanent Address: </label>
+							<label class="control-label col-12">Permanent Address: </label>
 							<div class="col-sm-10">
-								<input type="text" name="parmanent_address" id="parmanent_address2" disabled/>
+								<input type="text" name="permanent_address" id="permanent_address2" disabled/>
 							</div>
 						</div>
 						
@@ -1393,7 +1393,7 @@ img.logo {
 						<div class="form-group required">  
 							<label class="control-label col-12">If you can devote your time to the issues related to the upliftment of Ayurveda of the "Ayurveda Federation of India", then in what form would you like to give your time? - यदि आप अपना समय "आयुर्वेद फेडरेशन ऑफ़ इंडिया" के आयुर्वेद के उत्थान से संबंधित मुद्दों पर लगा सकते हैं, तो आप अपना समय किस रूप में देना चाहेंगे?</label>
 							<div class="col-sm-10">
-								<label class="checkstyle">>As a member of the District or State or Central executive
+								<label class="checkstyle">As a member of the District or State or Central executive
 									<input type="radio" name="nameNew92" value="As a member of the District or State or Central executive" class="dsc" disabled>
 									<span class="checkmark"></span>
 								</label>
@@ -1541,8 +1541,8 @@ $(document).ready(function(){
        $("#communication_address2").val($(this).val())
     });
     
-    $("#parmanent_address").on('keyup',function(){
-       $("#parmanent_address2").val($(this).val())
+    $("#permanent_address").on('keyup',function(){
+       $("#permanent_address2").val($(this).val())
     });
     
     $("#dob").on('change',function(){
@@ -1813,15 +1813,15 @@ $("#steptwo").click(function()
         $('#communication_address-error').hide();
     }
     
-    if($('#parmanent_address').val() == ''){
-        if($('#parmanent_address').next('label').length >=1 ){
-            $('#parmanent_address-error').html('This Field is required');
+    if($('#permanent_address').val() == ''){
+        if($('#permanent_address').next('label').length >=1 ){
+            $('#permanent_address-error').html('This Field is required');
         }else{
-            $('#parmanent_address').after('<label class="error" id="parmanent_address-error">This Field is required</label>');    
+            $('#permanent_address').after('<label class="error" id="permanent_address-error">This Field is required</label>');    
         }
         var error = 1;
     }else{
-        $('#parmanent_address-error').hide();
+        $('#permanent_address-error').hide();
     }
     
     if($('#dob').val() == ''){

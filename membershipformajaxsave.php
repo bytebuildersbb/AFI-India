@@ -10,7 +10,7 @@ die; */
     $payment2       = '2100.00';
     $payment3       = '11000.00'; 
     $payment4       = '5100.00';
-    $paymentstatus1 = 'SUCCESS';
+    $paymentstatus1 = 'Failed';
      
     $amount         = $_POST["customAmount"];
     $types          = $_POST["type"];
@@ -27,7 +27,7 @@ die; */
     }
     $bothmob        =  $_POST["mobilenumber"];
     $comadd         =  $_POST["communication_address"];
-    $peradd         =  $_POST["parmanent_address"];
+    $peradd         =  $_POST["permanent_address"];
     $dob            =  $_POST["dob"]; 
     $pinnn          =  $_POST["postalcode"];
     $state          =  $_POST["state"];
@@ -135,7 +135,7 @@ die; */
                                       
                 $errorMsg=  "Your membership form submitted successfully";
                 $code= "20" ;
-                echo $redirectUrl =  "payrouter.php?lastId=".$last_id1."&memberType=".$typeof;die;
+                echo $redirectUrl =  "payrouter.php?lastId=".$last_id1."&memberType=".$typeof."&email=".$email;die;
                 
                 $SMS_URL = 'http://sms.digitalnexk.com/sendsms/sendsms.php';
                 $smsUsername = "jslcT";
@@ -176,7 +176,7 @@ die; */
                 $errorMsg=  "Your membership form submitted successfully";
                 
                 $code= "20" ;
-                echo $redirectUrl =  "payrouter.php?lastId=".$last_id1."&memberType=".$typeof;die;
+                echo $redirectUrl =  "payrouter.php?lastId=".$last_id1."&memberType=".$typeof."&email=".$email;die;
             
             }
         }
@@ -198,7 +198,7 @@ die; */
                 move_uploaded_file($ProLectTempName, "uploads/idcards/" . $idCardNewProLect);
                 $errorMsg=  "Your membership form submitted successfully";
                 $code= "20" ;
-                echo $redirectUrl =  "payrouter.php?lastId=".$last_id1."&memberType=".$typeof;die;
+                echo $redirectUrl =  "payrouter.php?lastId=".$last_id1."&memberType=".$typeof."&email=".$email;die;
             
             }
         }
@@ -220,7 +220,7 @@ die; */
                                       
                 $errorMsg=  "Your membership form submitted successfully";
                 $code= "20" ;
-                echo $redirectUrl =  "payrouter.php?lastId=".$last_id1."&memberType=".$typeof;die;
+                echo $redirectUrl =  "payrouter.php?lastId=".$last_id1."&memberType=".$typeof."&email=".$email;die;
             
             }
         }
@@ -242,7 +242,7 @@ die; */
                                       
                 $errorMsg=  "Your membership form submitted successfully";
                 $code= "20" ;
-                echo $redirectUrl =  "payrouter.php?lastId=".$last_id1."&memberType=".$typeof;die;
+                echo $redirectUrl =  "payrouter.php?lastId=".$last_id1."&memberType=".$typeof."&email=".$email;die;
             
             }
         }

@@ -1,7 +1,7 @@
  <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
       <div class="navbar-brand-wrapper d-flex align-items-center">
          <a class="navbar-brand brand-logo" href="index.html">
-         <img src="../../img/logo.png" alt="logo" style="height: auto; width: 50%;" />
+         <img src="../../img/Welcomelogo.png" alt="logo" style="height: auto; width: 50%;" />
          </a>
          <a class="navbar-brand brand-logo-mini" href="index.html"><img src="../images/logo-mini.svg" alt="logo" /></a>
       </div>
@@ -27,7 +27,7 @@
                   <div class="dropdown-divider"></div>
                   <a class="dropdown-item preview-item">
                      <div class="preview-thumbnail">
-                        <img src="../images/faces/face10.jpg" alt="image" class="img-sm profile-pic">
+                        <img src="../../img/Welcomelogo.png" alt="image" class="img-sm profile-pic">
                      </div>
                      <div class="preview-item-content flex-grow py-2">
                         <p class="preview-subject ellipsis font-weight-medium text-dark">Marian Garner </p>
@@ -74,7 +74,7 @@
             </li>
             <li class="nav-item dropdown d-none d-xl-inline-flex user-dropdown">
                <a class="nav-link dropdown-toggle" id="UserDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
-               <img class="img-xs rounded-circle ml-2" src="../images/faces/face8.jpg" alt="Profile image"> <span class="font-weight-normal"> <?php echo $_SESSION['userdata']["username"]; ?> </span></a>
+               <img class="img-xs rounded-circle ml-2" src="../../img/Welcomelogo.png" alt="Profile image"> <span class="font-weight-normal"> <?php echo $_SESSION['userdata']["username"]; ?> </span></a>
                <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="UserDropdown">
                   <div class="dropdown-header text-center">
                      <img class="img-md rounded-circle" src="../images/faces/face8.jpg" alt="Profile image">
