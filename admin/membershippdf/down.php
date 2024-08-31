@@ -14,6 +14,9 @@
    $pin = isset($_GET['pin']) ? $_GET['pin'] : '';
    $type = isset($_GET['type']) ? $_GET['type'] : '';
    $mailid = isset($_GET['mailid']) ? $_GET['mailid'] : '';
+   $date = date('d-m-Y');
+   $time = rand(1000, 9999);
+
    
    if ($type == 'STUDENT') {
        $doc1 = [
@@ -60,157 +63,51 @@
        <meta charset="UTF-8">
        <meta name="viewport" content="width=device-width, initial-scale=1.0">
        <title>Membership Certificate</title>
-       <style>
-           
-           .certificate {
-               width: 800px;
-               background: white;
-               padding: 20px;
-               box-shadow: 0 0 10px rgba(0,0,0,0.1);
-               position: relative;
-               margin: 0 auto;
-               overflow: hidden;
-               height: 10vh;
-           }
-           .cont{
-           max-width: 500px;
-           margin-top: 120px;
-           }
-           .header {
-               text-align: center;
-           }
-          .header p{
-           font-size: 13px;
-           font-family: Arial, Helvetica, sans-serif;
-          }
-           .title {
-               font-size: 22px;
-               font-weight: bold;
-               color: #DAA520;
-               text-align: center;
-              
-           }
-           .content {
-               text-align: center;
-               font-size: 18px;
-               
-           }
-           .content .name {
-               font-size: 22px;
-               font-weight: bold;
-               color: #DAA520;
-               margin: 10px 0;
-               
-           }
-           .content p {
-               margin: 0px auto;
-               font-size: 12px;
-               font-weight: 400;
-               text-align:center;
-               width:100%;
-           }
-     
-           .photo img {
-               width: 243px;
-               position: absolute;
-               right: 0;
-               top: -86px;
-   
-           }
-           .topwave > img{
-               position: absolute;
-               top: 0;
-               left: 0;
-               z-index: 10;
-               height: 150px;
-               width: 75%;    
-           }
-           .logo > img{
-               position: absolute;
-               z-index: 20;
-               left: 164px;
-               top: 0px;
-               height: 150px
-           }
-          
-       </style>
-   </head>
-   <body>
-   
-       <div class="certificate" style="border:2px solid #057735;" >
-           <div class="topwave">
-               <img src="data:image/png;base64,' . base64_encode(file_get_contents( 'images/top-bg.png' )) .'" style=" background-repeat: no-repeat;" alt="" >
-           </div>
-   
-           <div class="logo">
-               <img src="data:image/png;base64,' . base64_encode(file_get_contents( 'images/logo.png' )) .'"  alt="">
-           </div>
-         <div class="cont" >
-           <div class="header">
-               
-               <p style="font-size:13px;">A constituent body of ‘Ayurveda vigyan forum’ reg. with Ministry of corporate affairs, Government of India</p>
-               <p style="font-size:13px;">Admn. Off.: D-50, First Floor, Sector 122, Noida, District Gautambudh </p>
-           </div>
-           <div class="title">
-              ' . htmlspecialchars($type) . ' MEMBERSHIP CERTIFICATE
-           </div>
-           <div class="content">
-               <p>This certificate has been presented to</p>
-               <p class="name">' . htmlspecialchars($name) . '</p>
-               <p>' . htmlspecialchars($address) . '</p>
-   
-               <table class="signature-table" style=" width: 100%; border-collapse: collapse; margin-left:0px;  line-height:9.5px; ">
-                <tr>
-               <td style="padding: 20px; ">
-                <div style="text-align:center;margin-bottom: 15px;">
-               <img src="data:image/png;base64,' . base64_encode(file_get_contents( 'images/dr.abhishakesign.png' )) .'" alt="Signature" style="height:15px; max-width: 120px;object-fit:cover;">
-               </div>
-               <p style="margin:5px 0;" ><b>DR. ABHISHEK GUPTA</b></p>
-               <p style="text-align-center;font-size: 11px;margin-bottom:5px;">Founder</p>
-               <p style="font-size:11px; text-align:center;">Ayurveda Federation of India</p>
-           </td>
-   
-           <td style="padding: 20px; text-align-center;">
-              <div style="text-align:center;    margin-bottom: 5px;">
-               <img style="max-width: 50px;" src="data:image/png;base64,' . base64_encode(file_get_contents($doc1['img'])) .'" alt="Signature">
-               </div>
-               <p style="style="max-width:250px;margin:10px auto;text-align:center;"><b>' . htmlspecialchars($doc1['name']) . '</b></p>
-               <p style="font-size: 11px;text-align:center;margin:5px 0;">' . htmlspecialchars($doc1['des']) . '</p>
-               <p style="font-size:11px;text-align-center;">' . htmlspecialchars($doc1['dep']) . '</p>
-           </td>
-
-
-
-           <td style="padding: 20px;">
-            <div style="text-align:center; margin-bottom: 5px;">
-                <img style="max-width: 50px;" src="data:image/png;base64,' . base64_encode(file_get_contents($doc2['img'])) .'" alt="Signature">
-               <p style="style="max-width:150px;margin:0px auto;text-align:center;"><b>' . htmlspecialchars($doc2['name']) . '</b></p>
-               <p style="font-size: 11px;text-align:center;margin:5px 0;">' . htmlspecialchars($doc2['des']) . '</p>
-               <p style="font-size:11px;text-align:center">' . htmlspecialchars($doc2['dep']) . '</p>
-           </td>
-               </tr>
-                   </table>
-               </div>
-   
-           <div class="photo" >
-               <img src="data:image/jpg;base64,' . base64_encode(file_get_contents($image)) . '" style="margin-top:120px;  padding-right: 30px; border-radius: 20px;">
-               <div class="foot" style="position: relative; bottom:0%; left: 130px; height: 50%; width: 110%; ">
-                        <p
-                           style="margin-top:0; text-align: center;font-size: 12px; line-height: 15px;   font-weight: 400;  color: #000;">
-                           A Leading Organization, working tirelessly for Ayurveda Practitioners, Students, Researchers. Pioneers of Ayurveda on Global scale.</p>
-                       <p
-                           style="padding: 0 20px;text-align: center;font-size: 12px; line-height: 15px; font-weight: 400;  color: #000;">
-                           Admn. Off.: D-50, First Floor, Sector 122, Noida, District Gautambudh Nagar, Uttar Pradesh-201316</p>
-                           </div>
-                    <div style="position:absolute; bottom: 230px; width:100%; left:0; right:0;">
-                    <img src="data:image/png;base64,' . base64_encode(file_get_contents( 'images/bottom-bg.png' )) .'"  alt="bottom-image" style="width:100% " ;>
-                    </div>       
-           
-         </div>
-           </div>
-           
+      <style>
        
-       </div>
+            @import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+            
+        body {
+            font-family: "Kaushan Script", cursive;
+        }
+
+
+    </style>
+   </head>
+   <body style="margin: 0; padding: 0; display: flex; justify-content: center; align-items: center; height: 100vh;  text-align: center;">
+
+    <div style="position: relative;  ;">
+        <img src="data:image/png;base64,'. base64_encode(file_get_contents( 'images/afi_cert.png' )) . '" style="background-repeat: no-repeat;top:0%; position:absolute;" alt="" width="99%">
+
+        <!-- Date and Time -->
+        <div style="position:relative;">
+            <h5 style="position: absolute; color: #000;top:7.5%; left:18%; ">'. htmlspecialchars($date) .'</h5>
+        </div>
+        <div style="position:relative;">
+            <h5 style="position: absolute; color: #000;top:7.5%;right:14%;">AFI/M/'. htmlspecialchars($time) .'</h5>
+        </div>
+
+        <!-- Name -->
+        <p style="position: absolute; top: 43%; left: 50%; transform: translateX(-50%); font-size: 18px; color: #917507; margin: 0;">
+            '. htmlspecialchars($name) .'
+        </p>
+
+        <!-- Father"s Name -->
+        <p style="position: absolute; top: 47%; left: 50%; transform: translateX(-50%); font-size: 16px; color: #202021; margin: 0;">
+            S/o '. htmlspecialchars($fathername) .'
+        </p>
+
+        <!-- Address -->
+        <p style="position: absolute; top: 50%; left: 50%; transform: translateX(-50%); font-size: 16px; color: #202021; margin: 0;">
+            Resident of '. htmlspecialchars($address) .'
+        </p>
+
+        <!-- Type of Member -->
+        <p style="position: absolute; bottom: 39%; left: 50%; transform: translateX(-50%); font-size: 16px; margin: 0;"> 
+            As a '. htmlspecialchars($type) .' Member
+        </p>
+    </div>
+   
    </body>
    </html>
    ';
@@ -222,7 +119,7 @@
    $dompdf->set_option('isRemoteEnabled', TRUE);
    
    // Set paper size and orientation
-   $dompdf->setPaper('A4', 'landscape');
+   $dompdf->setPaper('A4', 'potrait');
    
    // Render PDF (generate PDF)
    $dompdf->render();

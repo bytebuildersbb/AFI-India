@@ -74,18 +74,24 @@
 
                 <div class="col-12">
                     <div class="ayurveda">
-                        <div class="row">
-                            <div class="col-md-4 col-12 mb-3 ">
-                                <a href="membership-id.html"><img src="assets/images/afi1.png"
-                                        class="img-fluid afilift"></a>
+                       <div class="row">
+                            <div class="col-md-4 mb-3">
+                                <a href="membership.php">
+									<img src="assets/images/afi3.png" class="img-fluid afilift">
+								</a>
                             </div>
-                            <div class="col-md-4 col-12 mb-3 ">
-                                <img src="assets/images/afi2.png" class="img-fluid afilift">
+                            <div class="col-md-4 mb-3 d-flex justify-content-center align-items-center text-center"> 
+                                <a>
+									<h3>Facebook Followers</h3>
+									<h2>4.8K followers</h2>
+								</a> 
                             </div>
-                            <div class="col-md-4 col-12 mb-3 ">
-                                <a href="membership.html"><img src="assets/images/afi3.png"
-                                        class="img-fluid afilift"></a>
+                            <div class="col-md-4 mb-3">
+                                <a href="certificate-page.php">
+                                <img src="assets/images/afi2-new.png" class="img-fluid afilift">
+								</a>
                             </div>
+                        
                         </div>
                     </div>
                 </div>

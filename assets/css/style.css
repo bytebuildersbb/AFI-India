@@ -5117,7 +5117,6 @@ select {
 }
 
 
-
 .pricingTable .holder .hdng p {
     font-size: 28px;
     font-weight: bold;
@@ -5150,6 +5149,14 @@ select {
 
 .pricingTable .holder.active {
     background: #f36233;
+}
+
+.pricingTable .holder.orange {
+    background: #f98100;
+}
+
+.pricingTable .holder.green {
+    background: #00a61b;
 }
 
 .pricingTable .holder.active .hdng p,

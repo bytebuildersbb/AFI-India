@@ -141,8 +141,8 @@ if(isset($_POST["subscribe"])){
                 <div class="row d-flex justify-content-between">
                     <div class="col-md-8 col-sm-12 col-12 col-lg-6">
                         <ul class="d-flex account_login-area">
-                            <li><a href="mailto:ayurvedafederation@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i> ayurvedafederation@gmail.com</a></li>
-                            <li><a href="tel:8595336710"><i class="fa fa-phone"></i>8595336710</a></li>
+                            <li><a href="mailto:contact@afi-india.in"><i class="fa fa-envelope" aria-hidden="true"></i>contact@afi-india.in</a></li>
+                            <li><a href="tel:8799701700"><i class="fa fa-phone"></i>8799701700</a></li>
                         </ul>
                     </div>
                     <div class="col-md-4 col-sm-12 col-12 col-lg-6">
@@ -188,7 +188,7 @@ if(isset($_POST["subscribe"])){
 
                         <nav class="navbar navbar-expand-lg navbar-light p-0">
                             <a class="navbar-brand" href="<?php echo BASEPATH;?>index.php">
-								<img src="<?php echo BASEPATH;?>assets/images/logo/logo.png" alt="">
+								<img src="<?php echo BASEPATH;?>assets/images/logo/logo.png" alt="" width="65%">
 							</a>
        <!--                     <div class="header_img-2"> -->
 							<!--	<a class="navbar-brand  pl-3 ml-0" href="<?php echo BASEPATH;?>index.php">-->

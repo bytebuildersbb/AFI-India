@@ -1,158 +1,148 @@
 <html>
     <head>
     </head>
+    <style>
+        .footer-btn{
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    padding: 10px 23px;
+    text-transform: capitalize;
+    display: inline-block;
+    margin-top: 3px;
+    border-radius: 3px;
+    background: #ed5217;
+    border: 1px solid #ed5217;
+}
+    </style>
 <!-- .hx-site-footer-area start -->
-    <div class="hx-site-footer-area">
-        <div class="hx-site-footer-top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 col-md-6 col-sm-6 footer-t">
-                        <div class="hx-site-logo">
-                            <a href="index.html"><img src="<?php echo BASEPATH;?>assets/images/logo/logo.png" alt=""></a>
-                        </div>
-                        <h5 class="text-white">Ayurveda Federation of India</h5>
-                        <p>Ayurveda Federation of India (AFI) is a leading organization working tirelessly for the
-                            welfare of Ayurveda practitioners, students, researchers, and all stakeholders of Ayurveda
-                            on global scale. </p>
+ <div class="hx-site-footer-area">
+    <div class="hx-site-footer-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-md-12 col-sm-12 mb-lg-0 mb-4">
+                    <div class="hx-site-logo mb-2">
+                        <a href="index.html"><img src="<?php echo BASEPATH;?>assets/images/logo/logo.png" alt=""></a>
                     </div>
-
-                    <div class="col-lg-2 col-md-6 col-sm-6 footer-t">
-                        <div class="hx-site-footer-service">
-                            <h3>Quick Links</h3>
-                            <div class="service-section">
-                                <ul>
-                                    <li><a href="about.php">About AFI</a></li>
-                                    <li><a href="membership.php">AFI Membership</a></li>
-                                    <li><a href="upcoming-events.php">Event</a></li>
-                                    <li><a href="#">State Councils</a></li>
-                                    <li><a href="#">Legel Matters</a></li>
-                                    <li><a href="privacy-policy.php">Privacy Policy</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6 footer-t">
-                        <div class="hx-site-footer-link">
-                            <h3>Vaidya's Tattva Private Limited</h3>
-                            <div class="hx-latest-section">
-                                <div class="posts">
-								
-										<div class="post">
-											<div class="img-holder">
-												<img src="<?php echo BASEPATH;?>assets/images/logo3header.png" alt="">
-											</div>
-											<div class="details">
-												<h4><a href="detail.php?q=<?php echo $rows->urlSlug; ?>"><?php echo $rows->blogTitle; ?></a></h4>
-											</div>
-										</div>
-										
-								
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-sm-6 footer-t">
-                        <div class="hx-site-footer-adress">
-                            <h3>Contact Us</h3>
-                            <div class="adress-section">
-                                <ul>
-                                    <li><i class="fa fa-home fa-lg pb-3"> <strong>Office Address: </strong></i> <br>
-                                        E-5,First Floor Lane No 1, Westend Marg, Near Saket Metro, Saidulajab, New
-                                        Delhi, Delhi 110030</li>
-                                </ul>
-                                <ul class="ad">
-                                    <li><span><i class="fa fa-phone fa-lg pb-3"> <strong>Contact No. </strong></i>
-                                        </span><br> <a
-                                            href="tel:+91-8595336710" class="text-white">+91-8595336710</a> </li>
-
-                                    <li><span><i class="fa fa-envelope fa-lg pb-3"> <strong>Email ID </strong></i>
-                                        </span><br> <a
-                                            href="mailto:ayurvedafederation@gmail.com"
-                                            class="text-white">ayurvedafederation@gmail.com</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
+                    <h5 class="text-white">Ayurveda Federation of India</h5>
+                    <p class="pr-lg-5">AFI is the Constituent Body of Ayurveda Vigyan Forum. Established in 2021, and
+                        the only apex Ayurveda organisation of India registered with the central government. </p>
+                    <p>Ayurveda Industry's voice for policy change</p>
                 </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="hx-site-footer-service">
+                        <h3 class="mb-4">Quick Links</h3>
+                        <div class="service-section">
+                            <ul>
+                                <li><a href="about.php">About AFI</a></li>
+                                <li><a href="membership.php">AFI Membership</a></li>
+                                <li><a href="upcoming-events.php">Event</a></li>
+                                <li><a href="#">State Councils</a></li>
+                                <li><a href="#">Legel Matters</a></li>
+                                <li><a href="privacy-policy.php">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="hx-site-footer-adress">
+                        <h3 class="mb-4">Contact Us</h3>
+                        <div class="adress-section">
+                            <ul>
+                                <li><i class="fa fa-home fa-lg pb-3"> </i> <strong>Office Address: </strong><br>
+                                    E-5,First Floor Lane No 1, Westend Marg, Near Saket Metro, Saidulajab, New
+                                    Delhi, Delhi 110030</li>
+                            </ul>
+                            <ul class="ad">
+                                <li><span><i class="fa fa-phone fa-lg pb-3"></i><strong> Contact No.</strong></span><br>
+                                    <a href="tel:+91-8799701700" class="text-white">+91-8799701700</a>
+                                </li>
+
+                                <li><span><i class="fa fa-envelope fa-lg pb-3"> </i><strong> Email ID </strong>
+                                    </span><br> <a href="mailto:contact@afi-india.in"
+                                        class="text-white">contact@afi-india.in</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
-        <div class="hx-site-footer-bottom">
-            <div class="container">
-                <div class="hx-site-footer-bottom-content">
-                    <div class="row">
-                        <div class="col-12">
-                            <span>Copyright © 2021 <a href="">Ayurveda Federation of India. </a> All Rights Reserved.
-                                <!--    <span>Copyright © 2021 <a href="">Ayurveda Federation of India. </a> All Rights Reserved. |-->
-                                <!--Design By <a href="https://www.jeenasikho.co.in/" class="text-warning">Jeenasikho-->
-                                <!--    Lifecare</a></span>-->
-                                    <div class="btns pt-5 text-center">
-                    <div class="btn-style"><a href="#" class="vaidya">Vaidya's Tattva Private Limited</a></div>
-                </div>
-
+    </div>
+    <div class="hx-site-footer-bottom">
+        <div class="container">
+            <div class="hx-site-footer-bottom-content">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="heading-md text-white">Partner Organisation:</h2>
+                        <div class="btns text-center">
+                            <div class="footer-btn">Vaidya's Tattva Private Limited</div>
                         </div>
+                        <p class="mt-3"> <span>Copyright © 2021 <a href="https://afi-india.in/index.php">Ayurveda Federation of India. </a> All Rights Reserved.</span></p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
     <!-- .hx-site-footer-area end -->
 
     <!-- Modal -->
   
-<div class="modal fade bd-example-modal-md" id="exampleModal" tabindex="-1" role="dialog"
-aria-labelledby="exampleModalLabel" aria-hidden="true">
-<div class="modal-dialog modal-md" role="document">
-<div class="modal-content">
-<div class="modal-header border-0">
-<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-<span aria-hidden="true">&times;</span>
-</button>
-</div>
-<div class="modal-body p-0">
-<div class="newsletter-popup">
-<div class="newsletter-content">
-<h2 class="ls-25" style="color:#ed5217; text-align: center;">Welcome To Proctocon - 2024</h2>
+<!--<div class="modal fade bd-example-modal-md" id="exampleModal" tabindex="-1" role="dialog"-->
+<!--aria-labelledby="exampleModalLabel" aria-hidden="true">-->
+<!--<div class="modal-dialog modal-md" role="document">-->
+<!--<div class="modal-content">-->
+<!--<div class="modal-header border-0">-->
+<!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
+<!--<span aria-hidden="true">&times;</span>-->
+<!--</button>-->
+<!--</div>-->
+<!--<div class="modal-body p-0">-->
+<!--<div class="newsletter-popup">-->
+<!--<div class="newsletter-content">-->
+<!--<h2 class="ls-25" style="color:#ed5217; text-align: center;">Welcome To Proctocon - 2024</h2>-->
 <!--<h4 class="font-weight-normal ls-25">Get AFI Membership <span class="text-primary">25% Off</span></h4>-->
 <!--<h4 class="font-weight-normal ls-25">To Become Part of <br> <span-->
 <!--<h4 class="text-success">To Become Part of Revolution for Ayurveda</h4>-->
                                     
                                     
 
-<section class="slider_container">
-    <section class="slider">
-      <div class="slide one">
-            <img src="proctocon/img/banner-img.png" alt class="slider-bg img-fluid d-md-block" style="height:500px;">
-      </div>
-      <div class="slide two">
-             <img src="proctocon/img/banner-img.png" alt class="slider-bg img-fluid d-md-block" style="height:500px;">
-      </div>
-      <div class="slide three">
-             <img src="proctocon/img/banner-img.png" alt class="slider-bg img-fluid d-md-block" style="height:500px;">
-      </div>
-      <div class="slide four">
-           <img src="proctocon/img/banner-img.png" alt class="slider-bg img-fluid d-md-block" style="height:500px;">
-      </div>
-      <div class="slide four">
-           <img src="proctocon/img/banner-img.png" alt class="slider-bg img-fluid d-md-block" style="height:500px;">
-      </div>
-    </section>
-  </section>
+<!--<section class="slider_container">-->
+<!--    <section class="slider">-->
+<!--      <div class="slide one">-->
+<!--            <img src="proctocon/img/banner-img.png" alt class="slider-bg img-fluid d-md-block" style="height:500px;">-->
+<!--      </div>-->
+<!--      <div class="slide two">-->
+<!--             <img src="proctocon/img/banner-img.png" alt class="slider-bg img-fluid d-md-block" style="height:500px;">-->
+<!--      </div>-->
+<!--      <div class="slide three">-->
+<!--             <img src="proctocon/img/banner-img.png" alt class="slider-bg img-fluid d-md-block" style="height:500px;">-->
+<!--      </div>-->
+<!--      <div class="slide four">-->
+<!--           <img src="proctocon/img/banner-img.png" alt class="slider-bg img-fluid d-md-block" style="height:500px;">-->
+<!--      </div>-->
+<!--      <div class="slide four">-->
+<!--           <img src="proctocon/img/banner-img.png" alt class="slider-bg img-fluid d-md-block" style="height:500px;">-->
+<!--      </div>-->
+<!--    </section>-->
+<!--  </section>-->
 
 
-<div class="button-container" style="text-align: center; margin-top: 20px;">
-    <a href="proctocon/proctocon.html" class="btn-style" style="display: inline-block;padding: 10px 30px;background-color: #ed5217;color: #fff;text-decoration: none;border-radius: 5px;font-size: 16px;">Register Now</a>
-</div>
+<!--<div class="button-container" style="text-align: center; margin-top: 20px;">-->
+<!--    <a href="proctocon/proctocon.html" class="btn-style" style="display: inline-block;padding: 10px 30px;background-color: #ed5217;color: #fff;text-decoration: none;border-radius: 5px;font-size: 16px;">Register Now</a>-->
+<!--</div>-->
 
                         <!--<div class="modal-body_img">-->
                         <!--    <img src="<?php echo BASEPATH;?>proctocon/img/banner-img.png" alt="">-->
                         <!--</div>-->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
   
 
 

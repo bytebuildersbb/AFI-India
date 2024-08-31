@@ -58,11 +58,11 @@
                <div class="alert alert-danger text-center" role="alert"><?php echo $errorMsg; ?></div>
             <?php endif; ?>
               <div class="auth-form-light text-left p-5">
-                <div class="brand-logo">
-                  <img src="../img/foot-logo.png" style="width:25%;">
+                <div class="brand-logo" style="text-align:center;">
+                  <img src="../img/Welcomelogo.png" style="width:25%;">
                 </div>
-                <h4>Hello! let's get started</h4>
-                <h6 class="font-weight-light">Sign in to continue.</h6>
+                <h4 style="text-align:center;">Hello! let's get started</h4>
+                <h6 class="font-weight-light" style="text-align:center;">Sign in to continue.</h6>
                 <form class="pt-3" method="POST">
                   <input type="hidden" name="csrf" value="<?php echo "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"; ?>">
                   <div class="form-group">

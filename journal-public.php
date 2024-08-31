@@ -256,7 +256,7 @@ $runQuery   =  $connect->query($getMetas);
 				</div>
 
 				<div class="col-md-12 text-right">
-					<input type="submit" class="theme-btn" value="Sumbit">
+					<input type="submit" class="theme-btn" value="Submit">
 				</div>
 			</div>
 		</div>

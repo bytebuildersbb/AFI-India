@@ -1,5 +1,19 @@
 <?php include "layouts/main-header.php"; ?>
 
+
+<style>
+    
+.pricingTable .holder:hover {
+    background-image: linear-gradient(#FFB18C, #F8F8F8, #7FE5B3);
+}
+
+.pricingTable .holder:hover p {
+    color: #000;
+}
+
+</style>
+
+
 <div class="top-header marquee pt-2">
         <div class="container-fluid">
             <div class="row d-flex">
@@ -46,7 +60,6 @@
             <div class=" container-fluid pricingTable">
                 <div class="container">
                     <div class="row monthlyPriceList animated d-flex justify-content-center">
-                        
                         <div class="col-md-4 mt-5">
                             <div class="inner holder h-100">
                                 <div class="hdng">
@@ -67,7 +80,7 @@
                         </div>
                         
                         <div class="col-md-4 mt-5">
-                            <div class="inner holder active h-100">
+                            <div class="inner holder h-100">
                                 <div class="hdng">
                                     <p>Patron Membership</p>
                                 </div>
@@ -85,7 +98,7 @@
                         
                          <div class="col-md-4 mt-5">
                             <div class="inner holder h-100">
-                                <div class="hdng">
+                                <div class="hdng"> 
                                     <p>Pharma Membership</p>
                                 </div>
                                 <div class="price mt-5">
@@ -118,11 +131,7 @@
                             </div>
                         </div>
 
-                        
-
-                        
-
-                         <div class="col-md-4 mt-5">
+                        <div class="col-md-4 mt-5">
                             <div class="inner holder h-100">
                                 <div class="hdng">
                                     <p>Associate Membership</p>
@@ -181,39 +190,41 @@
     <!--        </div>-->
     <!--    </div>-->
     <!--</div>-->
-		<div class="join_india py-5">
-        <div class="container">
-            <div class="hx-site-title-1 text-center">
-                <span>Join with Us</span>
-                <h2>Join Ayurveda Federation of India</h2>
-            </div>
-            <div class="row d-flex justify-content-center">
-                <div class="col-12">
-                    <div class="ayurveda">
-                        <div class="row">
-                            <div class="col-md-4 mb-3">
-                                <a href="member-id-card.php">
-									<img src="assets/images/afi1.png" class="img-fluid afilift">
-								</a>
+<div class="join_india py-5">
+    <div class="container">
+        <div class="hx-site-title-1 text-center">
+            <span>Join with Us</span>
+            <h2>Join Ayurveda Federation of India</h2>
+        </div>
+        <div class="row d-flex justify-content-center">
+            <div class="col-12">
+                <div class="ayurveda">
+                    <div class="row align-items-center">
+                        <div class="col-md-4 mb-3 text-center">
+                            <a href="membership.php">
+                                <img src="assets/images/afi3.png" class="img-fluid afilift">
+                            </a>
+                        </div>
+                        <div class="col-md-4 mb-3 text-center">
+
+                            <div class="d-flex justify-content-center align-items-center text-center">
+                                <a>
+                                    <h3>Facebook Followers</h3>
+                                    <h2>4.8K</h2>
+                                </a>
                             </div>
-                            <div class="col-md-4 mb-3">
-                                <a href="certificate-page.php">
-                                <img src="assets/images/afi2.png" class="img-fluid afilift">
-								</a>
-                            </div>
-                        
-                            <div class="col-md-4 mb-3">
-                                <a href="membership.php">
-									<img src="assets/images/afi3.png" class="img-fluid afilift">
-								</a>
-                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3 text-center">
+                            <a href="certificate-page.php">
+                                <img src="assets/images/afi2-new.png" class="img-fluid afilift">
+                            </a>
                         </div>
                     </div>
                 </div>
-				
             </div>
         </div>
     </div>
+</div>
 	
     
 <?php include "layouts/main-footer.php"; ?>

@@ -10,7 +10,7 @@ die; */
     $payment2       = '2100.00';
     $payment3       = '11000.00'; 
     $payment4       = '5100.00';
-    $paymentstatus1 = 'Failed';
+    $paymentstatus1 = 'SUCCESS'; 
      
     $amount         = $_POST["customAmount"];
     $types          = $_POST["type"];

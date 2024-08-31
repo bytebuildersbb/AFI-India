@@ -47,7 +47,7 @@ $runQuerys   =  $connect->query($getMetass);
     </div>
     <!-- .breadcumb-area end -->
     <!-- hx-blog-area start -->
-    <div class="hx-blog-area ptb-100-70">
+    <div class="hx-blog-area py-5">
         <div class="container">
             <div class="col-l2">
                 <div class="hx-site-title-1 text-center">
@@ -241,36 +241,44 @@ $runQuerys   =  $connect->query($getMetass);
 		<!-- hx-blog-area start -->
 
 
-		<div class="join_india ptb-100-70">
-			<div class="container">
-				<div class="row d-flex justify-content-center">
-					<div class="col-l2">
-						<div class="hx-site-title-1 text-center">
-							<span>Join with Us</span>
-							<h2>Join Ayurveda Federation of India</h2>
-						</div>
-					</div>
+<div class="join_india py-2">
+    <div class="container">
+        <div class="hx-site-title-1 text-center">
+            <span>Join with Us</span>
+            <h2>Join Ayurveda Federation of India</h2>
+        </div>
+        <div class="ayurveda">
+            <div class="row align-items-center">
+                <div class="col-md-4 mb-3 text-center">
+                    <a href="membership.php">
+                        <img src="../assets/images/afi3.png" class="img-fluid afilift">
+                    </a>
+                </div>
+                <div class="col-md-4 mb-3 text-center">
 
-					<div class="col-12">
-						<div class="ayurveda">
-							<div class="row">
-								<div class="col-md-4 col-12 mb-3 ">
-									<a href="membership.php"><img src="<?php echo BASEPATH;?>assets/images/afi1.png"
-											class="img-fluid afilift"></a>
-								</div>
-								<div class="col-md-4 col-12 mb-3 ">
-									<img src="<?php echo BASEPATH;?>assets/images/afi2.png" class="img-fluid afilift">
-								</div>
-								<div class="col-md-4 col-12 mb-3 ">
-									<a href="membership.php"><img src="<?php echo BASEPATH;?>assets/images/afi3.png"
-											class="img-fluid afilift"></a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+                    <div class="d-flex justify-content-center align-items-center text-center">
+                        <a>
+                            <h3>Facebook Followers</h3>
+                            <h2>4.8K</h2>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3 text-center">
+                    <a href="certificate-page.php">
+                        <img src="../assets/images/afi2-new.png" class="img-fluid afilift">
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+		
+		
+
+		
+		
+		
 		
 	</div>
 

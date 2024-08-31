@@ -1364,9 +1364,11 @@ mobile menu
 }
 
 .hx-site-title-1 h2:before {
-    left: 46%;
-
+   left: 0;
+    right: 0;
+    margin: 0 auto;
 }
+
 
 .hx-about-style-1 .hx-about-img {
     text-align: right;
@@ -5232,6 +5234,13 @@ select {
 
 }
 
+.pricingTable .holder:hover {
+    background-image: linear-gradient(#FFB18C, #F8F8F8, #7FE5B3);
+}
+
+.pricingTable .holder:hover p {
+    color: #000;
+}
 
 
 .pricingTable .holder .hdng p {
@@ -5639,26 +5648,23 @@ position: relative;
     width: 100%;
 }
 
-.teams2 img {
-    min-width: 80px;
-    height: 80px;
-    object-fit: cover;
-    max-width: 80px;
-}
-.teams2 h5 {
-    font-size: 15px;
-    line-height: 1.5;
-}
+/*.teams2 img {*/
+/*    min-width: 80px;*/
+/*    height: 80px;*/
+/*    object-fit: cover;*/
+/*    max-width: 80px;*/
+/*}*/
 
-.teams2 {
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0px 0px 20px 0.801px #577bf945;
-     background-image: radial-gradient( #ed52174d #f8f8f8 15%, #577bf961 64%) 
-    background-image: linear-gradient(#b3e7f5b8, #f8f8f8);
-        box-shadow: 0px 0px 20px 0.801px #577bf945;
-    background-image: linear-gradient(#b3e7f5b8, #f8f8f8);
-}
+/*.teams2 {*/
+/*    background-color: white;*/
+/*    border-radius: 8px;*/
+/*    box-shadow: 0px 0px 20px 0.801px #577bf945;*/
+/*     background-image: radial-gradient( #ed52174d #f8f8f8 15%, #577bf961 64%) */
+/*    background-image: linear-gradient(#b3e7f5b8, #f8f8f8);*/
+/*        box-shadow: 0px 0px 20px 0.801px #577bf945;*/
+/*    background-image: linear-gradient(#b3e7f5b8, #f8f8f8);*/
+/*}*/
+
 
 .team-btn{
 font-size: 14px;
@@ -5673,8 +5679,62 @@ font-size: 14px;
     box-shadow: 2px 2px 3px #ed521752;
     background: white;
     }
+    
+    
+ .btns.custom-btn a {
+    font-size: 13px;
+    border-radius: 50px;
+    padding: 9px 18px;
+}
+/*.teams2 {*/
+/*  background-color: #fff;*/
+/*    border-radius: 18px;*/
+/*    box-shadow: 0px 0px 20px 0.801px #577bf945;*/
+/*    background-image: radial-gradient( #ed52174d #F8F8F8 15%, #577bf961 64%)*/
+/*    background-image: linear-gradient(#b3e7f5b8, #F8F8F8);*/
+/*    background-image: linear-gradient(#FFDBCF, #F8F8F8);*/
+/*    border: 1px solid #FFDBCF;*/
+/*    box-shadow: none;*/
+/*}*/
+.teams2 img {
+    min-width: 80px;
+    height: 80px;
+    object-fit: initial;
+    max-width: 80px;
+}
+.teams2 h5 {
+    font-size: 15px;
+    line-height: 1.5;
+}
+
 .btn-style a {
     color: white;
+}
+    .btns.custom-btn a {
+    font-size: 13px;
+    border-radius: 50px;
+    padding: 9px 18px;
+}
+.teams2 {
+  background-color: #fff;
+    border-radius: 18px;
+    box-shadow: 0px 0px 20px 0.801px #577bf945;
+    background-image: radial-gradient( #ed52174d #F8F8F8 15%, #577bf961 64%)
+    background-image: linear-gradient(#b3e7f5b8, #F8F8F8);
+    background-image: linear-gradient(#FFDBCF, #F8F8F8);
+    border: 1px solid #FFDBCF;
+    box-shadow: none;
+}
+.teams2 img {
+    min-width: 80px;
+    height: 80px;
+    max-width: 80px;
+}
+.teams2 .text-success {
+    height: 20px;
+}
+.teams2 .content-height {
+    height: 50px;
 }
 
 
@@ -6108,3 +6168,42 @@ input#mobile {
     color: white !important;
 }
 
+
+.about-list li {
+    list-style: disc;
+}
+
+.about-list {
+    padding-left: 20px;
+}
+
+ .footer-btn{
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    padding: 10px 23px;
+    text-transform: capitalize;
+    display: inline-block;
+    margin-top: 3px;
+    border-radius: 3px;
+    background: #ed5217;
+    border: 1px solid #ed5217;
+ }
+
+@media (max-width: 767px) {
+    .text-success {
+    height: auto;
+}
+.content-height {
+    height: auto;
+}
+.teams2 h5 {
+    height: auto;
+}
+.hx-site-title h2, .hx-site-title-1 h2 {
+    font-size: 28px;
+}
+.heading-md {
+    font-size: 26px;
+}
+}
