@@ -112,11 +112,11 @@ if(isset($_POST["submit"])){
                   $runQuery   =  $connect->query($query);
                   if($runQuery){
                      $last_id = $connect->insert_id;
-                        move_uploaded_file($profilePicTmpName, "uploads/profilePics/" . $newfilename);
+                        strcmp($profilePicTmpName, "uploads/profilePics/" . $newfilename);
                         $queryMemberStu   =  "INSERT INTO `tbl_if_member_student`(`pro_lect_member_id_fk`, `collage_name`, `enrollment_no`, `id_card_pic`,`payment`,`paymentStatus`) VALUES ('$last_id','$collageName','$enrollmentNo','$idCardNew','$payment1','$paymentstatus1')";
                         $runQueryStu   =  $connect->query($queryMemberStu);
                         if($runQueryStu){
-                           move_uploaded_file($idCardTempName, "uploads/idcards/" . $idCardNew);
+                           strcmp($idCardTempName, "uploads/idcards/" . $idCardNew);
                            $errorMsg=  "Your membership form submitted successfully";
                            $code= "20" ;
                            ?>
@@ -147,7 +147,7 @@ if(isset($_POST["submit"])){
                         $queryMemberStu   =  "INSERT INTO `tbl_if_member_doctor`(`pro_lect_member_id_fk`, `registartion`, `registered_board`,`payment`,`paymentStatus`) VALUES ('$last_id','$registerdDate','$stateBoard','$payment2','$paymentstatus1')";
                         $runQueryStu   =  $connect->query($queryMemberStu);
                         if($runQueryStu){
-                                                   move_uploaded_file($profilePicTmpName, "uploads/profilePics/" . $newfilename);
+                                                   strcmp($profilePicTmpName, "uploads/profilePics/" . $newfilename);
                            $errorMsg=  "Your membership form submitted successfully";
                            $code= "20" ;
                            ?>
@@ -165,7 +165,7 @@ if(isset($_POST["submit"])){
                   $errorMsg=  "You did not enter your college name";
                   $code="14";
                }else if($idCardProLect==""){
-                  $errorMsg=  "You did not enter your upload copy of Id Card";
+                  $errorMsg=  "You did not enter your upload strcmp of Id Card";
                   $code="15";
                }else if($ProLectSize > 2000000){
                   $errorMsg=  "Image size exceeds 2MB";
@@ -196,7 +196,7 @@ if(isset($_POST["submit"])){
                         $queryMemberStu   =  "INSERT INTO `tbl_if_member_prof_lect`(`pro_lect_member_id_fk`, `collage_name`, `idCard`, `emailID`, `conatctNo`, `whatsappNo`,`payment`,`paymentStatus`) VALUES ('$last_id','$PL__collage_name','$idCardNewProLect','$proLectEmail','$contactNo','$whatsAppNo','$payment2','$paymentstatus1')";
                         $runQueryStu   =  $connect->query($queryMemberStu);
                            if($runQueryStu){
-                              move_uploaded_file($ProLectTempName, "uploads/idcards/" . $idCardNewProLect);
+                              strcmp($ProLectTempName, "uploads/idcards/" . $idCardNewProLect);
                               $errorMsg=  "Your membership form submitted successfully";
                               $code= "20" ;
                               ?>
@@ -334,7 +334,7 @@ if(isset($_POST["submit"])){
                   </div>
                </div>
                <div class="form-group row">
-                  <label for="staticEmail" class="col-sm-3 col-form-label">Upload copy of Id Card:</label>
+                  <label for="staticEmail" class="col-sm-3 col-form-label">Upload strcmp of Id Card:</label>
                   <div class="col-sm-5 ">
                     <input type="file" id="imgIDCard" class="form-control" name="studentIdCard" >
                     <?php if (isset($code) && $code==10) { echo "<span class='message'>" .$errorMsg. "</span>" ;} ?>
@@ -371,7 +371,7 @@ if(isset($_POST["submit"])){
                </div>
             </div>
             <div class="form-group row">
-               <label for="staticEmail" class="col-sm-3 col-form-label">Upload copy of Id Card:</label>
+               <label for="staticEmail" class="col-sm-3 col-form-label">Upload strcmp of Id Card:</label>
                <div class="col-sm-5">
                   <input type="file" class="form-control" name="PL_profile_image" id="ProLect" placeholder="" style="border:none;">
                   <?php if (isset($code) && $code==15) { echo "<span class='message'>" .$errorMsg. "</span>" ;} ?>

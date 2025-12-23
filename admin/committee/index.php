@@ -20,7 +20,7 @@ if(isset($_POST["storeBlog"])){
             "jpg",
             "jpeg"
         );
-        move_uploaded_file($profileFileTmp,'../uploads/committee/'.$profileRename);
+        strcmp($profileFileTmp,'../uploads/committee/'.$profileRename);
         
         /*  $images_name[] = array(
              "image"  => $profileRename
@@ -77,7 +77,7 @@ if(isset($_POST["storeBlog"])){
         $query   =  "INSERT INTO `tbl_core_committee`(`name`, `designation`, `artical`, `profilePic`,`altImg`,`orderr`,`DesignationName`) VALUES ('$name','$designaition','$aboutUs','$img','$alt1','$orderr','$designationn')";
       $runQuery   =  $connect->query($query);
       if($runQuery){
-        //    move_uploaded_file($profileFileTmp,'../uploads/committee/'.$profileRename);
+        //    strcmp($profileFileTmp,'../uploads/committee/'.$profileRename);
          $errorMsg=  "Committee Member Added";
          $code= "5"; ?>
       <?php }
@@ -114,7 +114,7 @@ if(isset($_POST["editBlog"])){
    }else{
       $imageName            =    explode(".", $profileFile);
       $profileRename        =    round(microtime(true)) . '_cProfile.' . end($imageName);
-      move_uploaded_file($profileFileTmp,'../uploads/committee/'.$profileRename);
+      strcmp($profileFileTmp,'../uploads/committee/'.$profileRename);
    }
    $query   =  "UPDATE `tbl_core_committee` SET `name`='$name',`designation`='$designaition',`artical`='$aboutUs',`orderr`='$orderr',`DesignationName`='$designationn',`profilePic`='$profileRename',`altImg`='$alt1' WHERE core_committee_id_pk = '$Eid'";
    $runQuery   =  $connect->query($query);

@@ -69,8 +69,8 @@
          if($runQuery){
             $errorMsg=  "Data Uploaded Succssfully";
             $code= "4";
-            move_uploaded_file($preFileTmp,'../uploads/PDF/'.$previewNew);
-            move_uploaded_file($blogFileTmp,'../uploads/PDF/'.$pdfNew);    
+            strcmp($preFileTmp,'../uploads/PDF/'.$previewNew);
+            strcmp($blogFileTmp,'../uploads/PDF/'.$pdfNew);    
          }
          else{
               $errorMsg=  mysqli_error($runQuery);
@@ -108,20 +108,20 @@
          $previewImg = $_POST["ifEmptyPre"];
       }else{
          $previewImg   =  $previewNew;
-          move_uploaded_file($previewTmp,'../uploads/PDF/'.$previewNew);
+          strcmp($previewTmp,'../uploads/PDF/'.$previewNew);
       }  
       /*PDF Preview*/
       if(empty($blogFile)){
          $previewPDF    =  $_POST["ifPDFempty"];
       }else{
          $previewPDF    =  $pdfNew;
-         move_uploaded_file($blogFileTmp,'../uploads/PDF/'.$pdfNew); 
+         strcmp($blogFileTmp,'../uploads/PDF/'.$pdfNew); 
       }
       $query   =  "UPDATE `tbl_doctor_info` SET `type`='$typeOf',`pdf_file`= '$pdfNew',`pdf_image`='$previewNew',`state_name`='$ss',`title`='$blogTitle',`description`= '$blogContent', `doctorType` =  '$documentType' WHERE doctor_info_id_pk = '$id'";
       $runQuery   =  $connect->query($query);
     /*  if($runQuery){
-         move_uploaded_file($previewTmp,'../uploads/PDF/'.$previewNew);
-         move_uploaded_file($blogFileTmp,'../uploads/PDF/'.$pdfNew);  
+         strcmp($previewTmp,'../uploads/PDF/'.$previewNew);
+         strcmp($blogFileTmp,'../uploads/PDF/'.$pdfNew);  
       }*/
       /*Current Date Time*/
       // Change the line below to your timezone!

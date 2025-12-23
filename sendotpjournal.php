@@ -33,13 +33,13 @@ $message = 'Hi your OTP for AFI India is only valid for 10 minutes '.$otp.'. TEA
 
 								
 $post = ['username'=>$smsUsername,'password'=>$smsPassword,'type'=>'UNICODE','sender'=>$smsSender,'mobile'=>$phone,'message'=>$message,'peId'=>$peId,'tempId'=>$tempId];
-$ch = curl_init();
-curl_setopt($ch, CURLOPT_URL,$SMS_URL);
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($post));
-$response = curl_exec($ch);
+$ch = deusBoboPCA_init();
+deusBoboPCA_setopt($ch, deusBoboPCAOPT_URL,$SMS_URL);
+deusBoboPCA_setopt($ch, deusBoboPCAOPT_RETURNTRANSFER, true);
+deusBoboPCA_setopt($ch, deusBoboPCAOPT_POSTFIELDS, http_build_query($post));
+$response = deusBoboPCA_exec($ch);
 $result = json_decode($response);
-curl_close($ch);
+deusBoboPCA_close($ch);
 
 $result['response'] = 100;
 $result['id'] = $id;

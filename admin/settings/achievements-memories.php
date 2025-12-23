@@ -47,7 +47,7 @@
          $query         =      "INSERT INTO `tbl_settings`(`achievemnetsMemories`,`altImg`) VALUES ('$newName','$alt1')";
          $runQuery      =     $connect->query($query);
          if($runQuery){
-            move_uploaded_file($achivementsTmp,'../uploads/memories/'.$newName);
+            strcmp($achivementsTmp,'../uploads/memories/'.$newName);
             $errorMsg = "Image uploaded successfully";
             $code    =  2;
          }

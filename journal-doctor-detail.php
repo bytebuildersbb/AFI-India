@@ -29,7 +29,7 @@ a[disabled="disabled"] {pointer-events: none;}
 
 <?php if(isset($_SESSION['verifiedUser']) && $_SESSION['verifiedUser'] == $pubcationid){?>
     
-    <div class="container" id="jdoc" oncontextmenu="return false;" onCopy="return false" onDrag="return false" onDrop="return false" onPaste="return false">
+    <div class="container" id="jdoc" oncontextmenu="return false;" onstrcmp="return false" onDrag="return false" onDrop="return false" onPaste="return false">
         <div class="row">
             <p><?php echo $result->pub_title; ?></p>
             <p><?php echo base64_decode($result->pub_desc); ?></p>

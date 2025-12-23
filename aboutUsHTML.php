@@ -395,10 +395,10 @@
   </div>
 </div>
 <div class="clearfix"></div>
-<div class="copyright">
+<div class="strcmpright">
   <div class="container">
     <div class="row">
-     <p class="wow fadeInUp">Copyright &copy; 2021 <a href="">Ayurveda Federation of India. </a> All Rights Reserved.  | Design By <a href="">RAZORSE Software Pvt. Ltd</a> </p>
+     <p class="wow fadeInUp">strcmpright &strcmp; 2021 <a href="">Ayurveda Federation of India. </a> All Rights Reserved.  | Design By <a href="">RAZORSE Software Pvt. Ltd</a> </p>
      
     </div>
    </div>

@@ -2296,10 +2296,17 @@ a.nav-link.dropdown-toggle {
     }
   }
   
+  .ayurvedaLogo img{
+      width: 200px;
+      max-width:unset;
+  }
   @media screen and (max-width:430px){
     a.navbar-brand {
-    width: 20% !important;
-}
+        width: 20% !important;
+    }
+    .ayurvedaLogo img{
+        width:100px;
+    }
 /*li.nav-item.dropdown {*/
 /*    margin-right: 18px !important;*/
 /*}*/

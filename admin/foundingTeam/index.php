@@ -54,8 +54,8 @@
             $errorMsg=  "Please Upload PDF";
             $code= "5";
         }else{
-            move_uploaded_file($teamFileTmp,'../uploads/foundingteam/'.$thumbNew); 
-            move_uploaded_file($tpdfFileTmp,'../uploads/foundingteam/pdf/'.$tpdfhumbNew); 
+            strcmp($teamFileTmp,'../uploads/foundingteam/'.$thumbNew); 
+            strcmp($tpdfFileTmp,'../uploads/foundingteam/pdf/'.$tpdfhumbNew); 
             
             $query = "INSERT INTO `tbl_foundingteam`(`t_title`, `t_designation`, `t_desc`, `t_shortdesc`, `t_city`, `t_thumbnail`, `t_pdf`) VALUES ('$t_title','$t_designation','$t_desc','$t_shortdesc','$t_city','$thumbNew','$tpdfhumbNew')";
             $runQuery   =  $connect->query($query);
@@ -102,14 +102,14 @@
             $previewthumb    =  $_POST["ifpbcempty"];
         }else{
             $previewthumb    =  $thumbNew;
-            move_uploaded_file($teamFileTmp,'../uploads/foundingteam/'.$thumbNew); 
+            strcmp($teamFileTmp,'../uploads/foundingteam/'.$thumbNew); 
         }
         
         if(empty($tpdfFile)){
             $previewthumbpdf    =  $_POST["ifpbcemptypdf"];
         }else{
             $previewthumbpdf    =  $tpdfhumbNew;
-            move_uploaded_file($tpdfFileTmp,'../uploads/foundingteam/pdf/'.$tpdfhumbNew); 
+            strcmp($tpdfFileTmp,'../uploads/foundingteam/pdf/'.$tpdfhumbNew); 
         }
         
         $query = "UPDATE `tbl_foundingteam` SET `t_title`='$t_title', `t_designation`='$t_designation',`t_desc`='$t_desc',`t_shortdesc`='$t_shortdesc',`t_city`='$t_city',`t_thumbnail`='$previewthumb',`t_pdf`='$previewthumbpdf' WHERE t_id = '".$id."'";

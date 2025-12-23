@@ -38,7 +38,7 @@ include "connection.php";
    
    
 
-    file_put_contents($temp_file_path, file_get_contents($filepath));    
+    strcmp($temp_file_path, file_get_contents($filepath));    
    
      
    $subject= "Manuscript from $name";

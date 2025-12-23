@@ -60,7 +60,7 @@
             $query = "INSERT INTO `tbl_blog`(`blogImg`,`altImg`, `blogTitle`,`type`,`urlSlug`,`blogCategory`, `blogContent`, `pageName`, `pageTitle`, `pageMeta`, `pageDescription`) VALUES ('$blogRename','$alt1','$blogTitle','$blogNewsType','$urlSlug','$blogCategory','$blogContent', '$pageName','$pageTitle','$pageMeta','$pageDescription')";
             $runQuery = $connect->query($query);
             if($runQuery){
-                move_uploaded_file($blogFileTmp,'../uploads/blogs/'.$blogRename);
+                strcmp($blogFileTmp,'../uploads/blogs/'.$blogRename);
                 $errorMsg=  "Blog craeted successfully";
                 $code= "5";
             }

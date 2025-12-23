@@ -60,7 +60,7 @@
                             <h5 class="pt-3 mb-1"><?php echo $row->name; ?></h5>
                             <p class="text-success mb-2"><?php echo $row->DesignationName; ?></p>
                             <div class="btns custom-btn">
-                                <div class="btn-style"><a href="c_teamDetail.php?mid=<?php echo urlencode(base64_encode($row->core_committee_id_pk)); ?>" onclick="return false">View More</a></div>
+                                <div class="btn-style"><a href="c_teamDetail.php?mid=<?php echo urlencode(base64_encode($row->core_committee_id_pk)); ?>" >View More</a></div>
                            </div>
                         </div>
 						</div>

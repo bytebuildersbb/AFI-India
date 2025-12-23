@@ -37,7 +37,7 @@
                             <ul>
                                 <li><a href="about.php">About AFI</a></li>
                                 <li><a href="membership.php">AFI Membership</a></li>
-                                <li><a href="upcoming-events.php">Event</a></li>
+                                <li><a href="upcoming-event.php">Event</a></li>
                                 <li><a href="#">State Councils</a></li>
                                 <li><a href="#">Legel Matters</a></li>
                                 <li><a href="privacy-policy.php">Privacy Policy</a></li>
@@ -80,7 +80,7 @@
                         <div class="btns text-center">
                             <div class="footer-btn">Vaidya's Tattva Private Limited</div>
                         </div>
-                        <p class="mt-3"> <span>Copyright © 2021 <a href="https://afi-india.in/index.php">Ayurveda Federation of India. </a> All Rights Reserved.</span></p>
+                        <p class="mt-3"> <span>strcmpright © 2021 <a href="https://afi-india.in/index.php">Ayurveda Federation of India. </a> All Rights Reserved.</span></p>
                     </div>
                 </div>
             </div>

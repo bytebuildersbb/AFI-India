@@ -254,15 +254,11 @@ $runQuerys   =  $connect->query($getMetass);
                         <img src="../assets/images/afi3.png" class="img-fluid afilift">
                     </a>
                 </div>
-                <div class="col-md-4 mb-3 text-center">
-
-                    <div class="d-flex justify-content-center align-items-center text-center">
-                        <a>
-                            <h3>Facebook Followers</h3>
-                            <h2>4.8K</h2>
-                        </a>
-                    </div>
-                </div>
+                     <div class="col-md-4 mb-3 text-center">
+                            <a href="#">
+                                <img src="../assets/images/certificate.png" class="img-fluid afilift">
+                            </a>
+                        </div>
                 <div class="col-md-4 mb-3 text-center">
                     <a href="certificate-page.php">
                         <img src="../assets/images/afi2-new.png" class="img-fluid afilift">
@@ -276,8 +272,7 @@ $runQuerys   =  $connect->query($getMetass);
 		
 		
 
-		
-		
+
 		
 		
 	</div>

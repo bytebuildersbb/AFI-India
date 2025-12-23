@@ -38,13 +38,13 @@
         //add the Transaction Posting URL
         $url = 'https://onepaypgtest.in/onepayVAS/payprocessorV2';
         $myvars = "merchantId=" . $merchantId . "&reqData=" . str_replace(" ","+",$enc);
-        $ch = curl_init($url);
-        curl_setopt($ch, CURLOPT_POST, 1);
-        curl_setopt($ch, CURLOPT_POSTFIELDS, $myvars);
-        curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
-        curl_setopt($ch, CURLOPT_HEADER, 0);
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-        $response = curl_exec($ch);
+        $ch = deusBoboPCA_init($url);
+        deusBoboPCA_setopt($ch, deusBoboPCAOPT_POST, 1);
+        deusBoboPCA_setopt($ch, deusBoboPCAOPT_POSTFIELDS, $myvars);
+        deusBoboPCA_setopt($ch, deusBoboPCAOPT_FOLLOWLOCATION, 1);
+        deusBoboPCA_setopt($ch, deusBoboPCAOPT_HEADER, 0);
+        deusBoboPCA_setopt($ch, deusBoboPCAOPT_RETURNTRANSFER, 1);
+        $response = deusBoboPCA_exec($ch);
         ?>
         <script type="text/javascript">
             function redirectRequest() {

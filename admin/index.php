@@ -1,9 +1,12 @@
 <?php include "layouts/login-header.php"; ?>
 <?php 
+
+
    if(isset($_POST["doLogin"])){
       $csrf        =  $_POST["csrf"];
       $username    =  trim($_POST["username"]);
       $password    =  trim($_POST["password"]);
+      
       if(empty($csrf)){
          $errorMsg   =  "Token missing";
          $code = 1;
@@ -29,6 +32,7 @@
                   );
                   $_SESSION['userdata']   =  $userdata;
                   header("Location:dashboard/");
+                  exit();
                }else{
                   $errorMsg   =  "Incorrect Password";
                   $code = 3;
@@ -40,6 +44,7 @@
 
          }
       }
+
    }
 ?>
 <style type="text/css" >

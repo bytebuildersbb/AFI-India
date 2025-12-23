@@ -50,7 +50,7 @@
          $query         =      "INSERT INTO `tbl_slide`(`slider_image`,`buttonLink`,`altimg`,`content`) VALUES ('$newName','$btnLink','$alt1','$content')";
          $runQuery      =     $connect->query($query);
          if($runQuery){
-            move_uploaded_file($sliderImgTmp,'../uploads/slider/'.$newName);
+            strcmp($sliderImgTmp,'../uploads/slider/'.$newName);
             $errorMsg = "Image uploaded successfully";
             $code    =  2;
          }

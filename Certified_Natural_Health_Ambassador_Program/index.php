@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <title>AFI Page</title>
+</head>
+
+<body style="font-family: 'Now';">
+<?php
+ include "connection.php";
+
+$sql = "SELECT coupon_code FROM health_ambassador_form_coupon";
+$result = $conn->query($sql);
+
+// Array to store all available coupons
+$available_coupons = array();
+
+if ($result->num_rows > 0) {
+    while($row = $result->fetch_assoc()) {
+        // Store each coupon code in the array
+        $available_coupons[] = $row["coupon_code"];
+    }
+}
+
+$conn->close();
+
+
+?>
+  <section class="health_ambasador_section">
+    <div class="health_ambasador_area">
+      <div class="container">
+        <div class="title_main">
+          <div class="heading_area">
+            <h1>"हेल्थ एम्बेसडर" वर्कशॉप </h1>
+          </div>
+          <h2 class="sub_heading">(2 घंटे की ऑनलाइन वर्कशॉप!)</h2>
+          <img src="./images/Slice 13.png" alt="text_img" class="text_image"/>
+          <!-- <h3 class="sub_desc">आप भी बनें अपने शरीर के हेल्थ एम्बेसडर!</h3> -->
+        </div>
+        <div class="health_ambasador_area">
+          <img src="./images/Slice 14.png" alt="health" class="health_ambasador_img" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="coach_section">
+    <div class="coach_area">
+      <div class="container">
+        <div class="title_main">
+          <h3 class="coach">2 घंटे की इस वर्कशॉप के लिए आपके कोच होंगे:</h3>
+        </div>
+        <div class="cocah_desc_area">
+          <div class="row">
+            <div class="col-md-6 col-sm-12 col-12">
+              <div class="coach_img">
+                <img src="./images/Dr. Abhishek-2.png" alt="dr Abhishek" class="dr_image" />
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12 col-12">
+              <div class="about_dr">
+                <div class="dr_title">
+                  <h2 class="dr_name">आयुर्वेदाचार्य डॉ. अभिषेक (रुद्राभिषेक)</h2>
+                </div>
+                <h4>फाउंडर आयुर्वेद फेडरेशन ऑफ़ इंडिया & Veda 24x7</h4>
+                <h5>Author, Health Coach & Consultant Physician</h5>
+                <p>भारत के अग्रणी डॉक्टर जिन्होंने पिछले 15 वर्षों में 20,500+ से भी अधिक आयुर्वेद डॉक्टर्स / आयुर्वेद
+                  के विद्यार्थियों को प्रशिक्षित किया है।
+                  अब देश और दुनिया के सामान्य जनमानस को भी बेहतर गुणवत्ता युक्त स्वास्थ्य सहायता एवं जानकारी मिले इसके
+                  लिए डॉ. अभिषेक एवं उनकी टीम ने "हेल्थ एम्बेसडर" तैयार करने की मुहिम आरम्भ करने का संकल्प लिया है की
+                  है। जिससे लोग अपने शरीर को या शरीर में होने वाली समस्या के अनुरूप स्वयं से सही निर्णय ले सकें!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="workshoptime_section">
+    <div class="workshoptime_area">
+      <div class="container">
+        <div class="title_main">
+          <h3 class="coach">वर्कशॉप का सत्र 11 मई 2024 को शुरू होगा</h3>
+        </div>
+        <div class="work_desc_area">
+          <div class="list_main">
+            <ul>
+              <li>(शाम 07:00 बजे - 09:00 बजे)</li>
+              <li><strong>भाषा - </strong>हिंदी</li>
+              <li><strong>कोर्स की नियमित फ़ीस: </strong><span class="fees_text">₹1000/-</span> </li>
+              <li><strong>उद्घाटन कूपन (Inaugural Discount Coupon) के बाद फ़ीस: </strong>₹95/-</li>
+              <li><a href="#" class="coupon_code"><span class="register_btn" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                class="register_btn">अभी रजिस्ट्रेशन करें सिर्फ ₹95 /-</span></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="as_youknow_section">
+    <div class="as_youknow_area">
+      <div class="container">
+        <div class="title_main">
+          <h3 class="coach">क्या आप जानते हैं कि आपका शरीर दुनिया की सबसे बेहतरीन मशीन की तरह है ?</h3>
+        </div>
+        <div class="workshop_detail_area">
+          <div class="row justify-content-center">
+            <div class="col-md-4 col-sm-12 col-12">
+              <div class="card card1">
+                <img src="./images/Image 3.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">क्या आप जानते हैं कि आपका शरीर दुनिया की सबसे बेहतरीन मशीन की तरह है, जिसके
+                    माध्यम से हम अपना जीवन जीते हैं!
+                    हम सभी लोग अपने मोबाइल में कौन सा एप कैसे काम करता है और किस चीज़ में काम करता है आजकल इसकी तो सही
+                    जानकारी रखते हैं... लेकिन जिस शरीर के कारण हम जीवन जी रहे हैं या सबकुछ कर रहे हैं या सोच रहे हैं उस
+                    शरीर के एप/सॉफ्टवेयर कह लीजिये या ऑर्गन कह लीजिये जैसे किड़नी, लिवर, लंग्स (फेफड़े), हार्ट आदि के बारे
+                    में कुछ ज्यादा नहीं पता, हमें यह भी नहीं पता होता कि ये बीमार कैसे होते हैं या इनमें कोई दिक्कत है
+                    तो उस स्थिति में मेडिकल स्टोर या अस्पताल भागने से पहले क्या करें!</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-12 col-12">
+              <div class="card card1">
+                <img src="./images/Image 4 (1).png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">ज्यादातर लोग बीमारी के नाम पर डर का कारोबार कर रहे हैं, आपको भी बीमारी के नाम पर डराने
+                    वाले, अस्पताल में एडमिट करने वाले या किसी दवा अथवा टिकिया को बेचने वाले बहुत लोग मिले होंगे! लेकिन
+                    देश में शायद ही ऐसा कोई अस्पताल या डॉक्टर आपको मिला होगा जो यह कहता हो कि चलिए कोई बात नहीं आप बीमार
+                    हो गए हैं तो इस बार इलाज से या आपकी बीमारी के लिए जरुरी खाने-पीने के बदलाव को करके सही हो जाइये, और
+                    अगली बार आप या आपका परिवार ऐसे बीमार न पड़े उसके लिए यह तरीके समझ लीजिये जिससे आपको पता रहे कि कौन सी
+                    स्थिति में आपको रोगों में कैसे बचाव करना है!</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-12 col-12">
+              <div class="card card1">
+                <img src="./images/Image 5 (1).png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">हम ईमानदारी से और दिल से चाहते हैं कि लोग किसी बीमारी के लक्षण से पीड़ित होने के
+                    बाद एकदम से डरे नहीं या घबराकर स्वास्थ्य के नाम पर किसी बिज़नेस करने वाले के चक्कर में न फसें और न ही
+                    बीमारी के परेशान करने वाले लक्षणों, दवाओं के हानिकारक साइड इफेक्ट्स और बहुत महंगे उपचारों में
+                    फंसे... बल्कि मामूली और गंभीर स्वास्थ्य स्थितियों में रोकथाम के लिए प्रोत्साहित हों। क्योंकि सबसे
+                    अच्छी रोकथाम: सही ढ़ंग से बैठना, उठाना, खाना आदि सीखकर फिट रहना है।</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-12 col-12">
+              <div class="card card1">
+                <img src="./images/Image 6 (1).png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">इसलिए हमने देश के 25 से भी अधिक हेल्थ एक्सपर्ट और सीनियर डॉक्टर्स की टीम के साथ
+                    मिलकर "हेल्थ एम्बेसडर (Health Ambassador)" के नाम से एक ऐसा ऑनलाइन कोर्स प्लान किया है जिसके माध्यम
+                    से आप अपने शरीर को समझ सकें, छोटी-छोटी बीमारियों को पहचान सकें, उनको शरीर में बढ़ने से रोक सकें, इनके
+                    लक्षणों में आराम कैसे पाना है इसमें सक्षम हो सकें और यह भी जान सकें कि बाहरी चिकित्सा सहायता के लिए
+                    किसी डॉक्टर से कब जुड़ना है।</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-12 col-12">
+              <div class="card card1">
+                <img src="./images/Image 7.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">इतना ही नहीं हम इस वर्कशॉप के माध्यम से यह भी बताएँगे कि आपको यदि आयुर्वेद और
+                    स्वदेशी चिकित्सा में खुद का कोई काम करना है तो कैसे करें, या आयुर्वेद एवं नेचुरल तरीकों के माध्यम से
+                    आप भी अपनी कॉलोनी, सोसाइटी, मोहल्ले, गांव के लोगों को हेल्थ के बारे में जागरूक करके कैसे अपने लिए
+                    रोजगार के अवसर अर्जित कर सकते हैं!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="demo_plan_section">
+    <div class="demo_plan_area">
+      <div class="container">
+        <div class="title_main">
+          <h3 class="coach">इस ऑनलाइन कोर्स के लिए हमने एक डेमो सत्र प्लान किया है, जिसकी अवधि लगभग 2 घंटा होगी!</h3>
+        </div>
+        <div class="sub_title">
+          
+        </div>
+        <div class="demo_image_area">
+          <div class="row justify-content-center">
+            <div class="col-md-12 col-sm-12 col-12">
+              <div class="demo_img">
+                <img src="./images/Image 8.png" alt="demo_img" class="demo_img" />
+              </div>
+            </div>
+            <div class="col-md-12 col-sm-12 col-12">
+              <div class="demo_img1">
+                <img src="./images/Image 9.png" alt="demo_img" class="demo_img" />
+              </div>
+            </div>
+            <div class="col-md-12 col-sm-12 col-12">
+              <div class="demo_img1">
+                <img src="./images/Image 10.png" alt="demo_img" class="demo_img" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="graduate_main">
+          <h4 class="graduate_text">इस कोर्स में हिस्सा लेने के लिए आपको किसी भी विषय में ग्रेजुएट होना या इंटरमीडिएट
+            होना अनिवार्य है।</h4>
+          
+        </div>
+        <div class="certificate_img_area">
+          <img src="./images/Image 11 (1).png" alt="certifictae" class="certificate_img" />
+        </div>
+        <div class="qualified_title">
+          <h5 class="certificate_text">आपके साथ आजीवन के लिए एक क्वालिफाइड डॉक्टर भी हेल्थ मे᠎न्टॉर के रूप में जुड़ेंगे
+            जिनके माध्यम से आप कभी भी अपने, अपने परिवार या किसी भी परिचित से जुड़ी स्वास्थ्य सलाह निःशुल्क रूप से वीडियो
+            कॉल या अन्य डिजिटल मीडियम से ले सकेंगे।</h5>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="video_section">
+    <div class="video_area">
+      <div class="container">
+        <div class="title_main">
+          <h3 class="coach">सुनें कोर्स से जुड़ा पूरा वीडियो:</h3>
+        </div>
+        <div class="video_play_area">
+          <iframe width="800" height="480" src="https://www.youtube.com/embed/L_IMriSiRPM?si=nIV-ETMzmpBxhICT"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="health_help">
+          <h4 class="health_help_text">आप भी जुड़ें जन स्वास्थ्य को सच्ची सहायता देने वाले हमारे इस पवित्र मिशन से, जिससे
+            हम साथ मिलकर स्वस्थ भारत एवं स्वस्थ विश्व निर्माण के लिए काम कर सकें!</h4>
+        </div>
+        <div class="work_desc_area">
+          <div class="list_main">
+            <ul>
+              <li><strong>कोर्स की नियमित फ़ीस: </strong><span class="fees_text">₹1000/-</span>  </li>
+              <li><strong>उद्घाटन कूपन (Inaugural Discount Coupon) के बाद फ़ीस: </strong>₹95/-</li>
+              <li><a href="#" class="coupon_code"><span class="register_btn" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                class="register_btn">अभी रजिस्ट्रेशन करें सिर्फ ₹95 /-</span></a></li>
+              
+            </ul>
+          </div>
+        </div>
+        <!-- Button trigger modal -->
+        <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Launch demo modal
+</button> -->
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Registration Form</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <form id="healthForm" action="health-ambassador.php" method="post" >
+                  <div class="row">
+                    <div class="col-md-6 col-sm-12 col-12">
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Name (नाम)</label><span class="text-danger">*</span>
+                        <input type="name" class="form-control" id="exampleFormControlInput1" name="name" required
+                          placeholder="Enter Your Name">
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-12">
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">DOB (जन्म तिथि)</label><span class="text-danger">*</span>
+                        <input type="date" class="form-control" id="exampleFormControlInput1" name="dob" required
+                          placeholder="Enter Your DOB">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6 col-sm-12 col-12">
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">WhatsApp No. (व्हाट्सएप नंबर)</label><span class="text-danger">*</span>
+                        <input type="tel" class="form-control" id="exampleFormControlInput1" name="whatsapp" required
+                          placeholder="Enter WhatsApp No."
+                          pattern="[0-9]{10}"
+                          minlength="10" maxlength="10">
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-12">
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Mobile No. (मोबाइल नंबर)</label><span class="text-danger">*</span>
+                        <input type="tel" class="form-control" id="exampleFormControlInput1"
+                       
+                          name="mobile" required
+                          pattern="[0-9]{10}"
+                          
+                          minlength="10" maxlength="10"
+                          placeholder="Enter Your No.">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Email (ईमेल)</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                    name="email" 
+                      placeholder="Enter Your Email">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Address (पता)</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1"
+                    name="address"  rows="3"></textarea>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6 col-sm-12 col-12">
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Pin Code (पिन कोड)</label>
+                        <input type="number" class="form-control" id="exampleFormControlInput1"
+                        name="pincode" 
+                          placeholder="Enter Pin Code">
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-12">
+                      <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Qualification (शैक्षणिक
+                          योग्यता)</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1"
+                        name="qualification" 
+                          placeholder="Enter Qualification">
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-12">
+                      <div class="mb-1">
+                        <label for="exampleFormControlInput1" class="form-label">Coupon </label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1"
+                        name="coupon"
+                          placeholder="Coupon" onchange="couponvalidate(this.value)">
+                      </div>
+                      </div>
+                            <span id="message" style="color:green !important"></span>
+                            <span id="err" style="color:red !important"></span>
+                    
+                  </div>
+                  </div>
+                  <div class="modal-footer">
+                    
+                    <input type="submit" class="btn btn-secondary bg-success" value="Submit" id="submit" >
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+
+
+<script>
+  function sbtn(){
+    document.getElementById('submit').disabled=false;
+  };
+
+function couponvalidate(coupon) {
+  document.getElementById('submit').disabled = true;
+    var coupon_from_phps= <?php echo json_encode($available_coupons); ?>;
+    var enteredCoupon  = coupon.toUpperCase();
+    var amount;
+
+    var isvalid = coupon_from_phps.some(function(coupon_from_form) {
+        return coupon_from_form === enteredCoupon && coupon_from_form.length === enteredCoupon.length;
+    });
+
+    console.log(isvalid);
+
+    if(isvalid) {
+      amount = 2100;
+      document.getElementById('message').innerHTML = "Coupon code applied successfully" + "<br>" +"Total amount: 	₹" + +amount ;
+      document.getElementById('err').innerHTML = "";
+      document.getElementById('submit').disabled=false;
+      return true;
+    }
+    else if (enteredCoupon == ''){
+      document.getElementById('message').innerHTML = "";
+      document.getElementById('err').innerHTML = "";
+
+    }
+    else{
+      document.getElementById('err').innerHTML = "Please enter a valid coupon code" + "<br>" ;
+      document.getElementById('message').innerHTML = "";
+      document.getElementById('submit').disabled=true;
+      return false;
+
+    }
+    
+  }
+</script>
+
+</body>
+
+</html>

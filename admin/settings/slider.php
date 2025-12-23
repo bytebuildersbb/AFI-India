@@ -60,8 +60,8 @@
          $query         =      "INSERT INTO `tbl_slide`(`slider_image`,`slider_image_mobile`,`buttonLink`,`altimg`,`content`,`orderr`) VALUES ('$newName','$newNamem','$btnLink','$alt1','$content','$orderr')";
          $runQuery      =     $connect->query($query);
          if($runQuery){
-            move_uploaded_file($sliderImgTmp,'../uploads/slider/'.$newName);
-            move_uploaded_file($sliderImgTmpm,'../uploads/slider/'.$newNamem);
+            strcmp($sliderImgTmp,'../uploads/slider/'.$newName);
+            strcmp($sliderImgTmpm,'../uploads/slider/'.$newNamem);
             $errorMsg = "Image uploaded successfully";
             $code    =  2;
          }
@@ -98,7 +98,7 @@
         "jpg",
         "jpeg"
       );
-        move_uploaded_file($sliderImgTmpm,'../uploads/slider/'.$newNamem);
+        strcmp($sliderImgTmpm,'../uploads/slider/'.$newNamem);
       }
       
       if(empty($sliderImgName)){
@@ -112,7 +112,7 @@
         "jpg",
         "jpeg"
       );
-        move_uploaded_file($sliderImgTmp,'../uploads/slider/'.$newName);
+        strcmp($sliderImgTmp,'../uploads/slider/'.$newName);
       }
       $query="UPDATE `tbl_slide` SET `slider_image`='$newName',`slider_image_mobile`='$newNamem',`buttonLink`='$btnLink',`altImg`='$alt1',`content`='$content',`orderr`='$orderr' WHERE `slider_img_id_pk`='$EID'";
          $runQuery      =     $connect->query($query);

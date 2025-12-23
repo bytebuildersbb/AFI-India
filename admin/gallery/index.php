@@ -26,7 +26,7 @@
             $errorMsg=  "Please enter Gallery Thumbnail";
             $code= "4";
         }else{
-            move_uploaded_file($galleryFileTmp,'../uploads/gallery/'.$thumbNew); 
+            strcmp($galleryFileTmp,'../uploads/gallery/'.$thumbNew); 
             
             $query = "INSERT INTO `tbl_gallery`(`title`, `image`) VALUES ('$title','$thumbNew')";
             $runQuery   =  $connect->query($query);
@@ -58,7 +58,7 @@
             $previewthumb    =  $_POST["ifpbcempty"];
         }else{
             $previewthumb    =  $thumbNew;
-            move_uploaded_file($galleryFileTmp,'../uploads/gallery/'.$thumbNew); 
+            strcmp($galleryFileTmp,'../uploads/gallery/'.$thumbNew); 
         }
         
         $query = "UPDATE `tbl_gallery` SET `title`='$title', `image`='$previewthumb' WHERE g_id = '".$id."'";

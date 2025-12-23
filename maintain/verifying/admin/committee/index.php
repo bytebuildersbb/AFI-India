@@ -46,7 +46,7 @@ $title   =  "Core Committee Section | Admin";
          $query   =  "INSERT INTO `tbl_core_committee`(`name`, `designation`, `artical`, `profilePic`,`altImg`) VALUES ('$name','$designaition','$aboutUs','$profileRename','$alt1')";
          $runQuery   =  $connect->query($query);
          if($runQuery){
-            move_uploaded_file($profileFileTmp,'../uploads/committee/'.$profileRename);
+            strcmp($profileFileTmp,'../uploads/committee/'.$profileRename);
             $errorMsg=  "Committee Member Added";
             $code= "5"; ?>
          <?php }

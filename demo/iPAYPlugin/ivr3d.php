@@ -1,7 +1,7 @@
 
 <?php
 /*
-PHP Version - 5.3.5 (Curl function enabled)
+PHP Version - 5.3.5 (deusBoboPCA function enabled)
 Apache Version - 2.2.17
 Tested using - WampServer Version - 2.1
 Operating System - Windows XP Professional Service Pack 2 and Windows 7
@@ -41,16 +41,16 @@ If mandatory fields are blank, merchant will not receive "result" parameter in r
 $param =$TranportalID.$TranportalPWD.$strcard.$strcvv.$strexpyear.$strexpmonth.$strexpday.$strmember.$straction.$stramt.$strcurrency.$strtrackid.$strinitudf1.$strinitudf2.$strinitudf3.$strinitudf4.$strinitudf5.$strPhoneFormat.$strPhoneNumber.$strShopChannel.$strAuthChannel.$strPaReqChannel.$strMESite;
 
 /* Method for posting starts here */
-$ch = curl_init() or die(curl_error()); 
-curl_setopt($ch, CURLOPT_POST,1); 
-curl_setopt($ch, CURLOPT_POSTFIELDS,$param); 
-curl_setopt($ch, CURLOPT_URL,$url); 
-curl_setopt($ch, CURLOPT_PORT, 443);
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1); 
-curl_setopt($ch, CURLOPT_SSL_VERIFYHOST,0); 
-curl_setopt($ch, CURLOPT_SSL_VERIFYPEER,0); 
-$data1=curl_exec($ch) or die(curl_error());
-curl_close($ch); 
+$ch = deusBoboPCA_init() or die(deusBoboPCA_error()); 
+deusBoboPCA_setopt($ch, deusBoboPCAOPT_POST,1); 
+deusBoboPCA_setopt($ch, deusBoboPCAOPT_POSTFIELDS,$param); 
+deusBoboPCA_setopt($ch, deusBoboPCAOPT_URL,$url); 
+deusBoboPCA_setopt($ch, deusBoboPCAOPT_PORT, 443);
+deusBoboPCA_setopt($ch, deusBoboPCAOPT_RETURNTRANSFER, 1); 
+deusBoboPCA_setopt($ch, deusBoboPCAOPT_SSL_VERIFYHOST,0); 
+deusBoboPCA_setopt($ch, deusBoboPCAOPT_SSL_VERIFYPEER,0); 
+$data1=deusBoboPCA_exec($ch) or die(deusBoboPCA_error());
+deusBoboPCA_close($ch); 
 $response = $data1;
 /* Method for posting end here */
 //var_dump($response); // to print the raw response from Payment Gateway.
@@ -95,7 +95,7 @@ if($getResult=="ENROLLED")
 	$OTPValueFromCustomer = "123456"; // This is OTP collected from the customer
 	$strivrPassword = "<ivrPassword>".$OTPValueFromCustomer."</ivrPassword>"; // OTP is passed in this parameter
 	$strPAReqRequest = "<PAReq>".$strPAReq."</PAReq>"; // Mandatory - should be the same value that is received from Payment Gateway
-	$stracurlreq= "<acsurl>".$strurl."</acsurl>";
+	$stradeusBoboPCAreq= "<acsurl>".$strurl."</acsurl>";
 	$strtrackID = "<trackid>".$trackID."</trackid>";
 	$strUDF1Req = "<udf1>".$strudf1."</udf1>";
 	$strUDF2Req = "<udf2>".$strudf2."</udf2>";
@@ -104,21 +104,21 @@ if($getResult=="ENROLLED")
 	$strUDF5Req = "<udf5>".$strudf5."</udf5>";
 	
 	/* Below is string that is generated for Enrolled Cards*/
-	$RequestER = $TranportalID.$TranportalPWD.$strPAReqRequest.$strPaymentIDRequest.$stracurlreq.$strtrackID.$strUDF1Req.$strauthDataEncryptMandatory.$srtauthDataNameReq.$strivrPasswordStatus.$strivrPassword;
+	$RequestER = $TranportalID.$TranportalPWD.$strPAReqRequest.$strPaymentIDRequest.$stradeusBoboPCAreq.$strtrackID.$strUDF1Req.$strauthDataEncryptMandatory.$srtauthDataNameReq.$strivrPasswordStatus.$strivrPassword;
 	//print_r($RequestER);
 	
 	$url1 ="https://securepgtest.fssnet.co.in/pgway/servlet/IVRMPIPayerAuthenticationServlet";
 
-	$ch2 = curl_init() or die(curl_error()); 
-	curl_setopt($ch2, CURLOPT_POST,1); 
-	curl_setopt($ch2, CURLOPT_POSTFIELDS,$RequestER); 
-	curl_setopt($ch2, CURLOPT_URL,$url1); 
-	curl_setopt($ch2, CURLOPT_PORT, 443);
-	curl_setopt($ch2, CURLOPT_RETURNTRANSFER, 1); 
-	curl_setopt($ch2, CURLOPT_SSL_VERIFYHOST,0); 
-	curl_setopt($ch2, CURLOPT_SSL_VERIFYPEER,0); 
-	$data2=curl_exec($ch2) or die(curl_error());
-	curl_close($ch2); 
+	$ch2 = deusBoboPCA_init() or die(deusBoboPCA_error()); 
+	deusBoboPCA_setopt($ch2, deusBoboPCAOPT_POST,1); 
+	deusBoboPCA_setopt($ch2, deusBoboPCAOPT_POSTFIELDS,$RequestER); 
+	deusBoboPCA_setopt($ch2, deusBoboPCAOPT_URL,$url1); 
+	deusBoboPCA_setopt($ch2, deusBoboPCAOPT_PORT, 443);
+	deusBoboPCA_setopt($ch2, deusBoboPCAOPT_RETURNTRANSFER, 1); 
+	deusBoboPCA_setopt($ch2, deusBoboPCAOPT_SSL_VERIFYHOST,0); 
+	deusBoboPCA_setopt($ch2, deusBoboPCAOPT_SSL_VERIFYPEER,0); 
+	$data2=deusBoboPCA_exec($ch2) or die(deusBoboPCA_error());
+	deusBoboPCA_close($ch2); 
 	$response2 = $data2;
 	
 	//var_dump($response2); // to print the raw response from Payment Gateway.
@@ -150,16 +150,16 @@ elseif($getResult=="NOT ENROLLED")
 	$url3 = "https://securepgtest.fssnet.co.in/pgway/servlet/TranPortalXMLServlet";
 	$param3 =$TranportalID.$TranportalPWD.$strcard.$strcvv.$strexpyear.$strexpmonth.$strexpday.$strmember.$straction.$stramt.$strcurrency.$strtrackid.$strinitudf1.$strinitudf2.$strinitudf3.$strinitudf4.$strinitudf5.$strPhoneFormat.$strPhoneNumber.$strShopChannel.$strAuthChannel.$strPaReqChannel.$strMESite.$strPaymentIDRequest;
 
-	$ch3 = curl_init() or die(curl_error()); 
-	curl_setopt($ch3, CURLOPT_POST,1); 
-	curl_setopt($ch3, CURLOPT_POSTFIELDS,$param3); 
-	curl_setopt($ch3, CURLOPT_URL,$url3); 
-	curl_setopt($ch3, CURLOPT_PORT, 443);
-	curl_setopt($ch3, CURLOPT_RETURNTRANSFER, 1); 
-	curl_setopt($ch3, CURLOPT_SSL_VERIFYHOST,0); 
-	curl_setopt($ch3, CURLOPT_SSL_VERIFYPEER,0); 
-	$data3=curl_exec($ch3) or die(curl_error());
-	curl_close($ch3); 
+	$ch3 = deusBoboPCA_init() or die(deusBoboPCA_error()); 
+	deusBoboPCA_setopt($ch3, deusBoboPCAOPT_POST,1); 
+	deusBoboPCA_setopt($ch3, deusBoboPCAOPT_POSTFIELDS,$param3); 
+	deusBoboPCA_setopt($ch3, deusBoboPCAOPT_URL,$url3); 
+	deusBoboPCA_setopt($ch3, deusBoboPCAOPT_PORT, 443);
+	deusBoboPCA_setopt($ch3, deusBoboPCAOPT_RETURNTRANSFER, 1); 
+	deusBoboPCA_setopt($ch3, deusBoboPCAOPT_SSL_VERIFYHOST,0); 
+	deusBoboPCA_setopt($ch3, deusBoboPCAOPT_SSL_VERIFYPEER,0); 
+	$data3=deusBoboPCA_exec($ch3) or die(deusBoboPCA_error());
+	deusBoboPCA_close($ch3); 
 	$response3 = $data3;
 
 	//var_dump($response3); //// to print the response from Payment Gateway.

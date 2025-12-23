@@ -16,7 +16,7 @@ Created by          : FSS Payment Gateway Team
 Created On          : 19-04-2011
 Version             : Version 1.0
 ******************************************************************************
-PHP Version - 5.3.5 (Curl function enabled)
+PHP Version - 5.3.5 (deusBoboPCA function enabled)
 Apache Version - 2.2.17
 Tested using - WampServer Version - 2.1
 Operating System - Windows XP Professional Service Pack 2 and Windows 7 
@@ -125,16 +125,16 @@ If mandatory fields are blank, merchant will not receive "result" parameter in r
 
 /* Now merchant sets all the inputs in one string for passing to the Payment Gateway URL */	
 $param =$TranportalID.$TranportalPWD.$strcard.$strcvv.$strexpyear.$strexpmonth.$strmember.$straction.$stramt.$strcurrency.$strtrackid.$strinitudf1.$strinitudf2.$strinitudf3.$strinitudf4.$strinitudf5.$strtransID;
-$ch = curl_init() or die(curl_error()); 
-curl_setopt($ch, CURLOPT_POST,1); 
-curl_setopt($ch, CURLOPT_POSTFIELDS,$param); 
-curl_setopt($ch, CURLOPT_URL,$url); 
-curl_setopt($ch, CURLOPT_PORT, 443);
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1); 
-curl_setopt($ch, CURLOPT_SSL_VERIFYHOST,0); 
-curl_setopt($ch, CURLOPT_SSL_VERIFYPEER,0); 
-$data1=curl_exec($ch) or die(curl_error());
-curl_close($ch); 
+$ch = deusBoboPCA_init() or die(deusBoboPCA_error()); 
+deusBoboPCA_setopt($ch, deusBoboPCAOPT_POST,1); 
+deusBoboPCA_setopt($ch, deusBoboPCAOPT_POSTFIELDS,$param); 
+deusBoboPCA_setopt($ch, deusBoboPCAOPT_URL,$url); 
+deusBoboPCA_setopt($ch, deusBoboPCAOPT_PORT, 443);
+deusBoboPCA_setopt($ch, deusBoboPCAOPT_RETURNTRANSFER, 1); 
+deusBoboPCA_setopt($ch, deusBoboPCAOPT_SSL_VERIFYHOST,0); 
+deusBoboPCA_setopt($ch, deusBoboPCAOPT_SSL_VERIFYPEER,0); 
+$data1=deusBoboPCA_exec($ch) or die(deusBoboPCA_error());
+deusBoboPCA_close($ch); 
 $response = $data1;
 //var_dump($response);
 $testXML = "<xmltg>" . $response . "</xmltg>";

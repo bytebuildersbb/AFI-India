@@ -129,35 +129,34 @@ include "layouts/main-header.php";
             <span>Join with Us</span>
             <h2>Join Ayurveda Federation of India</h2>
         </div>
-        <div class="row d-flex justify-content-center">
-            <div class="col-12">
-                <div class="ayurveda">
-                    <div class="row align-items-center">
+     
+         <div class="row align-items-center">
                         <div class="col-md-4 mb-3 text-center">
                             <a href="membership.php">
                                 <img src="assets/images/afi3.png" class="img-fluid afilift">
                             </a>
                         </div>
-                        <div class="col-md-4 mb-3 text-center">
-
-                            <div class="d-flex justify-content-center align-items-center text-center">
-                                <a>
-                                    <h3>Facebook Followers</h3>
-                                    <h2>4.8K</h2>
-                                </a>
-                            </div>
+                             <div class="col-md-4 mb-3 text-center">
+                            <a href="#">
+                                <img src="assets/images/certificate.png" class="img-fluid afilift">
+                            </a>
                         </div>
+                        <!--<div class="col-md-4 mb-3 text-center">-->
+
+                        <!--    <div class="d-flex justify-content-center align-items-center text-center">-->
+                        <!--        <a>-->
+                        <!--            <h3>Facebook Followers</h3>-->
+                        <!--            <h2>4.8K</h2>-->
+                        <!--        </a>-->
+                        <!--    </div>-->
+                        <!--</div>-->
                         <div class="col-md-4 mb-3 text-center">
                             <a href="certificate-page.php">
                                 <img src="assets/images/afi2-new.png" class="img-fluid afilift">
                             </a>
                         </div>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
 </div>
-
 
 <?php include "layouts/main-footer.php"; ?>

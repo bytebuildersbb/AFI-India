@@ -1,0 +1,2573 @@
+# Copyright (C) 2024 FunnelKit
+# This file is distributed under the GPLv2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Stripe Payment Gateway for WooCommerce 1.10.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/funnelkit-stripe-woo-payment-gateway\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2024-11-23T20:34:44+05:30\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.10.0\n"
+"X-Domain: funnelkit-stripe-woo-payment-gateway\n"
+
+#. Plugin Name of the plugin
+#: funnelkit-stripe-woo-payment-gateway.php
+msgid "Stripe Payment Gateway for WooCommerce"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: funnelkit-stripe-woo-payment-gateway.php
+msgid "https://www.funnelkit.com/"
+msgstr ""
+
+#. Description of the plugin
+#: funnelkit-stripe-woo-payment-gateway.php
+msgid "Effortlessly accepts payments via Stripe on your WooCommerce Store."
+msgstr ""
+
+#. Author of the plugin
+#: funnelkit-stripe-woo-payment-gateway.php
+msgid "FunnelKit"
+msgstr ""
+
+#. Author URI of the plugin
+#: funnelkit-stripe-woo-payment-gateway.php
+msgid "https://funnelkit.com/"
+msgstr ""
+
+#: admin/admin.php:218
+#: admin/admin.php:273
+msgid "Stripe Settings"
+msgstr ""
+
+#: admin/admin.php:219
+msgid "Credit Cards"
+msgstr ""
+
+#: admin/admin.php:220
+#: admin/admin.php:608
+msgid "Express Checkout"
+msgstr ""
+
+#: admin/admin.php:221
+#: compatibilities/plugins/class-fk-checkout.php:37
+#: gateways/googlepay.php:110
+#: gateways/googlepay.php:185
+msgid "Google Pay"
+msgstr ""
+
+#: admin/admin.php:222
+#: compatibilities/plugins/class-fk-checkout.php:45
+#: gateways/applepay.php:61
+#: gateways/applepay.php:109
+msgid "Apple Pay"
+msgstr ""
+
+#: admin/admin.php:223
+#: gateways/affirm.php:39
+msgid "Affirm"
+msgstr ""
+
+#: admin/admin.php:224
+msgid "Afterpay"
+msgstr ""
+
+#: admin/admin.php:225
+#: gateways/klarna.php:25
+msgid "Klarna"
+msgstr ""
+
+#: admin/admin.php:226
+msgid "iDeal"
+msgstr ""
+
+#: admin/admin.php:227
+msgid "Bancontact"
+msgstr ""
+
+#: admin/admin.php:228
+msgid "P24"
+msgstr ""
+
+#: admin/admin.php:229
+msgid "SEPA"
+msgstr ""
+
+#: admin/admin.php:230
+#: gateways/alipay.php:94
+msgid "Alipay"
+msgstr ""
+
+#: admin/admin.php:278
+#: admin/admin.php:1373
+msgid "Stripe Connect"
+msgstr ""
+
+#: admin/admin.php:285
+msgid "Connection Status"
+msgstr ""
+
+#: admin/admin.php:289
+#: admin/admin.php:290
+msgid "This is your Stripe Connect ID and serves as a unique identifier."
+msgstr ""
+
+#: admin/admin.php:294
+msgid "Stripe Account Keys"
+msgstr ""
+
+#: admin/admin.php:297
+msgid "This will disable any connection to Stripe."
+msgstr ""
+
+#: admin/admin.php:301
+msgid "Connect Stripe Account"
+msgstr ""
+
+#: admin/admin.php:304
+#: admin/admin.php:409
+msgid "We make it easy to connect Stripe to your site. Click the Connect button to go through our connect flow."
+msgstr ""
+
+#: admin/admin.php:308
+#: admin/parts/html-stripe-charge-info-modal.php:13
+msgid "Mode"
+msgstr ""
+
+#: admin/admin.php:315
+msgid "No live transactions are processed in test mode. To fully use test mode, you must have a sandbox (test) account for the payment gateway you are testing."
+msgstr ""
+
+#: admin/admin.php:320
+#: admin/app/dist/0.634e86317fb1b2242b86.js:1
+#: admin/app/src/stripe-gateway/enable-webhook/manual-modal.js:263
+msgid "Live Publishable Key"
+msgstr ""
+
+#: admin/admin.php:322
+msgid "Your publishable key is used to initialize Stripe assets."
+msgstr ""
+
+#: admin/admin.php:326
+#: admin/app/dist/0.634e86317fb1b2242b86.js:1
+#: admin/app/src/stripe-gateway/enable-webhook/manual-modal.js:308
+msgid "Live Secret Key"
+msgstr ""
+
+#: admin/admin.php:328
+msgid "Your secret key is used to authenticate Stripe requests."
+msgstr ""
+
+#: admin/admin.php:332
+#: admin/app/dist/0.634e86317fb1b2242b86.js:1
+#: admin/app/src/stripe-gateway/enable-webhook/manual-modal.js:262
+msgid "Test Publishable Key"
+msgstr ""
+
+#: admin/admin.php:334
+msgid "Your test publishable key is used to initialize Stripe assets."
+msgstr ""
+
+#: admin/admin.php:338
+#: admin/app/dist/0.634e86317fb1b2242b86.js:1
+#: admin/app/src/stripe-gateway/enable-webhook/manual-modal.js:307
+msgid "Test Secret Key"
+msgstr ""
+
+#: admin/admin.php:340
+msgid "Your test secret key is used to authenticate Stripe requests for testing purposes."
+msgstr ""
+
+#: admin/admin.php:345
+#: admin/admin.php:1739
+msgid "Test Connection"
+msgstr ""
+
+#: admin/admin.php:348
+msgid "Click this button to test a connection. If successful, your site is connected to Stripe."
+msgstr ""
+
+#: admin/admin.php:354
+msgid "Stripe Fees Currency"
+msgstr ""
+
+#: admin/admin.php:357
+msgid "Show Stripe Fee in Order Currency"
+msgstr ""
+
+#: admin/admin.php:358
+msgid "When enabled, the Stripe fee and payout will be shown in the order's currency. By default, Stripe provides the fee and payout in the currency of the Stripe account."
+msgstr ""
+
+#: admin/admin.php:364
+msgid "Statement Descriptor"
+msgstr ""
+
+#: admin/admin.php:366
+msgid "You can change the Statement descriptor your customers see on their bank statement in your <a href=\"https://dashboard.stripe.com/settings/public\" target=\"_blank\">Stripe account settings</a>. It recommended to keep it to your domain address so your buyers can reach out to you and avoid potential disputes and chargebacks."
+msgstr ""
+
+#: admin/admin.php:373
+#: admin/admin.php:375
+msgid "Enable Custom Descriptor"
+msgstr ""
+
+#: admin/admin.php:376
+msgid "Enable this setting to pass dynamic statement descriptor."
+msgstr ""
+
+#: admin/admin.php:381
+msgid "Shortened Descriptor"
+msgstr ""
+
+#: admin/admin.php:382
+msgid "You can change the Shortened Descriptor your customers see on their bank statement in your <a href=\"https://dashboard.stripe.com/settings/public\" target=\"_blank\">Stripe account settings</a>."
+msgstr ""
+
+#: admin/admin.php:390
+msgid "Shortened Descriptor Suffix"
+msgstr ""
+
+#: admin/admin.php:395
+msgid "You can pass custom payment descriptor suffix along with shortened descriptor in your <a href=\"https://dashboard.stripe.com/settings/public\" target=\"_blank\">Stripe account settings</a>. You can change the shortened descriptor or use dynamic Order ID using merge tag {{WOO_ORDER_ID}}"
+msgstr ""
+
+#: admin/admin.php:406
+#: admin/parts/webhook.php:5
+msgid "Create Webhook"
+msgstr ""
+
+#: admin/admin.php:413
+#: admin/parts/webhook_delete.php:5
+msgid "Delete Webhook"
+msgstr ""
+
+#: admin/admin.php:420
+msgid "Webhook URL"
+msgstr ""
+
+#. translators: %1$1s - %2$2s HTML markup
+#: admin/admin.php:424
+msgid "Important: the webhook URL is called by Stripe when events occur in your account, like a source becomes chargeable. %1$1sWebhook Guide%2$2s"
+msgstr ""
+
+#: admin/admin.php:428
+msgid "Live Webhook Secret"
+msgstr ""
+
+#. translators: %1$1s Webhook Status
+#: admin/admin.php:431
+#: admin/admin.php:438
+msgid "The webhook secret is used to authenticate webhooks sent from Stripe. It ensures nobody else can send you events pretending to be Stripe. %1$1s"
+msgstr ""
+
+#: admin/admin.php:435
+msgid "Test Webhook Secret"
+msgstr ""
+
+#: admin/admin.php:442
+msgid "Debug Log"
+msgstr ""
+
+#: admin/admin.php:444
+msgid "Log debug messages"
+msgstr ""
+
+#: admin/admin.php:445
+msgid "Log Stripe API calls, inside %s Note: this may log personal information. We recommend using this for debugging purposes only and deleting the logs when finished."
+msgstr ""
+
+#: admin/admin.php:466
+msgid "Stripe"
+msgstr ""
+
+#. translators: HTML for the  express checkout section heading
+#: admin/admin.php:611
+msgid ""
+"Accept payment using Apple Pay, Google Pay and Browser Payment using Express Buttons.\n"
+"The visibility of these payment buttons is browser dependent. Click on \"Test Visibility\" button to see if your browser supports these button.\n"
+"Learn more %1$1sabout the requirements%2$2s to show Apple Pay, Google Pay and Browser Payment method."
+msgstr ""
+
+#: admin/admin.php:617
+msgid "Enable Express Checkout"
+msgstr ""
+
+#: admin/admin.php:623
+msgid "Show button on"
+msgstr ""
+
+#: admin/admin.php:627
+msgid "Choose page to display Express Checkout buttons."
+msgstr ""
+
+#: admin/admin.php:629
+msgid "Product"
+msgstr ""
+
+#: admin/admin.php:630
+msgid "Cart"
+msgstr ""
+
+#: admin/admin.php:631
+#: gateways/googlepay.php:246
+msgid "Checkout"
+msgstr ""
+
+#: admin/admin.php:636
+msgid "Button text"
+msgstr ""
+
+#: admin/admin.php:639
+msgid "Add label text for the Express Checkout button."
+msgstr ""
+
+#: admin/admin.php:644
+msgid "Button theme"
+msgstr ""
+
+#: admin/admin.php:647
+msgid "Select theme for Express Checkout button."
+msgstr ""
+
+#: admin/admin.php:650
+msgid "Dark"
+msgstr ""
+
+#: admin/admin.php:651
+msgid "Light"
+msgstr ""
+
+#: admin/admin.php:652
+msgid "Light Outline"
+msgstr ""
+
+#: admin/admin.php:658
+msgid "Button Preview"
+msgstr ""
+
+#: admin/admin.php:664
+#: admin/admin.php:665
+msgid "Enable Stripe Link"
+msgstr ""
+
+#: admin/admin.php:668
+msgid "Enable Stripe link button to show as Express checkout button when Google Pay and Apple Pay are not available."
+msgstr ""
+
+#: admin/admin.php:678
+#: admin/admin.php:1769
+msgid "Re-verify Domain"
+msgstr ""
+
+#: admin/admin.php:681
+msgid "Click the button above to re-verify domain for Apple Pay."
+msgstr ""
+
+#: admin/admin.php:686
+msgid "Product page options"
+msgstr ""
+
+#: admin/admin.php:688
+msgid "Advanced customization options for Product page."
+msgstr ""
+
+#: admin/admin.php:692
+#: admin/admin.php:748
+msgid "Button position"
+msgstr ""
+
+#: admin/admin.php:696
+msgid "Select the position of Express Checkout button. This option will work only for Product page."
+msgstr ""
+
+#: admin/admin.php:699
+msgid "Above Add to Cart"
+msgstr ""
+
+#: admin/admin.php:700
+msgid "Below Add to Cart"
+msgstr ""
+
+#: admin/admin.php:701
+msgid "Inline Button"
+msgstr ""
+
+#: admin/admin.php:706
+#: admin/admin.php:728
+#: admin/admin.php:794
+msgid "Separator text"
+msgstr ""
+
+#: admin/admin.php:709
+msgid "Add separator text for the Express Checkout button. This will help to distinguish between Express Checkout and other buttons."
+msgstr ""
+
+#: admin/admin.php:721
+msgid "Cart page options"
+msgstr ""
+
+#: admin/admin.php:723
+msgid "Advanced customization options for Cart page."
+msgstr ""
+
+#: admin/admin.php:732
+msgid "Add separator text for Cart page. If empty will show default separator text."
+msgstr ""
+
+#: admin/admin.php:741
+msgid "Checkout page options"
+msgstr ""
+
+#: admin/admin.php:743
+msgid "Advanced customization options for Checkout page."
+msgstr ""
+
+#: admin/admin.php:752
+msgid "Select the position of Express Checkout button. This option will work only for Checkout page."
+msgstr ""
+
+#: admin/admin.php:755
+msgid "Above checkout form"
+msgstr ""
+
+#: admin/admin.php:756
+msgid "Above billing details"
+msgstr ""
+
+#: admin/admin.php:761
+#: admin/parts/html-stripe-charge-info-modal.php:36
+#: gateways/affirm.php:71
+#: gateways/afterpay.php:52
+#: gateways/alipay.php:108
+#: gateways/applepay.php:106
+#: gateways/bancontact.php:76
+#: gateways/creditcard.php:136
+#: gateways/googlepay.php:182
+#: gateways/ideal.php:104
+#: gateways/klarna.php:57
+#: gateways/localgateway.php:87
+#: gateways/sepa.php:131
+#: includes/abstract-payment-gateway.php:1446
+msgid "Title"
+msgstr ""
+
+#: admin/admin.php:765
+msgid "Add a title above Express Checkout button on Checkout page."
+msgstr ""
+
+#: admin/admin.php:771
+msgid "Button width"
+msgstr ""
+
+#: admin/admin.php:775
+msgid "Select width for button (in px). Default width 100%"
+msgstr ""
+
+#: admin/admin.php:780
+msgid "Alignment"
+msgstr ""
+
+#: admin/admin.php:784
+msgid "This setting will align title, tagline and button based on selection on Checkout page."
+msgstr ""
+
+#: admin/admin.php:787
+msgid "Left"
+msgstr ""
+
+#: admin/admin.php:788
+msgid "Center"
+msgstr ""
+
+#: admin/admin.php:789
+msgid "Right"
+msgstr ""
+
+#: admin/admin.php:798
+msgid "Add separator text for Checkout page. If empty will show default separator text."
+msgstr ""
+
+#: admin/admin.php:968
+msgid "Pay Now"
+msgstr ""
+
+#: admin/admin.php:969
+msgid "NOTE: Title and Tagline appears only on Checkout page."
+msgstr ""
+
+#: admin/admin.php:970
+msgid "No payment method detected. Either your browser is not supported or you do not have save cards. For more details read %1$1sdocument$2$2s."
+msgstr ""
+
+#: admin/admin.php:979
+msgid "Something went wrong! Please reload the page and try again."
+msgstr ""
+
+#: admin/admin.php:980
+msgid "Save changes"
+msgstr ""
+
+#: admin/admin.php:981
+msgid "Please enter all keys to connect to stripe."
+msgstr ""
+
+#: admin/admin.php:982
+msgid "You must enter your API keys or connect the plugin before performing a connection test. Mode:"
+msgstr ""
+
+#: admin/admin.php:983
+msgid "Keys Unavailable."
+msgstr ""
+
+#: admin/admin.php:984
+msgid "Your Stripe account has been disconnected."
+msgstr ""
+
+#: admin/admin.php:985
+msgid "You can connect other Stripe account now."
+msgstr ""
+
+#: admin/admin.php:986
+msgid "Sorry, we are unable to re-verify domain at the moment. "
+msgstr ""
+
+#: admin/admin.php:987
+msgid "This will enable Test mode only for the admin users. While other users will continue to process payments in Live mode."
+msgstr ""
+
+#: admin/admin.php:1012
+msgid "This fee, Stripe collects for the transaction."
+msgstr ""
+
+#: admin/admin.php:1013
+msgid "Stripe Fee:"
+msgstr ""
+
+#: admin/admin.php:1041
+msgid "This net total that will be credited to your stripe bank account."
+msgstr ""
+
+#: admin/admin.php:1042
+msgid "Stripe Payout:"
+msgstr ""
+
+#: admin/admin.php:1061
+msgid "Settings"
+msgstr ""
+
+#: admin/admin.php:1062
+msgid "Documentation"
+msgstr ""
+
+#: admin/admin.php:1078
+msgid "Learn more"
+msgstr ""
+
+#: admin/admin.php:1127
+msgid "Apple Pay is not supported on this browser. "
+msgstr ""
+
+#: admin/admin.php:1128
+msgid "Apple Pay is supported on this browser. "
+msgstr ""
+
+#: admin/admin.php:1132
+msgid "Google Pay is not  supported on this browser. "
+msgstr ""
+
+#: admin/admin.php:1133
+msgid "Google Pay is supported on this browser. "
+msgstr ""
+
+#. translators: %1$1s %2$2s %3$3s: HTML Markup
+#: admin/admin.php:1306
+msgid "Your manually managed API keys are valid."
+msgstr ""
+
+#: admin/admin.php:1309
+msgid "It is highly recommended to Connect with Stripe for easier setup and improved security."
+msgstr ""
+
+#: admin/admin.php:1310
+#: admin/parts/connect.php:5
+msgid "Connect with Stripe"
+msgstr ""
+
+#. translators: $1s Account name, $2s html markup, $3s account id, $4s html markup
+#: admin/admin.php:1314
+msgid "Account %2$1s is connected."
+msgstr ""
+
+#: admin/admin.php:1323
+msgid "Disconnect &amp; connect other account?"
+msgstr ""
+
+#: admin/admin.php:1328
+#: admin/admin.php:1375
+#: admin/admin.php:2055
+msgid "Manage API keys manually"
+msgstr ""
+
+#. translators: %1$1s: mode, %2$2s, %3$3s: HTML Markup
+#: admin/admin.php:1378
+msgid "Stripe Keys for %1$1s mode are not set correctly. Reconnect via %2$2s or %3$3s"
+msgstr ""
+
+#. translators: 1 - 4 html entities
+#: admin/admin.php:1515
+msgid "Unable to create domain association folder to domain root due to file permissions. Please create %1$1s.well-known%2$2s directory under domain root and place %3$3sdomain verification file%4$4s under it and refresh."
+msgstr ""
+
+#: admin/admin.php:1523
+msgid "Unable to copy domain association file to domain root."
+msgstr ""
+
+#: admin/admin.php:1627
+msgid "Error: The current user does not have sufficient permissions to perform this action. Please reload the page and try again."
+msgstr ""
+
+#: admin/admin.php:1636
+msgid "No SSL was detected, Stripe live mode requires SSL."
+msgstr ""
+
+#. translators: %1$s Webhook secret page link, %2$s Webhook guide page link
+#: admin/admin.php:1646
+msgid "Stripe requires using the %1$swebhook%2$s. %3$sWebhook Guide%4$s "
+msgstr ""
+
+#. translators: %1s - %3s HTML Entities, %4s Error Message
+#: admin/admin.php:1657
+msgid ""
+"Unable to verify domain. The path <b>%1$s</b> does not have write permissions. <br/> <strong>Solution:</strong> To verify domain, please contact your host to provide write permission and re-verify again.  Alternatively, you can also manually verify the domain by following this guide. For further help, <a target=\"_blank\" href=\"%2$s\"> contact support.</a>\n"
+"<br/>\n"
+"<br/>\n"
+"<a href=\"javascript:void(0)\" class=\"button button-primary fkwcs_apple_pay_domain_verification\" > I have given file writing permission, re-verify </a>  <a href=\"javascript:void(0)\" class=\"button fkwcs_dismiss_notice\" data-notice=\"fkwcs_apple_pay\"> I will verify manually </a> <a href=\"javascript:void(0)\" class=\"fkwcs_dismiss_notice\" data-notice=\"fkwcs_apple_pay\"> Dismiss </a> "
+msgstr ""
+
+#: admin/admin.php:1669
+msgid "Stripe Payment Gateway for WooCommerce requires PHP version 7.0+. Please reach out to your host to upgrade the PHP version."
+msgstr ""
+
+#. translators: 1: Opening strong tag, 2: Closing strong tag
+#: admin/admin.php:1679
+msgid "%1$sStripe Payment Gateway for WooCommerce%2$s is in Test mode, please ensure it is switched to Live mode after testing."
+msgstr ""
+
+#: admin/admin.php:1683
+msgid "Switch to Live mode"
+msgstr ""
+
+#: admin/admin.php:1683
+msgid "I'll do it later"
+msgstr ""
+
+#: admin/admin.php:1795
+msgid "Stripe keys are reset successfully."
+msgstr ""
+
+#: admin/admin.php:1810
+msgid "Webhook could not be created"
+msgstr ""
+
+#: admin/admin.php:1833
+msgid "Webhook created Successfully"
+msgstr ""
+
+#: admin/admin.php:1850
+msgid "Domain verification successful"
+msgstr ""
+
+#: admin/admin.php:1853
+msgid "Domain verification failed. Please check logs for more info."
+msgstr ""
+
+#: admin/admin.php:1937
+#: admin/admin.php:1946
+msgid "Webhook Deleted successfully"
+msgstr ""
+
+#: admin/admin.php:1941
+msgid "Webhook could not be deleted"
+msgstr ""
+
+#: admin/admin.php:1964
+#: admin/admin.php:2025
+msgid "Test Mode:"
+msgstr ""
+
+#: admin/admin.php:1966
+msgid "Please enter secret key to test."
+msgstr ""
+
+#: admin/admin.php:1972
+#: admin/admin.php:2028
+msgid "Live Mode:"
+msgstr ""
+
+#: admin/admin.php:1974
+msgid "Please enter secret key to live."
+msgstr ""
+
+#: admin/admin.php:1978
+msgid "Error: Empty String provided for keys"
+msgstr ""
+
+#. translators: %1$1s mode
+#: admin/admin.php:1986
+msgid "My first %1s customer (created for API docs)"
+msgstr ""
+
+#: admin/admin.php:1990
+msgid "Connected to Stripe successfully"
+msgstr ""
+
+#: admin/admin.php:2108
+msgid "An Error occurred while creating webhook. Error: "
+msgstr ""
+
+#: admin/admin.php:2435
+msgid " Switch to classic cart/checkout"
+msgstr ""
+
+#: admin/admin.php:2435
+msgid "Dismiss"
+msgstr ""
+
+#: admin/admin.php:2442
+msgid "We noticed that you’re using the new Cart/Checkout experience in WooCommerce. Full compatibility is in the works with FunnelKit Stripe. We suggest switching to the Classic Checkout experience in the meantime, it’s well tested and 100% compatible with our plugin and others as well."
+msgstr ""
+
+#: admin/admin.php:2550
+msgid "Cards & Express Checkouts"
+msgstr ""
+
+#: admin/admin.php:2554
+#: admin/admin.php:2578
+msgid "Transaction"
+msgstr ""
+
+#: admin/admin.php:2555
+#: admin/admin.php:2579
+msgid "Amount"
+msgstr ""
+
+#: admin/admin.php:2574
+msgid "All payment methods"
+msgstr ""
+
+#: admin/onboard.php:68
+msgid "Stripe Payment Gateway for WooCommerce - Onboarding"
+msgstr ""
+
+#: admin/onboard.php:108
+msgid "Thanks for installing Stripe Payment Gateway for WooCommerce!"
+msgstr ""
+
+#: admin/onboard.php:109
+msgid "Go through a quick set up to configure Stripe"
+msgstr ""
+
+#: admin/onboard.php:111
+msgid "Start Onboarding Wizard"
+msgstr ""
+
+#: admin/onboard.php:112
+msgid "Skip Setup"
+msgstr ""
+
+#: admin/onboard.php:275
+msgid "Error fetching gateways"
+msgstr ""
+
+#: admin/onboard.php:303
+msgid "Gateways rendered"
+msgstr ""
+
+#: admin/onboard.php:314
+msgid "Error enabling gateways"
+msgstr ""
+
+#: admin/onboard.php:349
+msgid "Gateways saved"
+msgstr ""
+
+#: admin/onboard.php:361
+msgid "Webhook URL rendered"
+msgstr ""
+
+#: admin/onboard.php:373
+#: admin/onboard.php:422
+#: admin/onboard.php:455
+#: admin/onboard.php:492
+#: admin/onboard.php:524
+msgid "Error saving"
+msgstr ""
+
+#: admin/onboard.php:408
+msgid "Webhook Created Successfully"
+msgstr ""
+
+#: admin/onboard.php:443
+msgid "Webhook saved"
+msgstr ""
+
+#: admin/onboard.php:469
+msgid "Checkout settings saved"
+msgstr ""
+
+#: admin/onboard.php:480
+msgid "Stripe Connect URL"
+msgstr ""
+
+#: admin/onboard.php:513
+msgid "Stripe Details Saved"
+msgstr ""
+
+#: admin/onboard.php:534
+msgid "Plugin mode saved"
+msgstr ""
+
+#. translators: %1$1s, %2$2s: HTML Markup
+#: admin/parts/connect.php:21
+msgid "Need help connecting with Stripe?  %1$s Read document. %2$s"
+msgstr ""
+
+#: admin/parts/connect.php:29
+msgid "Although you can add your API keys manually, we recommend using Stripe Connect. Stripe Connect prevents issues that can arise when copying and pasting account details from Stripe into Funnelkit Stripe gateway."
+msgstr ""
+
+#: admin/parts/html-stripe-charge-info-modal.php:11
+msgid "Charge Data"
+msgstr ""
+
+#: admin/parts/html-stripe-charge-info-modal.php:14
+msgid "Live"
+msgstr ""
+
+#: admin/parts/html-stripe-charge-info-modal.php:14
+msgid "Test"
+msgstr ""
+
+#: admin/parts/html-stripe-charge-info-modal.php:17
+msgid "Status"
+msgstr ""
+
+#: admin/parts/html-stripe-charge-info-modal.php:22
+msgid "Payment Intent"
+msgstr ""
+
+#: admin/parts/html-stripe-charge-info-modal.php:28
+msgid "Customer"
+msgstr ""
+
+#: admin/parts/html-stripe-charge-info-modal.php:34
+msgid "Payment Method"
+msgstr ""
+
+#: admin/parts/html-stripe-charge-info-modal.php:40
+msgid "Type"
+msgstr ""
+
+#: admin/parts/html-stripe-charge-info-modal.php:45
+msgid "Exp"
+msgstr ""
+
+#: admin/parts/html-stripe-charge-info-modal.php:49
+msgid "Fingerprint"
+msgstr ""
+
+#: admin/parts/html-stripe-charge-info-modal.php:53
+msgid "CVC check"
+msgstr ""
+
+#: admin/parts/html-stripe-charge-info-modal.php:57
+msgid "Postal check"
+msgstr ""
+
+#: admin/parts/html-stripe-charge-info-modal.php:61
+msgid "Street check"
+msgstr ""
+
+#: admin/parts/html-stripe-charge-info-modal.php:67
+msgid "Risk Data"
+msgstr ""
+
+#: admin/parts/html-stripe-charge-info-modal.php:70
+msgid "Score"
+msgstr ""
+
+#: admin/parts/html-stripe-charge-info-modal.php:75
+msgid "Level"
+msgstr ""
+
+#: admin/parts/html-stripe-charge-info-modal.php:83
+msgid "Actions"
+msgstr ""
+
+#: admin/parts/html-stripe-charge-info-modal.php:87
+msgid "capture amount"
+msgstr ""
+
+#: admin/parts/html-stripe-charge-info-modal.php:87
+msgid "Please enter the total order amount."
+msgstr ""
+
+#: admin/parts/html-stripe-charge-info-modal.php:90
+msgid "Capture"
+msgstr ""
+
+#: admin/parts/html-stripe-charge-info-modal.php:91
+msgid "Void"
+msgstr ""
+
+#: admin/parts/html-stripe-charge-info.php:2
+msgid "Transaction Data / Actions"
+msgstr ""
+
+#: admin/parts/webhook.php:18
+msgid "Click on create webhook to generate Webhook Secret"
+msgstr ""
+
+#: admin/parts/webhook_delete.php:33
+msgid "The current webhook seems to have been configured with the URL: %1$s, however, the webhook should be configured for %2$s. Kindly delete the current webhook and a create webhook button will appear."
+msgstr ""
+
+#: compatibilities/plugins/class-abstract-wfocu-bnpl.php:117
+#: compatibilities/plugins/class-wfocu-plugin-integration-fkwcs-sepa.php:197
+#: compatibilities/plugins/class-wfocu-plugin-integration-fkwcs-stripe.php:146
+msgid "%1$s - Order %2$s - 1 click upsell: %3$s"
+msgstr ""
+
+#: compatibilities/plugins/class-abstract-wfocu-bnpl.php:133
+msgid "Begin processing payment with %s for order %s for the amount of %s"
+msgstr ""
+
+#: compatibilities/plugins/class-abstract-wfocu-bnpl.php:231
+#: compatibilities/plugins/class-wfocu-plugin-integration-fkwcs-stripe.php:837
+#: includes/abstract-payment-gateway.php:439
+#: includes/abstract-payment-gateway.php:440
+#: includes/abstract-payment-gateway.php:448
+#: includes/webhook.php:409
+msgid "Reason : "
+msgstr ""
+
+#: compatibilities/plugins/class-abstract-wfocu-bnpl.php:231
+#: compatibilities/plugins/class-wfocu-plugin-integration-fkwcs-stripe.php:837
+#: includes/abstract-payment-gateway.php:439
+#: includes/abstract-payment-gateway.php:440
+#: includes/abstract-payment-gateway.php:448
+#: includes/webhook.php:409
+msgid "Amount : "
+msgstr ""
+
+#: compatibilities/plugins/class-abstract-wfocu-bnpl.php:231
+#: compatibilities/plugins/class-wfocu-plugin-integration-fkwcs-stripe.php:837
+#: includes/abstract-payment-gateway.php:448
+msgid " Status : Failed "
+msgstr ""
+
+#: compatibilities/plugins/class-fk-checkout.php:30
+msgid "Stripe Payment Request"
+msgstr ""
+
+#. translators: 1) dollar amount
+#. translators: 1) amount (including currency symbol)
+#: compatibilities/plugins/class-wfocu-plugin-integration-fkwcs-sepa.php:194
+#: compatibilities/plugins/class-wfocu-plugin-integration-fkwcs-stripe.php:143
+#: includes/abstract-payment-gateway.php:493
+msgid "Sorry, the minimum allowed order total is %1$s to use this payment method."
+msgstr ""
+
+#: compatibilities/plugins/class-wfocu-plugin-integration-fkwcs-sepa.php:207
+msgid "customer_name"
+msgstr ""
+
+#: compatibilities/plugins/class-wfocu-plugin-integration-fkwcs-sepa.php:208
+msgid "customer_email"
+msgstr ""
+
+#: compatibilities/plugins/class-wfocu-plugin-integration-fkwcs-sepa.php:602
+#: compatibilities/plugins/class-wfocu-plugin-integration-fkwcs-stripe.php:448
+msgid "Offer payment failed. Reason: Intent secret missing from auth"
+msgstr ""
+
+#: compatibilities/plugins/class-wfocu-plugin-integration-fkwcs-sepa.php:610
+#: compatibilities/plugins/class-wfocu-plugin-integration-fkwcs-stripe.php:456
+msgid "Offer payment failed. Reason: Unable to find matching ID for the secret"
+msgstr ""
+
+#: compatibilities/plugins/class-wfocu-plugin-integration-fkwcs-sepa.php:627
+#: compatibilities/plugins/class-wfocu-plugin-integration-fkwcs-stripe.php:477
+msgid "Offer payment failed. Reason: Intent was not authenticated properly."
+msgstr ""
+
+#: compatibilities/plugins/class-wfocu-plugin-integration-fkwcs-sepa.php:639
+#: compatibilities/plugins/class-wfocu-plugin-integration-fkwcs-stripe.php:493
+#: compatibilities/plugins/class-wfocu-plugin-integration-fkwcs-stripe.php:604
+msgid "Offer payment failed. Reason: "
+msgstr ""
+
+#: gateways/affirm.php:40
+msgid "Accepts payments via Affirm. The gateway should be enabled in your Stripe Account. Log into your Stripe account to review the <a href=\"https://dashboard.stripe.com/account/payments/settings\" target=\"_blank\">available gateways</a> <br/>Supported Currency: <strong>USD,CAD</strong>"
+msgstr ""
+
+#: gateways/affirm.php:41
+msgid "affirm is an online banking payment method that enables your customers in e-commerce to make an online purchase"
+msgstr ""
+
+#: gateways/affirm.php:55
+msgid "Enable Affirm Gateway"
+msgstr ""
+
+#: gateways/affirm.php:56
+msgid "Affirm - Pay Over Time"
+msgstr ""
+
+#: gateways/affirm.php:57
+msgid "After clicking \"Complete order\", you will be redirected to Affirm <br> - Pay Over Time to complete your purchase securely"
+msgstr ""
+
+#: gateways/affirm.php:73
+#: gateways/afterpay.php:54
+#: gateways/alipay.php:110
+#: gateways/applepay.php:108
+#: gateways/bancontact.php:78
+#: gateways/creditcard.php:138
+#: gateways/googlepay.php:184
+#: gateways/ideal.php:106
+#: gateways/klarna.php:59
+#: gateways/localgateway.php:89
+msgid "Change the payment gateway title that appears on the checkout."
+msgstr ""
+
+#: gateways/affirm.php:78
+#: gateways/afterpay.php:59
+#: gateways/alipay.php:115
+#: gateways/applepay.php:114
+#: gateways/bancontact.php:83
+#: gateways/creditcard.php:143
+#: gateways/googlepay.php:205
+#: gateways/ideal.php:111
+#: gateways/klarna.php:64
+#: gateways/localgateway.php:95
+#: gateways/sepa.php:138
+#: includes/abstract-payment-gateway.php:1454
+msgid "Description"
+msgstr ""
+
+#: gateways/affirm.php:81
+#: gateways/afterpay.php:62
+#: gateways/alipay.php:118
+#: gateways/applepay.php:117
+#: gateways/bancontact.php:86
+#: gateways/creditcard.php:146
+#: gateways/googlepay.php:208
+#: gateways/ideal.php:113
+#: gateways/klarna.php:67
+#: gateways/localgateway.php:98
+msgid "Change the payment gateway description that appears on the checkout."
+msgstr ""
+
+#: gateways/affirm.php:86
+msgid "Affirm Message Location"
+msgstr ""
+
+#. translators: gateway title
+#: gateways/affirm.php:93
+#: gateways/afterpay.php:74
+#: includes/abstract-payment-gateway.php:1485
+msgid "This option lets you limit the %1$s to which countries you are willing to sell to."
+msgstr ""
+
+#: gateways/affirm.php:95
+#: gateways/afterpay.php:76
+#: gateways/klarna.php:81
+msgid "Product Page"
+msgstr ""
+
+#: gateways/affirm.php:96
+#: gateways/afterpay.php:77
+#: gateways/klarna.php:82
+msgid "Cart Page"
+msgstr ""
+
+#: gateways/affirm.php:97
+#: gateways/afterpay.php:78
+#: gateways/klarna.php:83
+msgid "Shop/Categories Page"
+msgstr ""
+
+#: gateways/afterpay.php:23
+msgid "AfterPay Gateway"
+msgstr ""
+
+#: gateways/afterpay.php:24
+msgid "Accepts payments via AfterPay. The gateway should be enabled in your Stripe Account. Log into your Stripe account to review the <a href=\"https://dashboard.stripe.com/account/payments/settings\" target=\"_blank\">available gateways</a> <br/>Supported Currency: <strong>USD,CAD,AUD,NZD,GBP,EUR</strong>"
+msgstr ""
+
+#: gateways/afterpay.php:25
+msgid "AfterPay is an online banking payment method that enables your customers in e-commerce to make an online purchase"
+msgstr ""
+
+#: gateways/afterpay.php:37
+msgid "Enable AfterPay Gateway"
+msgstr ""
+
+#: gateways/afterpay.php:38
+msgid "AfterPay - Pay Over Time"
+msgstr ""
+
+#: gateways/afterpay.php:39
+msgid "After clicking \"Complete order\", you will be redirected to Afterpay to <br> complete your purchase securely"
+msgstr ""
+
+#: gateways/afterpay.php:67
+msgid "Afterpay Message Location"
+msgstr ""
+
+#: gateways/alipay.php:21
+msgid "Stripe Alipay Gateway"
+msgstr ""
+
+#: gateways/alipay.php:22
+msgid "Accepts payments via Alipay. The gateway should be enabled in your Stripe Account. Log into your Stripe account to review the <a href=\"https://dashboard.stripe.com/account/payments/settings\" target=\"_blank\">available gateways</a> <br/>Supported Currency: <strong>CNY, AUD, CAD, EUR, GBP, HKD, JPY, SGD, MYR, NZD, USD</strong>"
+msgstr ""
+
+#: gateways/alipay.php:23
+msgid "Alipay is a popular payment method that enables customers to make online purchases"
+msgstr ""
+
+#: gateways/alipay.php:93
+msgid "Enable Alipay Payment Gateway"
+msgstr ""
+
+#: gateways/alipay.php:95
+msgid "Securely pay with Alipay - A trusted global payment method"
+msgstr ""
+
+#: gateways/applepay.php:62
+msgid "Enable Apple Pay as Inline Payment Gateway."
+msgstr ""
+
+#: gateways/applepay.php:65
+msgid "Apple Pays allows customers to securely make payments using Apple Pay on their iPhone, iPad, or Apple Watch."
+msgstr ""
+
+#: gateways/applepay.php:102
+msgid "Enable Apple Pay"
+msgstr ""
+
+#: gateways/applepay.php:118
+msgid "Pay with Apple Pay"
+msgstr ""
+
+#: gateways/applepay.php:192
+msgid "<p>Note: Apple Pay Gateway visibility is dependent on Apple Pay supported browsers. <a href=%s>Learn more</a>"
+msgstr ""
+
+#: gateways/bancontact.php:27
+msgid "Stripe Bancontact Gateway"
+msgstr ""
+
+#: gateways/bancontact.php:28
+msgid "Accepts payments via Bancontact. The gateway should be enabled in your Stripe Account. Log into your Stripe account to review the <a href=\"https://dashboard.stripe.com/account/payments/settings\" target=\"_blank\">available gateways</a> <br/>Supported Currency: <strong>EUR</strong>"
+msgstr ""
+
+#: gateways/bancontact.php:30
+msgid "Bancontact is the most popular online payment method in Belgium and over 15 million cards in circulation"
+msgstr ""
+
+#: gateways/bancontact.php:72
+msgid "Enable Stripe Bancontact Gateway"
+msgstr ""
+
+#: gateways/bancontact.php:79
+msgid "Stripe Bancontact"
+msgstr ""
+
+#: gateways/bancontact.php:87
+msgid "Pay with Bancontact"
+msgstr ""
+
+#: gateways/bancontact.php:161
+msgid "Begin processing payment with Bancontact for order %1$1s for the amount of %2$2s"
+msgstr ""
+
+#: gateways/bancontact.php:203
+#: gateways/localgateway.php:299
+#: gateways/sepa.php:422
+#: includes/abstract-payment-gateway.php:1919
+msgid "Invalid Order Key."
+msgstr ""
+
+#. translators: Error message text
+#: gateways/bancontact.php:209
+#: gateways/localgateway.php:305
+#: includes/abstract-payment-gateway.php:1925
+msgid "Payment verification error: %s"
+msgstr ""
+
+#: gateways/bancontact.php:266
+#: gateways/localgateway.php:213
+#: gateways/sepa.php:527
+msgid "Payment Status: "
+msgstr ""
+
+#: gateways/bancontact.php:266
+#: gateways/localgateway.php:213
+#: gateways/sepa.php:527
+msgid "Source: Payment is Completed via "
+msgstr ""
+
+#. translators: transaction id
+#: gateways/bancontact.php:270
+#: gateways/localgateway.php:220
+#: gateways/sepa.php:531
+msgid "Charge authorized (Charge ID: %s). Process order to take payment, or cancel to remove the pre-authorization. Attempting to refund the order in part or in full will release the authorization and cancel the payment."
+msgstr ""
+
+#: gateways/creditcard.php:51
+msgid "Stripe Gateway"
+msgstr ""
+
+#: gateways/creditcard.php:52
+msgid " Accepts payments via Credit or Debit Cards. The gateway supports all popular Card brands. <br/>Use Allowed Card Brands to set up brands as per your choice. "
+msgstr ""
+
+#: gateways/creditcard.php:53
+msgid "Let your customers pay with major credit and debit cards without leaving your store"
+msgstr ""
+
+#: gateways/creditcard.php:132
+msgid "Enable Stripe Gateway"
+msgstr ""
+
+#: gateways/creditcard.php:139
+msgid "Credit Card (Stripe)"
+msgstr ""
+
+#: gateways/creditcard.php:147
+msgid "Pay with your credit card via Stripe"
+msgstr ""
+
+#: gateways/creditcard.php:152
+msgid "Charge Type"
+msgstr ""
+
+#: gateways/creditcard.php:154
+msgid "Select how to charge Order"
+msgstr ""
+
+#: gateways/creditcard.php:157
+msgid "Charge"
+msgstr ""
+
+#: gateways/creditcard.php:158
+msgid "Authorize"
+msgstr ""
+
+#: gateways/creditcard.php:163
+msgid "Enable Payment via Saved Cards"
+msgstr ""
+
+#: gateways/creditcard.php:164
+msgid "Saved Cards"
+msgstr ""
+
+#: gateways/creditcard.php:166
+msgid "Save card details for future orders"
+msgstr ""
+
+#: gateways/creditcard.php:171
+msgid "Enable Inline Credit Card Form"
+msgstr ""
+
+#: gateways/creditcard.php:172
+msgid "Credit Card Form Style"
+msgstr ""
+
+#: gateways/creditcard.php:174
+#: gateways/creditcard.php:183
+msgid "Use inline credit card for card payments"
+msgstr ""
+
+#: gateways/creditcard.php:180
+msgid "Enable Standard Credit Card Form"
+msgstr ""
+
+#: gateways/creditcard.php:189
+msgid "Enable Enhanced Payment Element (Recommended)"
+msgstr ""
+
+#: gateways/creditcard.php:192
+msgid "Use stripe payment elements for card payments"
+msgstr ""
+
+#: gateways/creditcard.php:204
+msgid "Enable in Card Field"
+msgstr ""
+
+#: gateways/creditcard.php:205
+msgid "Stripe Link Authentication"
+msgstr ""
+
+#: gateways/creditcard.php:208
+msgid "This setting enables Link in Card Element. By activating the Link feature, Stripe leverages your customer's email address to ascertain whether they have previously utilized Stripe services. In the affirmative, their payment details, along with billing and shipping information, are automatically employed to populate the checkout page. This streamlined process not only enhances conversion rates but also minimizes customer friction. Enabling Link ensures that the Stripe payment form is utilized exclusively, as it is the sole card form compatible with this feature."
+msgstr ""
+
+#: gateways/creditcard.php:216
+msgid "Enable on Billing Email Field"
+msgstr ""
+
+#: gateways/creditcard.php:220
+msgid "This setting enabled Link on Billing Email field. As soon as user types email the Link begins to detects to check if Stripe has a saved profile. By activating the Link feature, Stripe leverages your customer's email address to ascertain whether they have previously utilized Stripe services. In the affirmative, their payment details, along with billing and shipping information, are automatically employed to populate the checkout page. This streamlined process not only enhances conversion rates but also minimizes customer friction. Enabling Link ensures that the Stripe payment form is utilized exclusively, as it is the sole card form compatible with this feature."
+msgstr ""
+
+#: gateways/creditcard.php:227
+msgid "None"
+msgstr ""
+
+#: gateways/creditcard.php:245
+msgid "Allowed Card Brands"
+msgstr ""
+
+#: gateways/creditcard.php:248
+msgid "Accepts payments using selected cads. Please select atleast one card brand."
+msgstr ""
+
+#. translators: error message
+#: gateways/creditcard.php:309
+#: includes/traits/wc-subscriptions-trait.php:148
+msgid "Error: Unable to get payment method from the browser, please check for browser console error. "
+msgstr ""
+
+#. translators: 1) The error message that was received from Stripe.
+#: gateways/creditcard.php:407
+#: gateways/localgateway.php:359
+#: gateways/sepa.php:475
+#: includes/abstract-payment-gateway.php:2006
+msgid "Stripe SCA authentication failed. Reason: %s"
+msgstr ""
+
+#. translators: 1) The error message that was received from Stripe.
+#: gateways/creditcard.php:407
+#: gateways/localgateway.php:359
+#: gateways/sepa.php:475
+#: includes/abstract-payment-gateway.php:2006
+msgid "Stripe SCA authentication failed."
+msgstr ""
+
+#: gateways/creditcard.php:468
+msgid "We are unable to process payments using the selected method. Please choose a different payment method."
+msgstr ""
+
+#: gateways/creditcard.php:593
+#: gateways/creditcard.php:594
+msgid "Order charge successful in Stripe%s. Charge: %s. Payment method: %s"
+msgstr ""
+
+#: gateways/creditcard.php:598
+#: gateways/creditcard.php:599
+msgid "Order charge successful in Stripe%s. Charge: %s. Payment method: %s ending in %d"
+msgstr ""
+
+#: gateways/creditcard.php:603
+msgid "Wallet Used %s"
+msgstr ""
+
+#. translators: transaction id
+#: gateways/creditcard.php:632
+msgid "Charge authorized (Charge ID: %s). Press an eye icon below Transaction Data / Actions to Capture/Void the charge."
+msgstr ""
+
+#: gateways/creditcard.php:701
+#: gateways/sepa.php:615
+msgid "There was a problem adding the payment method."
+msgstr ""
+
+#: gateways/creditcard.php:717
+#: gateways/sepa.php:632
+msgid "Invalid stripe source"
+msgstr ""
+
+#: gateways/creditcard.php:733
+#: gateways/sepa.php:651
+msgid "Unable to attach payment method to customer"
+msgstr ""
+
+#: gateways/creditcard.php:852
+msgid "%1$1s Test Mode Enabled:%2$2s Use demo card 4242424242424242 with any future date and CVV. Check more %3$3sdemo cards%4$4s"
+msgstr ""
+
+#: gateways/googlepay.php:111
+msgid "Enable Google Pay as an inline payment gateway."
+msgstr ""
+
+#: gateways/googlepay.php:112
+msgid "Google Pay allows customers to make payments in your app or website using any credit or debit card saved to their Google Account, including those from Google Play, YouTube, Chrome, or an Android device."
+msgstr ""
+
+#: gateways/googlepay.php:156
+msgid ""
+"<p>Want to enhance the Google Pay button visibility irrespective of customer's device and browser? Follow these steps to integrate:</p>\n"
+"        <strong>Step 1:</strong> Register for a Google Pay Business Profile Start by setting up your <a target=\"_blank\" href=\"%1$s\">Google Pay business account</a><br/>\n"
+"        <strong>Step 2:</strong> Testing and Approval <a target=\"_blank\" href=\"%2$s\">Enable the test mode</a> to use Google Pay without a merchant ID. This lets you capture the necessary screenshots for Google API team approval.<br/>\n"
+"        <strong>Step 3:</strong> Add Merchant Name and Merchant ID Enter your merchant details to complete the setup.<br/><br/> <a target=\"_blank\" href=\"%4$s\">Click here to get detailed step by step instructions</a>\n"
+"        <p>Note: If you prefer <strong>not to</strong> request a Google Merchant ID, use the <a href=\"%3$s\">Express Checkout</a> buttons. These buttons provide Google Pay integration through the Chrome browser, offering a simple alternative.</p>"
+msgstr ""
+
+#: gateways/googlepay.php:178
+msgid "Enable Google Pay"
+msgstr ""
+
+#: gateways/googlepay.php:190
+msgid "Google Merchant ID"
+msgstr ""
+
+#: gateways/googlepay.php:192
+msgid "Your unique Google Merchant ID is assigned by the Google API team after you register for Google Pay services. During the testing phase in TEST mode, it is not necessary to provide this ID; Google Pay will function without it."
+msgstr ""
+
+#: gateways/googlepay.php:196
+msgid "Google Merchant Name"
+msgstr ""
+
+#: gateways/googlepay.php:198
+msgid "Google Merchant Name Assignment Upon registering for Google Pay, the Google API team will assign your Google Merchant Name. When testing in TEST mode, you may leave this field blank, and Google Pay will continue to operate smoothly."
+msgstr ""
+
+#: gateways/googlepay.php:209
+msgid "Pay with your Google Pay"
+msgstr ""
+
+#: gateways/googlepay.php:214
+msgid "Icon"
+msgstr ""
+
+#: gateways/googlepay.php:216
+msgid "With Rounded Border"
+msgstr ""
+
+#: gateways/googlepay.php:217
+msgid "With Border"
+msgstr ""
+
+#: gateways/googlepay.php:218
+msgid "Standard"
+msgstr ""
+
+#: gateways/googlepay.php:222
+#: gateways/googlepay.php:237
+msgid "The button color of the Google Pay button."
+msgstr ""
+
+#: gateways/googlepay.php:226
+msgid "Button Theme Settings"
+msgstr ""
+
+#: gateways/googlepay.php:230
+msgid "Color"
+msgstr ""
+
+#: gateways/googlepay.php:232
+msgid "Black"
+msgstr ""
+
+#: gateways/googlepay.php:233
+msgid "White"
+msgstr ""
+
+#: gateways/googlepay.php:241
+msgid "Theme"
+msgstr ""
+
+#: gateways/googlepay.php:243
+msgid "Book"
+msgstr ""
+
+#: gateways/googlepay.php:244
+msgid "Buy"
+msgstr ""
+
+#: gateways/googlepay.php:245
+msgid "Plain"
+msgstr ""
+
+#: gateways/googlepay.php:247
+msgid "Donate"
+msgstr ""
+
+#: gateways/googlepay.php:248
+msgid "Order"
+msgstr ""
+
+#: gateways/googlepay.php:249
+msgid "Pay"
+msgstr ""
+
+#: gateways/googlepay.php:250
+msgid "Subscribe"
+msgstr ""
+
+#: gateways/googlepay.php:254
+msgid "The button theme of the Google Pay button"
+msgstr ""
+
+#: gateways/googlepay.php:339
+#: gateways/googlepay.php:429
+#: gateways/googlepay.php:654
+#: gateways/smart-buttons.php:480
+#: includes/traits/wc-smart-button-functions.php:104
+#: includes/traits/wc-smart-button-functions.php:170
+#: includes/traits/wc-smart-button-functions.php:1074
+msgid "Total"
+msgstr ""
+
+#: gateways/googlepay.php:404
+#: includes/traits/wc-smart-button-functions.php:419
+#: includes/traits/wc-smart-button-functions.php:1123
+msgid "Your shipping address is not serviceable."
+msgstr ""
+
+#: gateways/googlepay.php:577
+#: gateways/googlepay.php:638
+#: gateways/smart-buttons.php:465
+#: includes/traits/wc-smart-button-functions.php:86
+#: includes/traits/wc-smart-button-functions.php:154
+#: includes/traits/wc-smart-button-functions.php:354
+msgid "Shipping"
+msgstr ""
+
+#: gateways/googlepay.php:580
+#: gateways/googlepay.php:642
+#: includes/traits/wc-smart-button-functions.php:158
+msgid "Discount"
+msgstr ""
+
+#: gateways/googlepay.php:587
+msgid "Fees"
+msgstr ""
+
+#: gateways/googlepay.php:634
+#: gateways/smart-buttons.php:457
+#: includes/traits/wc-smart-button-functions.php:77
+#: includes/traits/wc-smart-button-functions.php:150
+#: includes/traits/wc-smart-button-functions.php:346
+msgid "Tax"
+msgstr ""
+
+#: gateways/ideal.php:26
+msgid "Stripe iDeal Gateway"
+msgstr ""
+
+#: gateways/ideal.php:27
+msgid "Accepts payments via iDeal. The gateway should be enabled in your Stripe Account. Log into your Stripe account to review the <a href=\"https://dashboard.stripe.com/account/payments/settings\" target=\"_blank\">available gateways</a> <br/>Supported Currency: <strong>EUR</strong>"
+msgstr ""
+
+#: gateways/ideal.php:28
+msgid "iDeal is Netherlands based payment method that allows customers to complete transactions online"
+msgstr ""
+
+#: gateways/ideal.php:97
+#: gateways/sepa.php:124
+msgid "Enable/Disable"
+msgstr ""
+
+#: gateways/ideal.php:98
+msgid "Enable Stripe iDEAL"
+msgstr ""
+
+#: gateways/ideal.php:107
+msgid "iDEAL"
+msgstr ""
+
+#: gateways/ideal.php:114
+msgid "You will be redirected to iDEAL."
+msgstr ""
+
+#: gateways/ideal.php:178
+msgid "Begin processing payment with Ideal for order %1$1s for the amount of %2$2s"
+msgstr ""
+
+#: gateways/klarna.php:26
+msgid "Accepts payments via Klarna. The gateway should be enabled in your Stripe Account. Log into your Stripe account to review the <a href=\"https://dashboard.stripe.com/account/payments/settings\" target=\"_blank\">available gateways</a> <br/>Supported Currency: <strong> EUR, DKK, GBP, NOK, SEK, USD, CZK, AUD, NZD, CAD, PLN, CHF</strong>"
+msgstr ""
+
+#: gateways/klarna.php:27
+msgid "klarna is an online banking payment method that enables your customers in e-commerce to make an online purchase"
+msgstr ""
+
+#: gateways/klarna.php:42
+msgid "Enable Klarna"
+msgstr ""
+
+#: gateways/klarna.php:43
+msgid "Klarna - Pay Over Time"
+msgstr ""
+
+#: gateways/klarna.php:44
+msgid "After clicking the checkout button, you will be redirected to Klarna to <br> complete your purchase securely"
+msgstr ""
+
+#: gateways/klarna.php:72
+msgid "Klarna Message Location"
+msgstr ""
+
+#. translators: gateway title
+#: gateways/klarna.php:79
+msgid "This option lets you limit the %1$s Messages to Specific Pages."
+msgstr ""
+
+#: gateways/localgateway.php:31
+msgid "Enable "
+msgstr ""
+
+#: gateways/localgateway.php:166
+msgid "Begin processing payment with  %1$1s for order %2$2s for the amount of %3$3s"
+msgstr ""
+
+#: gateways/localgateway.php:344
+#: gateways/sepa.php:463
+#: includes/abstract-payment-gateway.php:1994
+msgid "Unable to process this payment, please try again or use alternative method."
+msgstr ""
+
+#: gateways/p24.php:24
+msgid "Stripe Przelewy 24 (P24) Gateway"
+msgstr ""
+
+#: gateways/p24.php:25
+msgid "Accepts payments via Przelewy 24 (P24). The gateway should be enabled in your Stripe Account. Log into your Stripe account to review the <a href=\"https://dashboard.stripe.com/account/payments/settings\" target=\"_blank\">available gateways</a> <br/>Supported Currency: <strong>EUR, PLN</strong>"
+msgstr ""
+
+#: gateways/p24.php:26
+msgid "P24 is an online banking payment method that enables your customers in e-commerce to make an online purchase"
+msgstr ""
+
+#: gateways/p24.php:32
+msgid "Enable Stripe Przelewy 24 (P24) Gateway"
+msgstr ""
+
+#: gateways/p24.php:33
+msgid "Stripe Przelewy 24 (P24)"
+msgstr ""
+
+#: gateways/p24.php:34
+msgid "Pay with Przelewy 24 (P24)"
+msgstr ""
+
+#: gateways/parts/credit-card.php:58
+msgid "3 digit Security Code usually found on the back of your card. American Express Cards have 4 digit code usually found on the front."
+msgstr ""
+
+#: gateways/parts/credit-card.php:71
+msgid "Save payment information to my account for future purchases."
+msgstr ""
+
+#: gateways/sepa.php:47
+msgid "Stripe SEPA"
+msgstr ""
+
+#: gateways/sepa.php:48
+msgid "Accepts payments via SEPA. The gateway should be enabled in your Stripe Account. Log into your Stripe account to review the <a href=\"https://dashboard.stripe.com/account/payments/settings\" target=\"_blank\">available gateways</a> <br/>Supported Currency: <strong>EUR</strong>"
+msgstr ""
+
+#: gateways/sepa.php:50
+msgid "The single euro payments area (SEPA) harmonises the way cashless euro payments are made across Europe."
+msgstr ""
+
+#: gateways/sepa.php:85
+msgid "SEPA IBAN"
+msgstr ""
+
+#: gateways/sepa.php:125
+msgid "Enable Stripe SEPA Direct Debit"
+msgstr ""
+
+#: gateways/sepa.php:133
+msgid "This controls the title which the user sees during checkout."
+msgstr ""
+
+#: gateways/sepa.php:134
+msgid "SEPA Direct Debit"
+msgstr ""
+
+#: gateways/sepa.php:140
+msgid "This controls the description which the user sees during checkout."
+msgstr ""
+
+#: gateways/sepa.php:141
+msgid "Mandate Information"
+msgstr ""
+
+#: gateways/sepa.php:145
+msgid "Enable Payment via Saved IBAN"
+msgstr ""
+
+#: gateways/sepa.php:146
+msgid "Saved IBAN"
+msgstr ""
+
+#: gateways/sepa.php:148
+msgid "Save IBAN details for future orders"
+msgstr ""
+
+#: gateways/sepa.php:153
+msgid "Company Name"
+msgstr ""
+
+#: gateways/sepa.php:157
+msgid "The name of your company that will appear in the SEPA mandate info."
+msgstr ""
+
+#: gateways/sepa.php:296
+msgid "Begin processing payment with SEPA for order %1$1s for the amount of %2$2s"
+msgstr ""
+
+#: gateways/sepa.php:489
+#: includes/traits/wc-subscriptions-trait.php:373
+#: includes/webhook.php:838
+msgid "Payment will be completed once payment_intent.succeeded webhook received from Stripe."
+msgstr ""
+
+#. translators: transaction id, other info
+#: gateways/sepa.php:492
+#: includes/traits/wc-subscriptions-trait.php:376
+#: includes/webhook.php:841
+msgid "Stripe charge awaiting payment: %1$s. %2$s"
+msgstr ""
+
+#. translators: %s: company name.
+#: gateways/sepa.php:580
+msgid "By providing your IBAN and confirming this payment, you are authorizing %s and Stripe, our payment service provider, to send instructions to your bank to debit your account and your bank to debit your account in accordance with those instructions. You are entitled to a refund from your bank under the terms and conditions of your agreement with your bank. A refund must be claimed within 8 weeks starting from the date on which your account was debited."
+msgstr ""
+
+#: gateways/sepa.php:590
+msgid "IBAN."
+msgstr ""
+
+#: gateways/sepa.php:696
+msgid "TEST MODE ENABLED. In test mode, you can use IBAN number DE89370400440532013000."
+msgstr ""
+
+#: gateways/smart-buttons.php:181
+#: includes/helper.php:689
+msgid "Stripe enabled Payment Request is not available in this browser"
+msgstr ""
+
+#: gateways/smart-buttons.php:445
+#: includes/traits/wc-smart-button-functions.php:69
+msgid "Sign up Fee"
+msgstr ""
+
+#: gateways/smart-buttons.php:472
+#: includes/traits/wc-smart-button-functions.php:93
+#: includes/traits/wc-smart-button-functions.php:361
+msgid "Pending"
+msgstr ""
+
+#: includes/abstract-payment-gateway.php:394
+msgid "Stripe is not configured properly."
+msgstr ""
+
+#: includes/abstract-payment-gateway.php:426
+msgid "Refund by user : "
+msgstr ""
+
+#: includes/abstract-payment-gateway.php:439
+#: includes/abstract-payment-gateway.php:440
+#: includes/webhook.php:409
+msgid "Status : "
+msgstr ""
+
+#: includes/abstract-payment-gateway.php:439
+#: includes/abstract-payment-gateway.php:440
+#: includes/webhook.php:409
+msgid "Transaction ID : "
+msgstr ""
+
+#: includes/abstract-payment-gateway.php:440
+msgid "Refund initiated: "
+msgstr ""
+
+#: includes/abstract-payment-gateway.php:445
+msgid "Your refund process is "
+msgstr ""
+
+#: includes/abstract-payment-gateway.php:703
+msgid "Customer for Order #"
+msgstr ""
+
+#. translators: %1$s First name, %2$s Second name, %3$s Username.
+#: includes/abstract-payment-gateway.php:733
+msgid "Name: %1$s %2$s, Username: %3$s"
+msgstr ""
+
+#. translators: %s: supported currency.
+#: includes/abstract-payment-gateway.php:1423
+msgid "This gateway supports the following currencies only : <strong>%s</strong>."
+msgstr ""
+
+#. translators: %s: Method title.
+#: includes/abstract-payment-gateway.php:1442
+msgid "Enable %s"
+msgstr ""
+
+#. translators: %s: Method title.
+#: includes/abstract-payment-gateway.php:1449
+msgid "Title of the %s gateway."
+msgstr ""
+
+#. translators: gateway title
+#: includes/abstract-payment-gateway.php:1458
+msgid "Description of the %1s gateway."
+msgstr ""
+
+#: includes/abstract-payment-gateway.php:1478
+msgid "Selling location(s)"
+msgstr ""
+
+#: includes/abstract-payment-gateway.php:1487
+msgid "Sell to all countries"
+msgstr ""
+
+#: includes/abstract-payment-gateway.php:1488
+#: includes/abstract-payment-gateway.php:1493
+msgid "Sell to all countries, except for&hellip;"
+msgstr ""
+
+#: includes/abstract-payment-gateway.php:1489
+#: includes/abstract-payment-gateway.php:1504
+msgid "Sell to specific countries"
+msgstr ""
+
+#: includes/abstract-payment-gateway.php:1500
+msgid "If any of the selected countries matches with the customer's billing country, then this payment method will not be visible on the checkout page."
+msgstr ""
+
+#: includes/abstract-payment-gateway.php:1511
+msgid "If any of the selected countries matches with the customer's billing country, then this payment method will be visible on the checkout page."
+msgstr ""
+
+#: includes/abstract-payment-gateway.php:2130
+msgid "Choose countries / regions&hellip;"
+msgstr ""
+
+#: includes/abstract-payment-gateway.php:2131
+msgid "Country / Region"
+msgstr ""
+
+#: includes/abstract-payment-gateway.php:2142
+msgid "Select all"
+msgstr ""
+
+#: includes/abstract-payment-gateway.php:2143
+msgid "Select none"
+msgstr ""
+
+#: includes/ajax.php:119
+msgid "invalid nonce"
+msgstr ""
+
+#: includes/ajax.php:132
+#: includes/webhook.php:647
+msgid "Intent ID"
+msgstr ""
+
+#: includes/client.php:56
+msgid "Stripe not initialized"
+msgstr ""
+
+#. translators: %1$s payment intent ID
+#: includes/helper.php:256
+msgid "The customer has initiated and payment intent created with ID %1$s. The customer had not completed the payment yet."
+msgstr ""
+
+#: includes/helper.php:271
+msgid "There was an error processing your credit card."
+msgstr ""
+
+#: includes/helper.php:272
+msgid "Your card number is incomplete."
+msgstr ""
+
+#: includes/helper.php:273
+msgid "Your card's expiration date is incomplete."
+msgstr ""
+
+#: includes/helper.php:274
+msgid "Your card's security code is incomplete."
+msgstr ""
+
+#: includes/helper.php:275
+msgid "Your card's zip code is incomplete."
+msgstr ""
+
+#: includes/helper.php:276
+msgid "The card number is incorrect. Check the card's number or use a different card."
+msgstr ""
+
+#: includes/helper.php:277
+msgid "The card's security code is incorrect. Check the card's security code or use a different card."
+msgstr ""
+
+#: includes/helper.php:278
+msgid "The card's ZIP code is incorrect. Check the card's ZIP code or use a different card."
+msgstr ""
+
+#: includes/helper.php:279
+msgid "The card number is invalid. Check the card details or use a different card."
+msgstr ""
+
+#: includes/helper.php:280
+msgid "This value provided to the field contains characters that are unsupported by the field."
+msgstr ""
+
+#: includes/helper.php:281
+msgid "The card's security code is invalid. Check the card's security code or use a different card."
+msgstr ""
+
+#: includes/helper.php:282
+msgid "The card's expiration month is incorrect. Check the expiration date or use a different card."
+msgstr ""
+
+#: includes/helper.php:283
+msgid "The card's expiration year is incorrect. Check the expiration date or use a different card."
+msgstr ""
+
+#: includes/helper.php:284
+msgid "The card's address is incorrect. Check the card's address or use a different card."
+msgstr ""
+
+#: includes/helper.php:285
+msgid "The card has expired. Check the expiration date or use a different card."
+msgstr ""
+
+#: includes/helper.php:286
+msgid "The card has been declined."
+msgstr ""
+
+#: includes/helper.php:287
+msgid "Your card's expiration year is in the past."
+msgstr ""
+
+#: includes/helper.php:288
+msgid "The bank account number provided is invalid (e.g., missing digits). Bank account information varies from country to country. We recommend creating validations in your entry forms based on the bank account formats we provide."
+msgstr ""
+
+#: includes/helper.php:289
+msgid "The specified amount is greater than the maximum amount allowed. Use a lower amount and try again."
+msgstr ""
+
+#: includes/helper.php:290
+msgid "The specified amount is less than the minimum amount allowed. Use a higher amount and try again."
+msgstr ""
+
+#: includes/helper.php:291
+msgid "The payment requires authentication to proceed. If your customer is off session, notify your customer to return to your application and complete the payment. If you provided the error_on_requires_action parameter, then your customer should try another card that does not require authentication."
+msgstr ""
+
+#: includes/helper.php:292
+msgid "The transfer or payout could not be completed because the associated account does not have a sufficient balance available. Create a new transfer or payout using an amount less than or equal to the account's available balance."
+msgstr ""
+
+#: includes/helper.php:293
+msgid "The bank account provided can not be used to charge, either because it is not verified yet or it is not supported."
+msgstr ""
+
+#: includes/helper.php:294
+msgid "The bank account provided already exists on the specified Customer object. If the bank account should also be attached to a different customer, include the correct customer ID when making the request again."
+msgstr ""
+
+#: includes/helper.php:295
+msgid "The bank account provided cannot be used for payouts. A different bank account must be used."
+msgstr ""
+
+#: includes/helper.php:296
+msgid "Your Connect platform is attempting to share an unverified bank account with a connected account."
+msgstr ""
+
+#: includes/helper.php:297
+msgid "The bank account cannot be verified, either because the microdeposit amounts provided do not match the actual amounts, or because verification has failed too many times."
+msgstr ""
+
+#: includes/helper.php:298
+msgid "This card has been declined too many times. You can try to charge this card again after 24 hours. We suggest reaching out to your customer to make sure they have entered all of their information correctly and that there are no issues with their card."
+msgstr ""
+
+#: includes/helper.php:299
+msgid "The charge you're attempting to capture has already been captured. Update the request with an uncaptured charge ID."
+msgstr ""
+
+#: includes/helper.php:300
+msgid "The charge you're attempting to refund has already been refunded. Update the request to use the ID of a charge that has not been refunded."
+msgstr ""
+
+#: includes/helper.php:301
+msgid "The charge you're attempting to refund has been charged back. Check the disputes documentation to learn how to respond to the dispute."
+msgstr ""
+
+#: includes/helper.php:302
+msgid "This charge would cause you to exceed your rolling-window processing limit for this source type. Please retry the charge later, or contact us to request a higher processing limit."
+msgstr ""
+
+#: includes/helper.php:303
+msgid "The charge cannot be captured as the authorization has expired. Auth and capture charges must be captured within seven days."
+msgstr ""
+
+#: includes/helper.php:304
+msgid "One or more provided parameters was not allowed for the given operation on the Charge. Check our API reference or the returned error message to see which values were not correct for that Charge."
+msgstr ""
+
+#: includes/helper.php:305
+msgid "The email address is invalid (e.g., not properly formatted). Check that the email address is properly formatted and only includes allowed characters."
+msgstr ""
+
+#: includes/helper.php:306
+msgid "The idempotency key provided is currently being used in another request. This occurs if your integration is making duplicate requests simultaneously."
+msgstr ""
+
+#: includes/helper.php:307
+msgid "The specified amount is invalid. The charge amount must be a positive integer in the smallest currency unit, and not exceed the minimum or maximum amount."
+msgstr ""
+
+#: includes/helper.php:308
+msgid "The source cannot be used because it is not in the correct state (e.g., a charge request is trying to use a source with a pending, failed, or consumed source). Check the status of the source you are attempting to use."
+msgstr ""
+
+#: includes/helper.php:309
+msgid "Both a customer and source ID have been provided, but the source has not been saved to the customer. To create a charge for a customer with a specified source, you must first save the card details."
+msgstr ""
+
+#: includes/helper.php:310
+msgid "The ZIP code provided was incorrect."
+msgstr ""
+
+#: includes/helper.php:311
+msgid "An error occurred while processing the card. Try again later or with a different payment method."
+msgstr ""
+
+#: includes/helper.php:312
+msgid "The card does not support this type of purchase."
+msgstr ""
+
+#: includes/helper.php:313
+msgid "The card has been declined for an unknown reason."
+msgstr ""
+
+#: includes/helper.php:314
+msgid "The customer has exceeded the balance or credit limit available on their card."
+msgstr ""
+
+#: includes/helper.php:315
+msgid "The card does not support the specified currency."
+msgstr ""
+
+#: includes/helper.php:316
+msgid "The bank returned the decline code do_not_honor, and did not provide any other information. We recommend that your customer contact their card issuer for more information. <a href=\"https://docs.stripe.com/declines\">Learn more about declines</a> "
+msgstr ""
+
+#: includes/helper.php:317
+msgid "The payment has been declined as Stripe suspects it is fraudulent."
+msgstr ""
+
+#: includes/helper.php:318
+msgid "The bank returned the decline code generic_decline, and did not provide any other information. We recommend that your customer contact their card issuer for more information. <a href=\"https://docs.stripe.com/declines\">Learn more about declines</a> "
+msgstr ""
+
+#: includes/helper.php:319
+msgid "The PIN entered is incorrect. "
+msgstr ""
+
+#: includes/helper.php:320
+msgid "The card has insufficient funds to complete the purchase."
+msgstr ""
+
+#: includes/helper.php:321
+msgid "Please select a payment method before proceeding."
+msgstr ""
+
+#: includes/helper.php:322
+msgid "Please enter your IBAN before proceeding."
+msgstr ""
+
+#: includes/helper.php:323
+msgid "Please select a bank before proceeding"
+msgstr ""
+
+#: includes/helper.php:324
+msgid "The IBAN you entered is incomplete."
+msgstr ""
+
+#: includes/helper.php:325
+msgid "Please enter a valid CPF / CNPJ"
+msgstr ""
+
+#: includes/helper.php:326
+msgid "Your card was declined. Your request was in test mode, but you used a real credit card. Only test cards can be used in test mode."
+msgstr ""
+
+#: includes/helper.php:327
+msgid "You do not have permission to use the PaymentElement card form. Please send a request to https://support.stripe.com/ and ask for the \"server_side_confirmation_beta\" to be added to your account."
+msgstr ""
+
+#: includes/helper.php:328
+msgid "Please provide a billing phone number."
+msgstr ""
+
+#: includes/helper.php:329
+msgid "Your payment could not be processed at this time because your bank account does not support instant verification."
+msgstr ""
+
+#: includes/helper.php:654
+msgid "MasterCard"
+msgstr ""
+
+#: includes/helper.php:655
+msgid "Visa"
+msgstr ""
+
+#: includes/helper.php:656
+msgid "American Express"
+msgstr ""
+
+#: includes/helper.php:657
+msgid "Discover"
+msgstr ""
+
+#: includes/helper.php:658
+msgid "JCB"
+msgstr ""
+
+#: includes/helper.php:659
+msgid "Diners Club"
+msgstr ""
+
+#: includes/helper.php:660
+msgid "UnionPay"
+msgstr ""
+
+#: includes/helper.php:662
+msgid "is not allowed"
+msgstr ""
+
+#: includes/helper.php:674
+msgid "Please enter a IBAN number to proceed."
+msgstr ""
+
+#: includes/helper.php:675
+msgid "Please select a bank to proceed."
+msgstr ""
+
+#: includes/helper.php:713
+msgid "Shipping address is invalid or no shipping methods are available. Please update your address."
+msgstr ""
+
+#. translators: last 4 digits of IBAN account
+#: includes/token.php:55
+msgid "SEPA IBAN ending in %s"
+msgstr ""
+
+#. translators: %d is the product Id
+#: includes/traits/wc-smart-button-functions.php:308
+msgid "Product with the ID (%d) cannot be found."
+msgstr ""
+
+#. translators: 1: product name 2: quantity in stock
+#: includes/traits/wc-smart-button-functions.php:329
+msgid "You cannot add that amount of \"%1$s\"; to the cart because there is not enough stock (%2$s remaining)."
+msgstr ""
+
+#: includes/traits/wc-smart-button-functions.php:501
+msgid "Waiting..."
+msgstr ""
+
+#: includes/traits/wc-smart-button-functions.php:502
+msgid "loading shipping methods..."
+msgstr ""
+
+#: includes/traits/wc-smart-button-functions.php:599
+msgid "Invalid shipping method format. Expected: index:id"
+msgstr ""
+
+#: includes/traits/wc-smart-button-functions.php:815
+msgid "Empty cart"
+msgstr ""
+
+#: includes/traits/wc-subscriptions-trait.php:78
+msgid "Update the Payment Method used for all of my active subscriptions."
+msgstr ""
+
+#: includes/traits/wc-subscriptions-trait.php:320
+msgid "Sorry, we are unable to process your payment at this time. Please retry later."
+msgstr ""
+
+#: includes/traits/wc-subscriptions-trait.php:334
+msgid "This transaction requires authentication."
+msgstr ""
+
+#. translators: %s is the charge Id
+#. translators: %s is the stripe charge Id
+#: includes/traits/wc-subscriptions-trait.php:343
+#: includes/traits/wc-subscriptions-trait.php:707
+msgid "Stripe charge awaiting authentication by user: %s."
+msgstr ""
+
+#. translators: 1) a date in the format yyyy-mm-dd, e.g. 2021-09-21; 2) time in the 24-hour format HH:mm, e.g. 23:04
+#: includes/traits/wc-subscriptions-trait.php:352
+msgid "The customer must authorize this payment via the pre-debit notification sent to them by their card issuing bank, before %1$s at %2$s, when the charge will be attempted."
+msgstr ""
+
+#: includes/traits/wc-subscriptions-trait.php:587
+msgid "A \"Stripe Customer ID\" value is required."
+msgstr ""
+
+#: includes/traits/wc-subscriptions-trait.php:590
+msgid "Invalid customer ID. A valid \"Stripe Customer ID\" must begin with \"cus_\"."
+msgstr ""
+
+#: includes/traits/wc-subscriptions-trait.php:610
+msgid "Invalid source ID. A valid source \"Stripe Source ID\" must begin with \"src_\", \"pm_\", or \"card_\"."
+msgstr ""
+
+#. translators: 1) card brand 2) last 4 digits
+#: includes/traits/wc-subscriptions-trait.php:651
+#: includes/traits/wc-subscriptions-trait.php:665
+msgid "N/A"
+msgstr ""
+
+#. translators: 1) card brand 2) last 4 digits
+#: includes/traits/wc-subscriptions-trait.php:665
+msgid "Via %1$s card ending in %2$s"
+msgstr ""
+
+#. translators: 1) last 4 digits of SEPA Direct Debit
+#: includes/traits/wc-subscriptions-trait.php:668
+msgid "Via SEPA Direct Debit ending in %1$s"
+msgstr ""
+
+#. translators: time, status
+#: includes/webhook.php:83
+msgid "Last webhook call was %1$1s. Status : %2$2s"
+msgstr ""
+
+#. translators: error message
+#: includes/webhook.php:89
+msgid "Reason : %1s"
+msgstr ""
+
+#: includes/webhook.php:93
+msgid "Last webhook call was %1$1s. Status : %2$2s. %3$3s"
+msgstr ""
+
+#. translators: timestamp
+#: includes/webhook.php:96
+#: includes/webhook.php:111
+msgid "No webhook call since %1s."
+msgstr ""
+
+#: includes/webhook.php:186
+msgid "Stripe Object found to be null in payload"
+msgstr ""
+
+#. translators: order id
+#: includes/webhook.php:291
+msgid "Stripe charge partially captured with amount %1$1s Order id - %2$2s"
+msgstr ""
+
+#. translators: partial captured amount
+#: includes/webhook.php:293
+msgid "This charge was partially captured via Stripe Dashboard with the amount : %s"
+msgstr ""
+
+#. translators: order id
+#: includes/webhook.php:297
+msgid "Stripe charge completely captured Order id - %1s"
+msgstr ""
+
+#. translators: transaction id
+#: includes/webhook.php:299
+#: includes/webhook.php:849
+msgid "Stripe charge complete (Charge ID: %s)"
+msgstr ""
+
+#. translators: amount (including currency symbol)
+#: includes/webhook.php:374
+msgid "Pre-Authorization for %s voided from the Stripe Dashboard."
+msgstr ""
+
+#: includes/webhook.php:387
+msgid "Refunded via Stripe dashboard"
+msgstr ""
+
+#: includes/webhook.php:407
+msgid "Pending to Success"
+msgstr ""
+
+#: includes/webhook.php:407
+msgid "Success"
+msgstr ""
+
+#: includes/webhook.php:439
+msgid "This order is under dispute. Please respond via Stripe dashboard."
+msgstr ""
+
+#: includes/webhook.php:472
+msgid "The disputed order lost or accepted."
+msgstr ""
+
+#: includes/webhook.php:476
+msgid "The disputed order resolved in your favour."
+msgstr ""
+
+#: includes/webhook.php:480
+msgid "The inquiry or retrieval closed."
+msgstr ""
+
+#: includes/webhook.php:689
+msgid "This order is under review. Please respond via stripe dashboard."
+msgstr ""
+
+#. translators: Review reason from Stripe
+#: includes/webhook.php:713
+msgid "Review for this order has been resolved. Reason: %s"
+msgstr ""
+
+#: includes/webhook.php:855
+msgid "Payment processing failed. Please retry."
+msgstr ""
+
+#. translators: transaction id
+#: includes/webhook.php:867
+msgid "Stripe charge awaiting payment: %1$s. Payment will be completed once payment_intent.succeeded webhook received from Stripe."
+msgstr ""
+
+#. translators: transaction id
+#: includes/webhook.php:867
+msgid "Stripe charge authorized (Charge ID: %s). Process order to take payment, or cancel to remove the pre-authorization. Attempting to refund the order in part or in full will release the authorization and cancel the payment."
+msgstr ""
+
+#: plugin.php:200
+msgid "<strong> Attention: </strong>WooCommerce is not installed or activated. Funnelkit Stripe Plugin is a WooCommerce Payment Gateway and would only work if WooCommerce is activated. Please install the WooCommerce Plugin first."
+msgstr ""
+
+#: admin/app/dist/0.634e86317fb1b2242b86.js:1
+#: admin/app/src/stripe-gateway/enable-webhook/manual-modal.js:134
+msgid "Add API Keys"
+msgstr ""
+
+#: admin/app/dist/0.634e86317fb1b2242b86.js:1
+#: admin/app/src/stripe-gateway/enable-webhook/manual-modal.js:135
+msgid "Enable Webhook"
+msgstr ""
+
+#: admin/app/dist/0.634e86317fb1b2242b86.js:1
+#: admin/app/src/stripe-gateway/enable-webhook/manual-modal.js:162
+msgid "You can find the keys in your Stripe account. "
+msgstr ""
+
+#: admin/app/dist/0.634e86317fb1b2242b86.js:1
+#: admin/app/src/stripe-gateway/enable-webhook/manual-modal.js:164
+msgid "Follow this guide"
+msgstr ""
+
+#: admin/app/dist/0.634e86317fb1b2242b86.js:1
+#: admin/app/src/stripe-gateway/enable-webhook/manual-modal.js:169
+msgid " to get the keys."
+msgstr ""
+
+#: admin/app/dist/0.634e86317fb1b2242b86.js:1
+#: admin/app/src/stripe-gateway/enable-webhook/manual-modal.js:171
+msgid "WEB URL is called by stripe, when event occur in your account, like a source becomes chargeable. Webhook guide or create secret on stripe dashboard"
+msgstr ""
+
+#: admin/app/dist/0.634e86317fb1b2242b86.js:1
+#: admin/app/src/stripe-gateway/enable-webhook/manual-modal.js:178
+msgid "Copy Webhook URL"
+msgstr ""
+
+#: admin/app/dist/0.634e86317fb1b2242b86.js:1
+#: admin/app/src/stripe-gateway/enable-webhook/manual-modal.js:208
+msgid "Select Mode"
+msgstr ""
+
+#: admin/app/dist/0.634e86317fb1b2242b86.js:1
+#: admin/app/src/stripe-gateway/enable-webhook/manual-modal.js:235
+msgid "Secret Key"
+msgstr ""
+
+#: admin/app/dist/0.634e86317fb1b2242b86.js:1
+#: admin/app/src/stripe-gateway/enable-webhook/manual-modal.js:251
+msgid "secret key is used to authenticate webhooks sent from stripe. It ensure nobody else can send you events pretending to be stripe."
+msgstr ""
+
+#: admin/app/dist/0.634e86317fb1b2242b86.js:1
+#: admin/app/src/stripe-gateway/enable-webhook/manual-modal.js:355
+msgid "Cancel"
+msgstr ""
+
+#: admin/app/dist/0.634e86317fb1b2242b86.js:1
+#: admin/app/src/stripe-gateway/enable-webhook/manual-modal.js:364
+msgid "Save"
+msgstr ""
+
+#: admin/app/dist/2.402feaf6c34629c23e09.js:1
+#: admin/app/dist/5.a00c875258a817e846bc.js:1
+#: admin/app/src/stripe-gateway/pages/failed-page.js:60
+msgid "Oops! Unable to connect"
+msgstr ""
+
+#: admin/app/dist/2.402feaf6c34629c23e09.js:1
+#: admin/app/dist/5.a00c875258a817e846bc.js:1
+#: admin/app/src/stripe-gateway/pages/failed-page.js:63
+msgid "Try again or add API Keys manually"
+msgstr ""
+
+#: admin/app/dist/2.402feaf6c34629c23e09.js:1
+#: admin/app/dist/5.a00c875258a817e846bc.js:1
+#: admin/app/src/stripe-gateway/pages/failed-page.js:73
+msgid "Try Again"
+msgstr ""
+
+#: admin/app/dist/2.402feaf6c34629c23e09.js:1
+#: admin/app/dist/5.a00c875258a817e846bc.js:1
+#: admin/app/src/stripe-gateway/pages/failed-page.js:80
+msgid "Add API keys manually"
+msgstr ""
+
+#: admin/app/dist/2.402feaf6c34629c23e09.js:1
+#: admin/app/src/stripe-gateway/connect-gateway/index.js:73
+msgid "Almost Done! Enable Express Checkout"
+msgstr ""
+
+#: admin/app/dist/2.402feaf6c34629c23e09.js:1
+#: admin/app/src/stripe-gateway/connect-gateway/index.js:76
+msgid "To get more conversions, we recommend you to enable Express Checkout for Google and Apple Pay."
+msgstr ""
+
+#: admin/app/dist/2.402feaf6c34629c23e09.js:1
+#: admin/app/src/stripe-gateway/connect-gateway/index.js:91
+msgid "Express Payment buttons will show on appropriate device. "
+msgstr ""
+
+#: admin/app/dist/2.402feaf6c34629c23e09.js:1
+#: admin/app/src/stripe-gateway/connect-gateway/index.js:100
+msgid "Learn More."
+msgstr ""
+
+#: admin/app/dist/2.402feaf6c34629c23e09.js:1
+#: admin/app/src/stripe-gateway/connect-gateway/index.js:120
+msgid "Confirm"
+msgstr ""
+
+#: admin/app/dist/2.402feaf6c34629c23e09.js:1
+#: admin/app/dist/7.1f985b1c48566370d74f.js:1
+#: admin/app/src/stripe-gateway/connect-gateway/index.js:126
+#: admin/app/src/stripe-gateway/enable-webhook/index.js:165
+msgid "Skip this Step"
+msgstr ""
+
+#: admin/app/dist/3.2174a47f12f5c3071125.js:1
+#: admin/app/src/stripe-gateway/pages/dashboard.js:29
+msgid "Connect Your Store With Stripe"
+msgstr ""
+
+#: admin/app/dist/3.2174a47f12f5c3071125.js:1
+#: admin/app/src/stripe-gateway/pages/dashboard.js:32
+msgid "Click the button below to start the onboarding process."
+msgstr ""
+
+#: admin/app/dist/3.2174a47f12f5c3071125.js:1
+#: admin/app/src/stripe-gateway/pages/dashboard.js:37
+msgid "Connect with stripe"
+msgstr ""
+
+#: admin/app/dist/3.2174a47f12f5c3071125.js:1
+#: admin/app/src/stripe-gateway/pages/dashboard.js:44
+msgid "Leave onboarding process"
+msgstr ""
+
+#: admin/app/dist/4.f9e1edaf1075cadb88d2.js:1
+#: admin/app/src/stripe-gateway/pages/success-page.js:58
+msgid "Stripe Successfully Setup"
+msgstr ""
+
+#: admin/app/dist/4.f9e1edaf1075cadb88d2.js:1
+#: admin/app/src/stripe-gateway/pages/success-page.js:61
+msgid "You are ready to accept payments via Stripe"
+msgstr ""
+
+#: admin/app/dist/4.f9e1edaf1075cadb88d2.js:1
+#: admin/app/src/stripe-gateway/pages/success-page.js:65
+msgid "Current Stripe Mode"
+msgstr ""
+
+#: admin/app/dist/4.f9e1edaf1075cadb88d2.js:1
+#: admin/app/src/stripe-gateway/pages/success-page.js:85
+msgid "You're in Test Mode "
+msgstr ""
+
+#: admin/app/dist/4.f9e1edaf1075cadb88d2.js:1
+#: admin/app/src/stripe-gateway/pages/success-page.js:86
+msgid "Make sure to switch to Live Mode once you're done testing"
+msgstr ""
+
+#: admin/app/dist/4.f9e1edaf1075cadb88d2.js:1
+#: admin/app/src/stripe-gateway/pages/success-page.js:99
+msgid "Save and Review Settings"
+msgstr ""
+
+#: admin/app/dist/6.3ef40b216f0edc431093.js:1
+#: admin/app/src/stripe-gateway/gateway/index.js:122
+msgid "Activate the payment methods"
+msgstr ""
+
+#: admin/app/dist/6.3ef40b216f0edc431093.js:1
+#: admin/app/src/stripe-gateway/gateway/index.js:125
+msgid "Following payment methods are available in your Stripe account. Enable the methods from which you want to accept payments."
+msgstr ""
+
+#: admin/app/dist/6.3ef40b216f0edc431093.js:1
+#: admin/app/src/stripe-gateway/gateway/index.js:147
+msgid "Recommended"
+msgstr ""
+
+#: admin/app/dist/6.3ef40b216f0edc431093.js:1
+#: admin/app/src/stripe-gateway/gateway/index.js:178
+msgid "Save and Continue"
+msgstr ""
+
+#: admin/app/dist/7.1f985b1c48566370d74f.js:1
+#: admin/app/src/stripe-gateway/enable-webhook/index.js:94
+msgid "Setup Webhook"
+msgstr ""
+
+#: admin/app/dist/7.1f985b1c48566370d74f.js:1
+#: admin/app/src/stripe-gateway/enable-webhook/index.js:97
+msgid "Create Webhook automatically and set up to listen to various Events with a single click."
+msgstr ""
+
+#: admin/app/dist/7.1f985b1c48566370d74f.js:1
+#: admin/app/src/stripe-gateway/enable-webhook/index.js:101
+msgid "This is the list of the supported webhook events:"
+msgstr ""
+
+#: admin/app/dist/7.1f985b1c48566370d74f.js:1
+#: admin/app/src/stripe-gateway/enable-webhook/index.js:128
+msgid "Setup Webhook Now"
+msgstr ""
+
+#: admin/app/dist/7.1f985b1c48566370d74f.js:1
+#: admin/app/src/stripe-gateway/enable-webhook/index.js:149
+msgid "Do it Manually"
+msgstr ""
+
+#: admin/app/dist/7.1f985b1c48566370d74f.js:1
+#: admin/app/src/stripe-gateway/enable-webhook/index.js:156
+msgid "Retry"
+msgstr ""

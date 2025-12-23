@@ -41,16 +41,17 @@ if (isset($_POST["pay"])) {
                                     <input type="text" class="form-control" id="exampleInputEmail1" name="name"
                                         required="">
                                 </div>
+                                <!--<div class="form-group">-->
+                                <!--    <label for="exampleInputEmail1">Email:</label>-->
+                                <!--    <input type="email" class="form-control" id="a22" -->
+                                <!--        name="emaill" required="">-->
+                                <!--</div>-->
                                 <div class="form-group">
                                     <label for="exampleInputEmail1">Mobile No:</label>
                                     <input type="tel" class="form-control" id="a11" name="mob" maxlength="10"
                                      required="">
                                 </div>
-                                <div class="form-group">
-                                    <label for="exampleInputEmail1">Email:</label>
-                                    <input type="email" class="form-control" id="a22" 
-                                        name="emaill" required="">
-                                </div>
+                                
                                 <div class="form-group required otp">
                                     <label class="control-label">Otp: </label>
                                    <div class="form-group">
@@ -103,6 +104,8 @@ $(document).ready(function() {
             alert("Mobile number cannot be empty.");
             return;
         }
+        
+        $('#stepone').show();
 
         $.ajax({
             url: "sendotp.php",
@@ -111,7 +114,7 @@ $(document).ready(function() {
                 mobile: mobilenum
             },
             success: function(data) {
-                // console.log(data);
+                console.log(data);
                 sessionStorage.setItem("otpstore", data);
                 $('.otp').show();
                 $('#sendotp').hide();
@@ -127,15 +130,16 @@ $(document).ready(function() {
 
     $('#stepone').on('click', function() {
         var mobile = $('#a11').val();
-        var email = $('#a22').val();
+        // var email = $('#a22').val();
         var encodedMobile = encodeURIComponent(mobile);
-        var encodedEmail = encodeURIComponent(email);
+        // var encodedEmail = encodeURIComponent(email);
         var membershipType = $("input[name='fav_language']:checked").val();
         var encodedMembershipType = encodeURIComponent(membershipType);
         console.log(membershipType);
 
-        var redirectUrl = 'certificate-fnc.php?mob=' + encodedMobile + '&email=' + encodedEmail + '&membership=' + encodedMembershipType;
-
+        var redirectUrl = 'certificate-fnc.php?mob=' + encodedMobile + '&membership=' + encodedMembershipType;
+        
+        //console.log(redirectUrl);
         window.location.href = redirectUrl;
     });
 

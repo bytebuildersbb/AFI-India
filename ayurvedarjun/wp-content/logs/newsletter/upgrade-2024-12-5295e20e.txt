@@ -1,0 +1,38 @@
+02-12-2024 11:22:08 - INFO  - 8.6.3 - 21.5 MB/256 MB - saatvikquiz > Start upgrade from 0.0.0
+02-12-2024 11:22:08 - INFO  - 8.6.3 - 21.2 MB/256 MB - saatvikquiz > Array
+(
+    [`73_newsletter_emails`] => Created table `73_newsletter_emails`
+)
+
+02-12-2024 11:22:08 - INFO  - 8.6.3 - 21.2 MB/256 MB - saatvikquiz > Array
+(
+    [`73_newsletter_sent`] => Created table `73_newsletter_sent`
+)
+
+02-12-2024 11:22:08 - INFO  - 8.6.3 - 21.2 MB/256 MB - saatvikquiz > Array
+(
+    [`73_newsletter`] => Created table `73_newsletter`
+)
+
+02-12-2024 11:22:08 - INFO  - 8.6.3 - 21.2 MB/256 MB - saatvikquiz > Array
+(
+    [`73_newsletter_user_logs`] => Created table `73_newsletter_user_logs`
+)
+
+02-12-2024 11:22:08 - INFO  - 8.6.3 - 21.2 MB/256 MB - saatvikquiz > Array
+(
+    [`73_newsletter_user_meta`] => Created table `73_newsletter_user_meta`
+)
+
+02-12-2024 11:22:08 - INFO  - 8.6.3 - 21.2 MB/256 MB - saatvikquiz > Array
+(
+    [`73_newsletter_stats`] => Created table `73_newsletter_stats`
+)
+
+02-12-2024 11:22:08 - INFO  - 8.6.3 - 21.2 MB/256 MB - saatvikquiz > Array
+(
+    [`73_newsletter_logs`] => Created table `73_newsletter_logs`
+)
+
+02-12-2024 11:22:08 - INFO  - 8.6.3 - 21.2 MB/256 MB - saatvikquiz > Backing up options of 0.0.0
+02-12-2024 11:22:08 - INFO  - 8.6.3 - 21.2 MB/256 MB - saatvikquiz > End

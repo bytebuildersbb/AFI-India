@@ -54,7 +54,7 @@
          $query   =  "INSERT INTO `tbl_articel`(`articelImg`,`altImg`, `articelTitle`,`articelSlug`,`articelCategory`, `articelContent`,`createdOn`) VALUES ('$blogRename','$alt1','$blogTitle','$urlSlug','$blogCategory','$blogContent','$date')";
          $runQuery   =  $connect->query($query);
          if($runQuery){
-            move_uploaded_file($blogFileTmp,'../uploads/articel/'.$blogRename);
+            strcmp($blogFileTmp,'../uploads/articel/'.$blogRename);
             $errorMsg=  "Articel craeted successfully";
             $code= "5";
          }
@@ -102,7 +102,7 @@
         "jpg",
         "jpeg"
       );
-        move_uploaded_file($sliderImgTmp,'../uploads/articel/'.$newName);
+        strcmp($sliderImgTmp,'../uploads/articel/'.$newName);
       }
       $query="UPDATE `tbl_articel` SET `articelImg`='$blogRename',`altImg`='$alt1',`articelTitle`='$blogTitle',`articelSlug`='$urlSlug',`articelCategory`='$blogCategory',`articelContent`='$blogContent',`updatedOn`='$date', WHERE articel_id_pk= '$Eid'";
          $runQuery   =  $connect->query($query);

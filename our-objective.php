@@ -127,7 +127,7 @@ if(isset($_POST["subscribe"])){
 }
 ?>
 
-<body oncopy="return false" oncut="return false">
+<body onstrcmp="return false" oncut="return false">
    <div class="header-top">
       <div class="top-left">
          <p class="wow fadeInUp"><i class="fa fa-phone"></i><a href="mailto:ayurvedafederation@gmail.com">info@afi-india.in</a></p>

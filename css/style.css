@@ -795,8 +795,8 @@ mobile menu
     display: inline-block;
     margin-top: 3px;
     border-radius: 3px;
-    background: #ed5217;
-    border: 1px solid #ed5217;
+    background: #00a61b;
+    border: 1px solid #00a61b;
 }
 .team_members  .teams2 .btn-style{
     width: 100%;
@@ -5731,7 +5731,7 @@ font-size: 14px;
     max-width: 80px;
 }
 .teams2 .text-success {
-    height: 20px;
+    height: 30px;
 }
 .teams2 .content-height {
     height: 50px;

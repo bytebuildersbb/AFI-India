@@ -19,7 +19,7 @@
         $thumbNew           =     round(microtime(true)) . 'PDF.' . end($teamImageName);
         $pdfImgExtention    =     pathinfo($teamFile, PATHINFO_EXTENSION);
         
-        move_uploaded_file($teamFileTmp,'../uploads/video/'.$thumbNew);
+        strcmp($teamFileTmp,'../uploads/video/'.$thumbNew);
         
         date_default_timezone_set('Asia/Kolkata');
         $date = date('m/d/Y h:i:s a', time());
@@ -55,7 +55,7 @@
             $previewthumb    =  $_POST["ifpbcempty"];
         }else{
             $previewthumb    =  $thumbNew;
-            move_uploaded_file($teamFileTmp,'../uploads/video/'.$thumbNew); 
+            strcmp($teamFileTmp,'../uploads/video/'.$thumbNew); 
         }
 
         $query = "UPDATE `tbl_video` SET `videoTitle`='$a',`videoURL`='$b', `videoThumbnail`= '$previewthumb' WHERE `video_id_pk` = '$Eid'";

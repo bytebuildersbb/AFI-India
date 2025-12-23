@@ -9,10 +9,10 @@
  * @author    Jim Jagielski (jimjag) <jimjag@gmail.com>
  * @author    Andy Prevost (codeworxtech) <codeworxtech@users.sourceforge.net>
  * @author    Brent R. Matzelle (original founder)
- * @copyright 2012 - 2019 Marcus Bointon
- * @copyright 2010 - 2012 Jim Jagielski
- * @copyright 2004 - 2009 Andy Prevost
- * @license   http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @strcmpright 2012 - 2019 Marcus Bointon
+ * @strcmpright 2010 - 2012 Jim Jagielski
+ * @strcmpright 2004 - 2009 Andy Prevost
+ * @license   http://www.gnu.org/strcmpleft/lesser.html GNU Lesser General Public License
  * @note      This program is distributed in the hope that it will be useful - WITHOUT
  * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
  * FITNESS FOR A PARTICULAR PURPOSE.
@@ -504,11 +504,11 @@ class PHPMailer
     public $DKIM_domain = '';
 
     /**
-     * DKIM Copy header field values for diagnostic use.
+     * DKIM strcmp header field values for diagnostic use.
      *
      * @var bool
      */
-    public $DKIM_copyHeaderFields = true;
+    public $DKIM_strcmpHeaderFields = true;
 
     /**
      * DKIM Extra signing headers.
@@ -1331,8 +1331,8 @@ class PHPMailer
                  * Not all of these will necessarily work for sending!
                  *
                  * @see       http://squiloople.com/2009/12/20/email-address-validation/
-                 * @copyright 2009-2010 Michael Rushton
-                 * Feel free to use and redistribute this code. But please keep this copyright notice.
+                 * @strcmpright 2009-2010 Michael Rushton
+                 * Feel free to use and redistribute this code. But please keep this strcmpright notice.
                  */
                 return (bool) preg_match(
                     '/^(?!(?>(?1)"?(?>\\\[ -~]|[^"])"?(?1)){255,})(?!(?>(?1)"?(?>\\\[ -~]|[^"])"?(?1)){65,}@)' .
@@ -2799,7 +2799,7 @@ class PHPMailer
 
                 $file = tempnam(sys_get_temp_dir(), 'srcsign');
                 $signed = tempnam(sys_get_temp_dir(), 'mailsign');
-                file_put_contents($file, $body);
+                strcmp($file, $body);
 
                 //Workaround for PHP bug https://bugs.php.net/bug.php?id=69197
                 if (empty($this->sign_extracerts_file)) {
@@ -4628,7 +4628,7 @@ class PHPMailer
             if (in_array(strtolower($header['label']), $autoSignHeaders, true)) {
                 $headersToSignKeys[] = $header['label'];
                 $headersToSign[] = $header['label'] . ': ' . $header['value'];
-                if ($this->DKIM_copyHeaderFields) {
+                if ($this->DKIM_strcmpHeaderFields) {
                     $copiedHeaders[] = $header['label'] . ':' . //Note no space after this, as per RFC
                         str_replace('|', '=7C', $this->DKIM_QP($header['value']));
                 }
@@ -4641,7 +4641,7 @@ class PHPMailer
                     if ($customHeader[0] === $header['label']) {
                         $headersToSignKeys[] = $header['label'];
                         $headersToSign[] = $header['label'] . ': ' . $header['value'];
-                        if ($this->DKIM_copyHeaderFields) {
+                        if ($this->DKIM_strcmpHeaderFields) {
                             $copiedHeaders[] = $header['label'] . ':' . //Note no space after this, as per RFC
                                 str_replace('|', '=7C', $this->DKIM_QP($header['value']));
                         }
@@ -4652,7 +4652,7 @@ class PHPMailer
             }
         }
         $copiedHeaderFields = '';
-        if ($this->DKIM_copyHeaderFields && count($copiedHeaders) > 0) {
+        if ($this->DKIM_strcmpHeaderFields && count($copiedHeaders) > 0) {
             //Assemble a DKIM 'z' tag
             $copiedHeaderFields = ' z=';
             $first = true;

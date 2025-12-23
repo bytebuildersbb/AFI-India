@@ -1,6 +1,78 @@
+# Hostinger / system
+error_log
+*.log
+
+# Environment / secrets
+.env
+.env.*
+
+# Uploads (uncomment if large)
+# uploads/
+# wp-content/uploads/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Node (if any)
+node_modules/
 # Hiims specific files #
 ##########################
 
+# Hostinger / system
+error_log
+*.log
+
+# Environment / secrets
+.env
+.env.*
+
+# Uploads (uncomment if large)
+# uploads/
+# wp-content/uploads/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Node (if any)
+node_modules/
+# Hostinger / system
+error_log
+*.log
+
+# Environment / secrets
+.env
+.env.*
+
+# Uploads (uncomment if large)
+# uploads/
+# wp-content/uploads/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Node (if any)
+node_modules/
+# Hostinger / system
+error_log
+*.log
+
+# Environment / secrets
+.env
+.env.*
+
+# Uploads (uncomment if large)
+# uploads/
+# wp-content/uploads/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Node (if any)
+node_modules/
 /logs/*
 /tmp/*
 /vendor/*

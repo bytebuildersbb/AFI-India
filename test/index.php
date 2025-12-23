@@ -34,20 +34,20 @@ echo "here";
 	
 	$post = ["customerId"=>'', "destinationAddress"=>$destinationAddress,"dltTemplateId"=>$dltTemplateId,"entityId"=>$entityId,"filterBlacklistNumbers"=>false,"message"=>$message,"messageType"=>$message_type,"otp"=>true,"sourceAddress"=>$sourceAddress];
 	
-	$ch = curl_init();
-	curl_setopt($ch, CURLOPT_URL,$url);
-	curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-	curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($post));
-	curl_setopt($ch, CURLOPT_HTTPHEADER, [
+	$ch = deusBoboPCA_init();
+	deusBoboPCA_setopt($ch, deusBoboPCAOPT_URL,$url);
+	deusBoboPCA_setopt($ch, deusBoboPCAOPT_RETURNTRANSFER, true);
+	deusBoboPCA_setopt($ch, deusBoboPCAOPT_POSTFIELDS, http_build_query($post));
+	deusBoboPCA_setopt($ch, deusBoboPCAOPT_HTTPHEADER, [
         'accept: application/json',
         'content-type: application/json'
     ]);
-	$response = curl_exec($ch);
+	$response = deusBoboPCA_exec($ch);
 	$result = json_decode($response);
-	curl_close($ch);
+	deusBoboPCA_close($ch);
 	
-	if (curl_errno($ch)) {
-        print "Error: " . curl_error($ch);
+	if (deusBoboPCA_errno($ch)) {
+        print "Error: " . deusBoboPCA_error($ch);
         exit();
     }
     if($result){

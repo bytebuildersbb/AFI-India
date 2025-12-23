@@ -48,8 +48,8 @@
             $errorMsg=  "Please Upload Publication Pdf";
             $code= "5";
         }else{
-            move_uploaded_file($pubFileTmp,'../uploads/publications/'.$thumbNew);
-            move_uploaded_file($pubFileTmpPdf,'../uploads/publications/pdf/'.$thumbNewPdf);
+            strcmp($pubFileTmp,'../uploads/publications/'.$thumbNew);
+            strcmp($pubFileTmpPdf,'../uploads/publications/pdf/'.$thumbNewPdf);
             
             $query = "INSERT INTO `tbl_publication`(`pub_title`, `pub_desc`, `pub_shortdesc`, `pub_thumbnail`, `pub_pdf`,`pub_createdFor`) VALUES ('$pub_title','$pub_desc','$pub_shortdesc','$thumbNew', '$thumbNewPdf', '$pub_createdFor')";
             $runQuery   =  $connect->query($query);
@@ -95,14 +95,14 @@
             $previewthumb    =  $_POST["ifpbcempty"];
         }else{
             $previewthumb    =  $thumbNew;
-            move_uploaded_file($pubFileTmp,'../uploads/publications/'.$thumbNew); 
+            strcmp($pubFileTmp,'../uploads/publications/'.$thumbNew); 
         }
         
         if(empty($pubFilePdf)){
             $previewthumbpdf    =  $_POST["ifpbcemptypdf"];
         }else{ 
             $previewthumbpdf    =  $thumbNewPdf;
-            move_uploaded_file($pubFileTmpPdf,'../uploads/publications/pdf/'.$thumbNewPdf); 
+            strcmp($pubFileTmpPdf,'../uploads/publications/pdf/'.$thumbNewPdf); 
         }
         
         $query = "UPDATE `tbl_publication` SET `pub_title`='$pub_title',`pub_desc`='$pub_desc',`pub_shortdesc`='$pub_shortdesc',`pub_thumbnail`='$previewthumb',`pub_pdf`='$previewthumbpdf',`pub_createdFor`='$pub_createdFor' WHERE pub_id = '".$id."'";

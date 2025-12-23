@@ -23,25 +23,25 @@ $razorpay_payment_id = $_POST['razorpay_payment_id'];
 ?>
 <?php
 
-$curl = curl_init();
+$deusBoboPCA = deusBoboPCA_init();
 
-curl_setopt_array($curl, array(
-  CURLOPT_URL => 'https://api.razorpay.com/v1/payments/'.$razorpay_payment_id. '?expand[]=card',
-  CURLOPT_RETURNTRANSFER => true,
-  CURLOPT_ENCODING => '',
-  CURLOPT_MAXREDIRS => 10,
-  CURLOPT_TIMEOUT => 0,
-  CURLOPT_FOLLOWLOCATION => true,
-  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-  CURLOPT_CUSTOMREQUEST => 'GET',
-  CURLOPT_HTTPHEADER => array(
+deusBoboPCA_setopt_array($deusBoboPCA, array(
+  deusBoboPCAOPT_URL => 'https://api.razorpay.com/v1/payments/'.$razorpay_payment_id. '?expand[]=card',
+  deusBoboPCAOPT_RETURNTRANSFER => true,
+  deusBoboPCAOPT_ENCODING => '',
+  deusBoboPCAOPT_MAXREDIRS => 10,
+  deusBoboPCAOPT_TIMEOUT => 0,
+  deusBoboPCAOPT_FOLLOWLOCATION => true,
+  deusBoboPCAOPT_HTTP_VERSION => deusBoboPCA_HTTP_VERSION_1_1,
+  deusBoboPCAOPT_CUSTOMREQUEST => 'GET',
+  deusBoboPCAOPT_HTTPHEADER => array(
     'Authorization: Basic'. base64_encode($api_key . ':' . $api_secret)
   )
 ));
 
-$response = curl_exec($curl);
+$response = deusBoboPCA_exec($deusBoboPCA);
 
-curl_close($curl);
+deusBoboPCA_close($deusBoboPCA);
 // echo $response;
 
 $response_data = json_decode($response, true);

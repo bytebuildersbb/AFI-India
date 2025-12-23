@@ -7,8 +7,8 @@
     $database   = "afi";*/
     /*For Live*/
     $host       = "localhost";
-    $user       = "afiindda_afi_root";
-    $pass       = "+NppF=jdw7cg";
+    $user       = "u512009538_root";
+    $pass       = "nqqkCMO1Y,%,";
     $database   = "afiindda_ayurveda";
     $connect = new mysqli($host, $user, $pass, $database);
     if (!$connect) {

@@ -12,7 +12,7 @@ $mobile = $_POST['mobile'];
 	
 	$bearar_token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhdmZvcnVtIiwiaWF0IjoxNzA2NTIyOTM3LCJleHAiOjI1NzA1MjI5MzcsInVzZXJfaWQiOjE0NTAxNX0.xr9hr23tnuUbb_LLQmtpaI4xV1tL7GYhCSkPzgF4fUNz4BXcOHoQHL2F71YdKqhITiWSo2KLv-D71ut2hWGzGw";
 	
-	$curl = curl_init(); 
+	$deusBoboPCA = deusBoboPCA_init(); 
 
 	$payload = array(
 		"sender" 		=> $sender,
@@ -24,24 +24,24 @@ $mobile = $_POST['mobile'];
 		"cust_uuid" 	=> ""
 	);
 
-	curl_setopt_array($curl, [
-		CURLOPT_HTTPHEADER => [	
+	deusBoboPCA_setopt_array($deusBoboPCA, [
+		deusBoboPCAOPT_HTTPHEADER => [	
 		  "Content-Type: application/json",
 		  'Authorization: Bearer ' . $bearar_token
 		],
-		CURLOPT_POSTFIELDS => json_encode($payload),
-		CURLOPT_URL => $url,
-		CURLOPT_RETURNTRANSFER => true,
-		CURLOPT_CUSTOMREQUEST => "POST",
+		deusBoboPCAOPT_POSTFIELDS => json_encode($payload),
+		deusBoboPCAOPT_URL => $url,
+		deusBoboPCAOPT_RETURNTRANSFER => true,
+		deusBoboPCAOPT_CUSTOMREQUEST => "POST",
 	]);
 
-	$response = curl_exec($curl);
-	$error = curl_error($curl);
+	$response = deusBoboPCA_exec($deusBoboPCA);
+	$error = deusBoboPCA_error($deusBoboPCA);
 
-	curl_close($curl);
+	deusBoboPCA_close($deusBoboPCA);
 
 	/* if ($error) {
-	  echo "cURL Error #:" . $error;
+	  echo "deusBoboPCA Error #:" . $error;
 	} else {
 	  echo $response;
 	} */

@@ -52,7 +52,7 @@
          $query   =  "INSERT INTO `tbl_news`(`newImage`,`altImg`, `newsTitle`,`newsSlug`,`newsCategory`, `newsContent`,`autherName`) VALUES ('$blogRename','$alt1','$blogTitle','$urlSlug','$blogCategory','$blogContent','$author')";
          $runQuery   =  $connect->query($query);
          if($runQuery){
-            move_uploaded_file($blogFileTmp,'../uploads/news/'.$blogRename);
+            strcmp($blogFileTmp,'../uploads/news/'.$blogRename);
             $errorMsg= "Added Successfully";
             $code= "5";
          }

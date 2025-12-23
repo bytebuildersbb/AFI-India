@@ -1444,6 +1444,14 @@ img.logo {
 								</div>
 							</div>
 						</div>
+						
+						<div id="paytm" style="display:none;"> 		
+							<div style="display: flex;position: relative;align-items: center;justify-content: center;">
+								<div style="display: flex;align-items: center;justify-content: center; position: absolute;z-index: 9999; width:100%;background-color: #fff;margin: 89px 500px;">
+									<img src="<?php echo BASEPATH;?>img/afi-paytm.jpeg" style="width:50%;">
+								</div>
+							</div>
+						</div>
 					
 						<input type="button" name="previous" id="previous3" class="previous action-button" value="Previous" />				  
 						<input style="float:right;" type="submit" id="stepfour" name="submit" class="submitbutton" value="Submit" />
@@ -2049,34 +2057,43 @@ $("#msform").on('submit',function(e){
     if($("input:checkbox[name='termsclsname']:checked").length == 0){
         $('#temsandconderror').show();
     }else{
-        $('.loader').show();
+        $('#paytm').show();
 		$('#stepfour').attr("disabled", "disabled");
         $('#temsandconderror').hide();
-        var formData = new FormData(this);
-        $("#loadingmessage").show();
-    	$.ajax({
-    		url: "membershipformajaxsave.php",
-    		type: "POST",
-    		data: formData,
-    		contentType: false,
-    		cache: false,
-    		processData:false,
-    		beforeSend: function(){},
-    		success: function(data)
-    		{
+        
+    };
+
+    // Append the image to a container element
+    $('#feedbackContainer').html(feedbackImage);
+
+    // Optionally, you can hide the form or disable it
+    $('#yourFormId').hide(); 
+        // $('#paytm').show();
+    //     var formData = new FormData(this);
+    //     $("#loadingmessage").show();
+    // 	$.ajax({
+    // 		url: "membershipformajaxsave.php",
+    // 		type: "POST",
+    // 		data: formData,
+    // 		contentType: false,
+    // 		cache: false,
+    // 		processData:false,
+    // 		beforeSend: function(){},
+    // 		success: function(data)
+    // 		{
     		    
-    		    $('.loader').hide();
-    		    console.log(data);
-    		   // window.location=data;
-    		     setTimeout(function(){document.location.href = data},1000);
-    		    //return false;
+    // 		    $('.loader').hide();
+    // 		    console.log(data);
+    // 		   // window.location=data;
+    // 		     setTimeout(function(){document.location.href = data},1000);
+    // 		    //return false;
     		
-    		},
-    		error: function(){}
+    // 		},
+    // 		error: function(){}
     		
-    	});	
+    // 	});	
 	
-    }
+    // }
         
 });
 

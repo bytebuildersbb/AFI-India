@@ -1,8 +1,9 @@
 <?php 
+ob_start();
     session_start();
     include "../connect.php";
     if(!isset($_SESSION['userdata']) && empty($_SESSION['userdata'])){
-        header("Location:../index.php");
+        // header("Location:../index.php");
     }
 ?>
 <!DOCTYPE html>

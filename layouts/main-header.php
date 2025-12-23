@@ -128,7 +128,7 @@ if(isset($_POST["subscribe"])){
 <?php } ?>
 
 </head>
-<body oncopy="return false" oncut="return false">
+<body onstrcmp="return false" oncut="return false">
 
 	 <!-- start preloader -->
    
@@ -190,11 +190,11 @@ if(isset($_POST["subscribe"])){
                             <a class="navbar-brand" href="<?php echo BASEPATH;?>index.php">
 								<img src="<?php echo BASEPATH;?>assets/images/logo/logo.png" alt="" width="65%">
 							</a>
-       <!--                     <div class="header_img-2"> -->
-							<!--	<a class="navbar-brand  pl-3 ml-0" href="<?php echo BASEPATH;?>index.php">-->
-							<!--		<img src="<?php echo BASEPATH;?>assets/images/Asset 2-8.png" alt="">-->
-							<!--	</a>-->
-							<!--</div>-->
+                            <div class="header_img-2"> 
+                                <a class="navbar-brand ayurvedaLogo pl-3 ml-0" href="https://afi-india.in/ayurvedarjun/">
+									<img src="<?php echo BASEPATH;?>assets/images/Asset 2-8.png" alt="" >
+								</a>
+							</div>
 							<!--<div class="header_img-2"> -->
 							<!--	<a class="navbar-brand  pl-3 ml-0" href="<?php echo BASEPATH;?>index.php">-->
 							<!--		<img src="<?php echo BASEPATH;?>assets/images/logo3header.png" alt="">-->
@@ -215,9 +215,9 @@ if(isset($_POST["subscribe"])){
                                             <li>
 												<a class="dropdown-item" href="<?php echo BASEPATH;?>upcoming-event.php">Upcoming Event</a>
                                             </li>
-                                            <li>
-												<a class="dropdown-item" href="<?php echo BASEPATH;?>past-event.php">Past Event </a>
-											</li>
+           <!--                                 <li>-->
+											<!--	<a class="dropdown-item" href="<?php echo BASEPATH;?>past-event.php">Past Event </a>-->
+											<!--</li>-->
                                         </ul>
                                     </li>
                                     <li class="nav-item dropdown">

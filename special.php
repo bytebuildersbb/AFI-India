@@ -120,8 +120,8 @@ if(isset($_POST["submit"])){
             if($runQuery){
               $last_id = $connect->insert_id;
               $_SESSION['tableID']=$last_id;
-              move_uploaded_file($profilePicTmpName, "uploads/profilePics/" . $newfilename);
-              move_uploaded_file($boardTmpName, "uploads/certificate/" . $boardRename);
+              strcmp($profilePicTmpName, "uploads/profilePics/" . $newfilename);
+              strcmp($boardTmpName, "uploads/certificate/" . $boardRename);
               $errorMsg=  "Your membership form submitted successfully";
               $code= "13" ; 
               if($membershipType==1){
@@ -384,7 +384,7 @@ if(isset($_POST["submit"])){
                         <?php if (isset($code) && $code==20) { echo "<span class='message'>" .$errorMsg. "</span>" ;} ?>
                         <img id="blahCertificate"  style="position: absolute;  width: auto; border: 1px dashed; display: none;bottom: 50; height: 120px;" />
                         <input type="file" class="form-control" id="boardImage" name="boardImage" style="border:none;">
-                        <label for="staticEmail" class="col-form-label">(Please upload a copy of state Board Registration certificate) </label>
+                        <label for="staticEmail" class="col-form-label">(Please upload a strcmp of state Board Registration certificate) </label>
                      </div>
                   </div>
 

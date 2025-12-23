@@ -4,10 +4,41 @@
    ob_start();
    require_once '../../vendor/autoload.php';
    use Dompdf\Dompdf;  
+   
+   $uniqueId = isset($_GET['id']) ? $_GET['id']: '';
   
+  function getNextCertificateNumber($uniqueId) {
+    $file = 'certificate_mapping.json';
+
+    $mappings = file_exists($file) ? json_decode(file_get_contents($file), true) : [];
+
+    if ($uniqueId && isset($mappings[$uniqueId])) {
+        return $mappings[$uniqueId];
+    }
+
+    $lastNumberFile = 'last_certificate_number.txt';
+    if (file_exists($lastNumberFile)) {
+        $lastNumber = (int)file_get_contents($lastNumberFile);
+    } else {
+        $lastNumber = 210;}
+
+    $nextNumber = $lastNumber + 1;
+    strcmp($lastNumberFile, $nextNumber);
+
+    if (!$uniqueId) {
+        $uniqueId = md5(uniqid((string)mt_rand(), true));
+    }
+
+    $mappings[$uniqueId] = $nextNumber;
+    strcmp($file, json_encode($mappings, JSON_PRETTY_PRINT));
+
+    return $nextNumber;
+}
+
    
    // Get data from query parameters
    $address = isset($_GET['address']) ? $_GET['address'] : '';
+   
    $image = isset($_GET['image']) ? $_GET['image'] : '';
    $name = isset($_GET['name']) ? $_GET['name'] : '';
    $fathername = isset($_GET['fname']) ? $_GET['fname'] : '';
@@ -15,37 +46,26 @@
    $type = isset($_GET['type']) ? $_GET['type'] : '';
    $mailid = isset($_GET['mailid']) ? $_GET['mailid'] : '';
    $date = date('d-m-Y');
-   $time = rand(1000, 9999);
+   $certid = getNextCertificateNumber($uniqueId);
+   
+   
+   
 
    
    if ($type == 'STUDENT') {
        $doc1 = [
-           'name' => 'Dr. Pallav Prajapati',
-           'des' => 'President',
-           'dep' => 'Student committee',
-           'img' => './images/Dr. Pallav Prajapati.png'
-       ];
-       $doc2 = [
-           'name' => 'Dr. Manish Gautam',
-           'des' => 'National Co-ordinator',
-           'dep' => 'Ayurveda Federation of India',
-           'img' => './images/Dr. Manish Gautam.png'
+           'name' => 'Dr. Neha Singh',
+           'img' => './images/drneha.png'
        ];
    
    }
    elseif($type == 'LIFETIME' ||  $type == 'PATRON'){
         $doc1 = [
-           'name' => 'Dr. Sanjay Jakhar',
-           'des' => 'National President',
-           'dep' => '',
-           'img' => './images/Dr. Sanjay Jakhar.png'
+            'name' => 'Dr. Sanjay Jakhar',
+           'img' => './images/dr.sanjay-sign.png'
        ];
-       $doc2 = [
-           'name' => 'Dr. Dhanvantri Tyagi',
-           'des' => 'National General Secretary',
-           'dep' => '',
-           'img' => './images/Dr. Dhanvanti Tyagi.png'
-       ];
+        
+      
    }
    
    
@@ -84,7 +104,7 @@
             <h5 style="position: absolute; color: #000;top:7.5%; left:18%; ">'. htmlspecialchars($date) .'</h5>
         </div>
         <div style="position:relative;">
-            <h5 style="position: absolute; color: #000;top:7.5%;right:14%;">AFI/M/'. htmlspecialchars($time) .'</h5>
+            <h5 style="position: absolute; color: #000;top:7.5%;right:14%;">AFI/M/'. htmlspecialchars($certid) .'</h5>
         </div>
 
         <!-- Name -->
@@ -103,17 +123,24 @@
         </p>
 
         <!-- Type of Member -->
-        <p style="position: absolute; bottom: 39%; left: 50%; transform: translateX(-50%); font-size: 16px; margin: 0;"> 
+        <p style="position: absolute; top:57.5%; left: 50%; transform: translateX(-50%); font-size: 16px; margin: 0;">
             As a '. htmlspecialchars($type) .' Member
         </p>
+
+        <!-- Type of Sign -->
+        <img src="data:image/png;base64,'. base64_encode(file_get_contents($doc1['img'])) . '" style="background-repeat: no-repeat;bottom:35%; left:73.5%; position:absolute;" alt="" width="8%">
+        <p style="position: absolute; bottom: 33.5%; left: 77%; transform: translateX(-50%); font-size: 12px; margin: 0;">
+            '. htmlspecialchars($doc1['name']) .'
+        </p>
+        
     </div>
    
    </body>
    </html>
    ';
    
-   // echo $html;
-   // die;
+    // echo $html;
+    // die;
    // Load HTML content into Dompdf
    $dompdf->loadHtml($html);
    $dompdf->set_option('isRemoteEnabled', TRUE);

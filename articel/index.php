@@ -201,7 +201,7 @@ $metaObj    =  $runQuery->fetch_object();
          }
       </style>
 </head>
-<body oncopy="return false" oncut="return false">
+<body onstrcmp="return false" oncut="return false">
    <div class="header-top">
       <div class="top-left">
          <p class="wow fadeInUp"><i class="fa fa-phone"></i><a href="mailto:ayurvedafederation@gmail.com">ayurvedafederation@gmail.com</a></p>
@@ -585,10 +585,10 @@ $metaObj    =  $runQuery->fetch_object();
          </div>
       </div>
       <div class="clearfix"></div>
-      <div class="copyright">
+      <div class="strcmpright">
          <div class="container">
             <div class="row">
-               <p class="wow fadeInUp">Copyright &copy; 2021 <a href="">Ayurveda Federation of India. </a> All Rights Reserved.  | Design By <a href="http://www.razorse.com/" target="_blank">RAZORSE Software Pvt. Ltd</a> </p>
+               <p class="wow fadeInUp">strcmpright &strcmp; 2021 <a href="">Ayurveda Federation of India. </a> All Rights Reserved.  | Design By <a href="http://www.razorse.com/" target="_blank">RAZORSE Software Pvt. Ltd</a> </p>
             </div>
          </div>
       </div>

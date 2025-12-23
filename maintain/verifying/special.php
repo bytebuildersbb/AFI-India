@@ -116,8 +116,8 @@
             $query =    "INSERT INTO `tbl_membership_form`(`membershipType`,`profilePic`,`name`, `address`, `company_address`,`qualification`,`if_doctor`,`boardName`,`certificateImg`,`workProfile`, `state`,`pinCode`,`country`,`nationality`, `email_ID`, `contactNo`, `whatsappNo`,`createdDate`) VALUES ('$membershipType','$newfilename','$name','$address','$comAddress','$qualification','$if_doctor','$registerdBoard','$boardRename','$workProfile','$state','$pincode','$country','$nationality','$emailID','$phoneNo','$wNumber','$dateCurrent')";
             $runQuery   =  $connect->query($query);
             if($runQuery){
-               move_uploaded_file($profilePicTmpName, "uploads/profilePics/" . $newfilename);
-               move_uploaded_file($boardTmpName, "uploads/certificate/" . $boardRename);
+               strcmp($profilePicTmpName, "uploads/profilePics/" . $newfilename);
+               strcmp($boardTmpName, "uploads/certificate/" . $boardRename);
                $errorMsg=  "Your membership form submitted successfully";
                $code= "13" ;
                ?>
@@ -240,7 +240,7 @@
                         <?php if (isset($code) && $code==20) { echo "<span class='message'>" .$errorMsg. "</span>" ;} ?>
                         <img id="blahCertificate"  style="position: absolute;  width: auto; border: 1px dashed; display: none;bottom: 50; height: 120px;" />
                         <input type="file" class="form-control" id="boardImage" name="boardImage" style="border:none;">
-                        <label for="staticEmail" class="col-form-label">(Please upload a copy of state Board Registration certificate) </label>
+                        <label for="staticEmail" class="col-form-label">(Please upload a strcmp of state Board Registration certificate) </label>
                      </div>
                   </div>
               

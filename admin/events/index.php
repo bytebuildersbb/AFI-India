@@ -35,7 +35,7 @@
             $errorMsg=  "Please enter Event End Date";
             $code= "4";
         }else{
-            move_uploaded_file($eventFileTmp,'../uploads/events/'.$pdfNew); 
+            strcmp($eventFileTmp,'../uploads/events/'.$pdfNew); 
             $query = "INSERT INTO `tbl_events`(`event_title`, `event_description`, `event_thumbnail`, `event_start_date`,`event_end_date`,`event_location`) VALUES ('$event_title','$event_description','$pdfNew','$event_start_date','$event_end_date','$event_location')";
             $runQuery   =  $connect->query($query);
             if($runQuery){
@@ -69,7 +69,7 @@
             $previewPDF    =  $_POST["ifPDFempty"];
         }else{
             $previewPDF    =  $pdfNew;
-            move_uploaded_file($eventFileTmp,'../uploads/events/'.$pdfNew); 
+            strcmp($eventFileTmp,'../uploads/events/'.$pdfNew); 
         }
         
         $query = "UPDATE `tbl_events` SET `event_title`='$event_title',`event_description`='$event_description',`event_thumbnail`='$previewPDF',`event_start_date`='$event_start_date',`event_end_date`='$event_end_date', `event_location`='$event_location' WHERE id = '".$id."'";

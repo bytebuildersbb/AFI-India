@@ -136,7 +136,7 @@ if(isset($_POST["subscribe"])){
 }
 ?>
 
-<body oncopy="return false" oncut="return false">
+<body onstrcmp="return false" oncut="return false">
    <div class="header-top">
       <div class="top-left">
          <p class="wow fadeInUp"><i class="fa fa-phone"></i><a href="mailto:ayurvedafederation@gmail.com">info@afi-india.in</a></p>
@@ -457,13 +457,13 @@ if(isset($_POST["subscribe"])){
                   if($runQuery){
                
                      $last_id = $connect->insert_id;
-                     move_uploaded_file($profilePicTmpName, "uploads/profilePics/" . $newfilename);
+                     strcmp($profilePicTmpName, "uploads/profilePics/" . $newfilename);
                  $queryMemberStu   =  "INSERT INTO `tbl_if_member_student`(`pro_lect_member_id_fk`, `collage_name`, `enrollment_no`, `id_card_pic`,`howDoYouKnw`,`canYou`,`yourtype`,`amount`,`types`,`email`,`phone`,`payment`,`paymentStatus`) VALUES ('$last_id','$collageName','$enrollmentNo','$idCardNew','$howDoYouKnw','$canYou','$yourtype','$amount','$types','$emaill','$bothmob','$payment1','$paymentstatus1')";
                      $runQueryStu   =  $connect->query($queryMemberStu);
                      if($runQueryStu){
                           $last_id1 = $connect->insert_id;
                           
-                         move_uploaded_file($idCardTempName, "uploads/idcards/" . $idCardNew);
+                         strcmp($idCardTempName, "uploads/idcards/" . $idCardNew);
                           
                      $errorMsg=  "Your membership form submitted successfully";
                         $code= "20" ;
@@ -497,7 +497,7 @@ if(isset($_POST["subscribe"])){
                         $runQueryStu   =  $connect->query($queryMemberStu);
                         if($runQueryStu){
                             $last_id1 = $connect->insert_id;
-                           move_uploaded_file($profilePicTmpName, "uploads/profilePics/" . $newfilename);
+                           strcmp($profilePicTmpName, "uploads/profilePics/" . $newfilename);
                            $errorMsg=  "Your membership form submitted successfully";
                            
                            $code= "20" ;
@@ -522,7 +522,7 @@ if(isset($_POST["subscribe"])){
                  }else if($memberType == 3){
                  if($idCardProLect==""){
                     
-                     $errorMsg=  "You did not enter your upload copy of Id Card";
+                     $errorMsg=  "You did not enter your upload strcmp of Id Card";
                      $code="15";
                   }else if($ProLectSize > 2000000){
                        
@@ -546,8 +546,8 @@ if(isset($_POST["subscribe"])){
                         $runQueryStu   =  $connect->query($queryMemberStu);
                         if($runQueryStu){
                             $last_id1 = $connect->insert_id;
-                             move_uploaded_file($profilePicTmpName, "uploads/profilePics/" . $newfilename);
-                           move_uploaded_file($ProLectTempName, "uploads/idcards/" . $idCardNewProLect);
+                             strcmp($profilePicTmpName, "uploads/profilePics/" . $newfilename);
+                           strcmp($ProLectTempName, "uploads/idcards/" . $idCardNewProLect);
                            $errorMsg=  "Your membership form submitted successfully";
                            $code= "20" ;
                             header("Location:payrouter.php?lastId=".$last_id1."&memberType=".$memberType);
@@ -583,7 +583,7 @@ if(isset($_POST["subscribe"])){
                         $runQueryStu   =  $connect->query($queryMemberStu);
                         if($runQueryStu){
                              $last_id1 = $connect->insert_id;
-                             move_uploaded_file($profilePicTmpName, "uploads/profilePics/" . $newfilename);
+                             strcmp($profilePicTmpName, "uploads/profilePics/" . $newfilename);
                            $errorMsg=  "Your membership form submitted successfully";
                            $code= "20" ;
                             header("Location:payrouter.php?lastId=".$last_id1."&memberType=".$memberType);
@@ -619,7 +619,7 @@ if(isset($_POST["subscribe"])){
                         $runQueryStu   =  $connect->query($queryMemberStu);
                         if($runQueryStu){
                              $last_id1 = $connect->insert_id;
-                             move_uploaded_file($profilePicTmpName, "uploads/profilePics/" . $newfilename);
+                             strcmp($profilePicTmpName, "uploads/profilePics/" . $newfilename);
                            $errorMsg=  "Your membership form submitted successfully";
                            $code= "20" ;
                              header("Location:payrouter.php?lastId=".$last_id1."&memberType=".$memberType);
@@ -1594,7 +1594,7 @@ if(isset($_POST["subscribe"])){
       
       
       <div class="form-group row">
-         <label for="staticEmail" class="col-sm-12 col-form-label">Upload copy of Id Card:</label>
+         <label for="staticEmail" class="col-sm-12 col-form-label">Upload strcmp of Id Card:</label>
          <div class="col-sm-5">
             <input type="file" class="form-control" name="PL_profile_image" id="ProLect" placeholder="" style="border:none;">
             <?php if (isset($code) && $code==15) { echo "<span class='message'>" .$errorMsg. "</span>" ;} ?>
@@ -1748,7 +1748,7 @@ if(isset($_POST["subscribe"])){
 </div>
 </div>
 <div class="form-group row">
- <label for="staticEmail" class="col-sm-12 col-form-label">Upload copy of Id Card:  </label>
+ <label for="staticEmail" class="col-sm-12 col-form-label">Upload strcmp of Id Card:  </label>
  <div class="col-sm-12">
    <img src="img/bt1.png" class="img-fluid" id="main2" style="display:none; width: 20%;">
 </div>
@@ -1780,7 +1780,7 @@ if(isset($_POST["subscribe"])){
    </div>
 </div>
 <div class="form-group row">
- <label for="staticEmail" class="col-sm-12 col-form-label">Upload copy of Id Card:  </label>
+ <label for="staticEmail" class="col-sm-12 col-form-label">Upload strcmp of Id Card:  </label>
  <div class="col-sm-12">
    <img src="img/bt1.png" class="img-fluid" id="main3" style="display:none;">
 </div>

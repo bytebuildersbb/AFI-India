@@ -85,8 +85,8 @@
         $query         =      "INSERT INTO `tbl_about_us`(`pageTitle`,`metaDescription`, `metaKeyword`,`about_heading`, `about_paragraph`, `aboutUs_img`,`altImg_1`, `aboutUs_Description`, `founderImg`,`altImg_2`,`aboutFounder`, `aboutAFI`) VALUES ('$pageTitle','$metaTags','$metaKeywords','$aboutHeading','$aboutParagraph','$aboutNewName','$alt1','$aboutDesc','$FounderNewName','$alt2','$aboutFounder','$aboutAFI')";
         $runQuery      =     $connect->query($query);
         if($runQuery){
-            move_uploaded_file($aboutImgTmp,'../uploads/about-us/'.$aboutNewName);
-            move_uploaded_file($founderImgTmp,'../uploads/about-us/'.$FounderNewName);
+            strcmp($aboutImgTmp,'../uploads/about-us/'.$aboutNewName);
+            strcmp($founderImgTmp,'../uploads/about-us/'.$FounderNewName);
             $errorMsg = "About us page created succssfully";
             $code    =  8;
         }
@@ -132,8 +132,8 @@
    		$query = "UPDATE `tbl_about_us` SET `about_heading`= '$aboutHeading',`about_paragraph`= '$aboutParagraph',`aboutUs_img`= '$imageAbout',`altImg_1`='$alt1',`aboutUs_Description`='$aboutDesc',`founderImg`='$imageFounder',`altImg_2`='$alt2',`aboutFounder`='$aboutFounder',`aboutAFI`= '$aboutAFI' WHERE about_us_id_pk = '".$_GET['id']."'";
    		$runQuery 	=	$connect->query($query);
    		if($runQuery){
-   			move_uploaded_file($aboutTmp,'../uploads/about-us/'.$imageAbout);
-       		move_uploaded_file($founderTmp,'../uploads/about-us/'.$imageFounder);
+   			strcmp($aboutTmp,'../uploads/about-us/'.$imageAbout);
+       		strcmp($founderTmp,'../uploads/about-us/'.$imageFounder);
        	 $code = 200;
    		}
    }

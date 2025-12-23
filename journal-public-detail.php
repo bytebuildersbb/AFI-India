@@ -105,7 +105,7 @@ p.abc {
     
 <?php //if(isset($_SESSION['verifiedUser']) && $_SESSION['verifiedUser'] == $pubcationid){?>
 <?php if(!empty($code)){?>
-    <div class="container pt-5 pb-5" id="jdoc" oncontextmenu="return false;" onCopy="return false" onDrag="return false" onDrop="return false" onPaste="return false">
+    <div class="container pt-5 pb-5" id="jdoc" oncontextmenu="return false;" onstrcmp="return false" onDrag="return false" onDrop="return false" onPaste="return false">
 
             <!-- <p><a href="<?php echo "admin/uploads/publications/pdf/".$result->pub_pdf; ?>"><img src="img/download-pdf.png"></a></p> -->
             <p class="abc mb-3"><strong style="font-size: 40px;color:#ed5217;">Thankyou!!</strong></p>

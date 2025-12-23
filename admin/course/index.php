@@ -39,7 +39,7 @@
          $errorMsg=  "Please enter course fee";
          $code= "4";
       }else{
-          move_uploaded_file($blogFileTmp,'../uploads/PDF/'.$pdfNew); 
+          strcmp($blogFileTmp,'../uploads/PDF/'.$pdfNew); 
          $query   =  "INSERT INTO `tbl_course`(`course_name`, `course_duration`, `course_details`, `course_fee`,`pdf`,`member_cost`,`course_type`) VALUES ('$courseName','$cDuration','$courseDetails','$courseFee','$pdfNew','$member_cost','$course_type')";
          $runQuery   =  $connect->query($query);
          if($runQuery){
@@ -66,7 +66,7 @@
          $previewPDF    =  $_POST["ifPDFempty"];
       }else{
          $previewPDF    =  $pdfNew;
-         move_uploaded_file($blogFileTmp,'../uploads/PDF/'.$pdfNew); 
+         strcmp($blogFileTmp,'../uploads/PDF/'.$pdfNew); 
       }
       $courseName       =  $_POST["courseName"];
       $cDuration        =  $_POST["cDuration"];
