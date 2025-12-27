@@ -476,3 +476,24 @@
         opacity:1;
 
 }
+
+
+.ParBox{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
+.childBox {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #e5e5e5;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    gap: 8px;
+}
