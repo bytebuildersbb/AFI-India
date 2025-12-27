@@ -67,7 +67,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     ");
 
     $insert->bind_param(
-        "sssssi",
+        "ssssssi",
         $name,
         $mobile,
         $address,
@@ -103,7 +103,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>new test Certified Natural Health Ambassador (CNHA) Program</title>
+    <title>Certified Natural Health Ambassador (CNHA) Program</title>
     <link rel="stylesheet" href="https://afi-india.in/css/style.css">
     <link rel="stylesheet" href="https://afi-india.in/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://afi-india.in/css/responsive.css">
