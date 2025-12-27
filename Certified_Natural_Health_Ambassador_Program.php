@@ -306,7 +306,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                             <div> <b>Registration Fee:</b> ₹2,799 only <i>(Limited-time launch offer)</i> </div>
                             <!-- <div> [🟢 Enroll in Level 1 – ₹1,999]</div> -->
 
-
                             <div class=""> <b>Combo Offer & Upgrade Path:</b>
                                 <div class="ntext ParBox" style="list-style: inside;">
                                    <div class="childBox"> <b>Direct Master Enrollment (Recommended): </b>Enroll directly in <b> Level 2 -
