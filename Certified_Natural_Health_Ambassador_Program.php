@@ -306,11 +306,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                             <div> <b>Registration Fee:</b> ₹2,799 only <i>(Limited-time launch offer)</i> </div>
                             <!-- <div> [🟢 Enroll in Level 1 – ₹1,999]</div> -->
 
+
+                            <div class=""> <b>Combo Offer & Upgrade Path:</b>
                                 <div class="ntext ParBox" style="list-style: inside;">
-                                   <div class="childBox"> <b>Direct Master Enrollment (Recommended): </b>Enroll directly in <b> Level 2 -
-                                            Master</b> for ₹2,799 only.</div>
-                                   <div class="childBox"> <b>Upgrade Path: </b>Start with <b> Level 1 (₹1,999) </b> → Upgrade later by
-                                        paying <b> ₹1,999 </b>(Total ₹3,998). </div>
+                                   <div class="childBox"> 
+                                    <b>Direct Master Enrollment (Recommended): </b>
+                                    Enroll directly in 
+                                    <b> Level 2- Master</b>: ₹2,799/-</div>
+                                   <div class="childBox"><div><b>Upgrade Path: </b>Start with <b></div> Level 1 (₹1,999) </b> → Upgrade later by
+                                        paying <div><b> ₹1,999 </b>(Total ₹3,998).</div> </div>
                                 </div>
                             </div>
                             <div style="color: #b52b2b;background: #ffe2e2;border: 1px solid #eb8282;padding: 6px;border-radius: 4px;">Direct Master enrollment is more economical; the upgrade option is for those who prefer to first complete Level 1 separately</div>

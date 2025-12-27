@@ -485,6 +485,7 @@
 }
 
 .childBox {
+    text-align: center;
     flex: 1;
     padding: 12px;
     border: 1px solid #e5e5e5;
