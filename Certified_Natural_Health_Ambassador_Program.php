@@ -78,17 +78,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     );
 
     if ($insert->execute()) {
-        echo json_encode([
-            "success" => true,
-            "id" => $conn->insert_id
-        ]);
+       $encryptedEmail = urlencode(encryptData($email));
+        $encryptedFlag = urlencode(encryptData('false'));
+        echo('Email:' . $encryptedEmail);
+        
+        header("Location: ./Certified_Natural_Health_Ambassador_Program/payment.php?e=$encryptedEmail&&c=$encryptedFlag");
+        exit();
     } else {
-        echo json_encode([
-            "success" => false,
-            "message" => $insert->error
-        ]);
+        echo "Error updating record: " . $stmt->error;
     }
-
     $insert->close();
     $conn->close();
     exit;
@@ -388,7 +386,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         <div class="video_section mt-4">
                             <div class=" imageParent" id="videoFrameId">
                                 <iframe width="560" height="315"
-                                    src="https://www.youtube.com/embed/Z-gZ18LS1pY?si=QTOTN7jHLFIGgbmK"
+                                    src="https://www.youtube.com/watch?v=6w_2drnqC1c"
                                     title="YouTube video player" frameborder="0"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
