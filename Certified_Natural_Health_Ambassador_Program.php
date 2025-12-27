@@ -212,7 +212,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                 <div> <b>Duration:</b> 4 Weeks | 8 Sessions (2 per week)</div>
                                 <div> <b>Course Value:</b><del> ₹11,000 </del> </div>
                                 <div> <b>Registration Fee:</b> ₹1,999 only <i>(Limited-time launch offer)</i> </div>
-                                <div> [🟢 Enroll in Level 1 – ₹1,999]</div>
+                                <!-- <div> [🟢 Enroll in Level 1 – ₹1,999]</div> -->
                                 <div> <i>👉 Demo Session attendees also get an extra ₹500 discount coupon. (Timer - expire in
                                         48 Hours after the Demo session) </i> </div>
 
@@ -304,19 +304,19 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                             <div style="display:flex;flex-direction:column; gap:8px;">
 
                             <div> <b>Registration Fee:</b> ₹2,799 only <i>(Limited-time launch offer)</i> </div>
-                            <div> [🟢 Enroll in Level 1 – ₹1,999]</div>
+                            <!-- <div> [🟢 Enroll in Level 1 – ₹1,999]</div> -->
 
 
                             <div class=""> <b>Combo Offer & Upgrade Path:</b>
-                                <ul class="ntext" style="list-style: inside;">
-                                    <li><b> Direct Master Enrollment (Recommended): </b>Enroll directly in <b> Level 2 -
-                                            Master</b> for ₹2,799 only.</li>
-                                    <li><b> Upgrade Path: </b>Start with <b> Level 1 (₹1,999) </b> → Upgrade later by
-                                        paying <b> ₹1,999 </b>(Total ₹3,998). </li>
-                                </ul>
+                                <div class="ntext ParBox" style="list-style: inside;">
+                                   <div class="childBox"> <b>Direct Master Enrollment (Recommended): </b>Enroll directly in <b> Level 2 -
+                                            Master</b> for ₹2,799 only.</div>
+                                   <div class="childBox"> <b>Upgrade Path: </b>Start with <b> Level 1 (₹1,999) </b> → Upgrade later by
+                                        paying <b> ₹1,999 </b>(Total ₹3,998). </div>
+                                </div>
                             </div>
                             <div style="color: #b52b2b;background: #ffe2e2;border: 1px solid #eb8282;padding: 6px;border-radius: 4px;">Direct Master enrollment is more economical; the upgrade option is for those who prefer to first complete Level 1 separately</div>
-                            <div>[🟢 Enroll Now]</div>
+                            <!-- <div>[🟢 Enroll Now]</div> -->
                             <div><i> 👉 Demo Session attendees also get an extra ₹500 discount coupon. (Timer - expire
                                     in 48 Hours after the Demo session) </i></div>
                             </div>
