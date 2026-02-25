@@ -17,13 +17,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $email         = $_POST['email'] ?? '';
     $qualification = $_POST['qualification'] ?? '';
     $programType   = 'Demo Program';
-    $programDate   = $_POST['programdate'] ?? '';
-    $basefare      = 'INR 99';
+    $programDate   = $_POST['programDate'] ?? '';
+    $basefare      = 99;
     // $basefare      = $_POST['basefare'] ?? 'INR 0';
     // $basefare      = (int) filter_var($basefare, FILTER_SANITIZE_NUMBER_INT);
 
     // Validation
-    if (!$name || !$mobile || !$email) {
+    if (!$name || !$mobile || !$email || !$qualification || !$address || !$programDate) {
         echo json_encode([
             "success" => false,
             "message" => "Required fields missing"
@@ -61,12 +61,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             `Address`,
             `Email ID`,
             `Qualification`,
-            `Program Type`,
-            `Program Date`,
+            `Program_Type`,
+            `Program_Date`,
             `Total Fees`,
-            `Registration Time`
+            `Registration_Time`
         )
-        VALUES (?,?, ?, ?, ?, ?, ?, ?, NOW())
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, NOW())
     ");
 
     $insert->bind_param(
@@ -333,7 +333,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             </div>
             <?php endif; ?>
             <!-- <form method="post" enctype="multipart/form-data"> -->
-            <form action="Certified_Natural_Health_Ambassador_Program.php" method="POST" enctype="multipart/form-data">
+            <form action="Certified_Natural_Health_Ambassador_Demo_Program.php" method="POST" enctype="multipart/form-data">
                 <!-- Step 1 -->
                 <input type="hidden" name="registration_id" id="registration_id">
                 <div id="step1">
@@ -355,11 +355,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <div class="form-group">
                         <label> <span class="required">*</span> Qualification</label>
                         <select class="form-control" name="qualification" required>
-                            <option>Select an option</option>
-                            <option>Post Graduated</option>
-                            <option>Graduated</option>
-                            <option>Intermediate</option>
-                            <option>High School</option>
+                            <option value="">Select an option</option>
+                            <option value="Post Graduated" >Post Graduated</option>
+                            <option value="Graduated" >Graduated</option>
+                            <option value="Intermediate" >Intermediate</option>
+                            <option value="High School" >High School</option>
                         </select>
                     </div>
 
@@ -370,13 +370,26 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     </div>
                     <div class="form-group">
                         <label> <span class="required">*</span> Select Slot</label>
-                        <select class="form-control" name="programdate" required>
-                            <option>Select an option</option>
-                            <option>10 January 2026 | Saturday</option>
-                            <option>11 January 2026 | Sunday</option>
-                            <option>17 January 2026 | Saturday</option>
+                        <select class="form-control" name="programDate" required value="<?= $_POST['programDate'] ?? '' ?>">
+                            <option value="">Select an option</option>
+                            <option value="10 January 2026 | Saturday">10 January 2026 | Saturday</option>
+                            <option value="11 January 2026 | Sunday">11 January 2026 | Sunday</option>
+                            <option value="17 January 2026 | Saturday">17 January 2026 | Saturday</option>
                         </select>
                     </div>
+                    <!-- <div class="form-group">
+                        <label> <span class="required">*</span> Select Slot </label>
+                        <br/>
+                       <input type="radio" id="10 January 2026 | Saturday" name="programDate" value="10 January 2026 | Saturday"
+                            <?= (($_POST['programDate'] ?? '') === '10 January 2026 | Saturday') ? 'checked' : '' ?>>
+                        <label for="10 January 2026 | Saturday">10 January 2026 | Saturday</label><br>
+                        <input type="radio" id="11 January 2026 | Sunday" name="programDate" value="11 January 2026 | Sunday"
+                            <?= (($_POST['programDate'] ?? '') === '11 January 2026 | Sunday') ? 'checked' : '' ?>>
+                        <label for="11 January 2026 | Sunday">11 January 2026 | Sunday</label><br>
+                        <input type="radio" id="17 January 2026 | Saturday" name="programDate" value="17 January 2026 | Saturday"
+                            <?= (($_POST['programDate'] ?? '') === '17 January 2026 | Saturday') ? 'checked' : '' ?>>
+                        <label for="17 January 2026 | Saturday">17 January 2026 | Saturday</label><br>
+                    </div> -->
                     <div style="display:flex;justify-content:space-between;gap:12px" class="rs-col mt-4">
                         <h5 class="totalFeeBox rs-order-1"><strong>Total Fees: <input type="text"
                                     class="form-control feesInput" value="INR 99" name="basefare"

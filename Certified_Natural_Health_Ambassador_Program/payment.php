@@ -7,13 +7,12 @@ require '../vendor/razorpay/razorpay/Razorpay.php';
 use Razorpay\Api\Api;
 // Razorpay credentials
 // // test
- $api_key = 'rzp_test_q0ypOYTjC1D936';
- $api_secret = 'N5HQC8Y1H4GR42wMo1HFYH8Z';
+//  $api_key = 'rzp_test_q0ypOYTjC1D936';
+//  $api_secret = 'N5HQC8Y1H4GR42wMo1HFYH8Z';
 
 // Live
-// $api_key = 'rzp_live_oBF2mGQndN1fo2';
-// $api_secret = 'c1noXnO4Qrj9G7BXaXFXj3V5';
-
+$api_key = 'rzp_live_oBF2mGQndN1fo2';
+$api_secret = 'c1noXnO4Qrj9G7BXaXFXj3V5';
 
 $api = new Api($api_key, $api_secret);
 
@@ -28,7 +27,7 @@ if (!$en_email) {
 $_SESSION['en_email'] = $en_email; // ✅ Save to session
 
 // Fetch basefare from DB
-$stmt = $conn->prepare("SELECT `Name`, `Email ID`, `Program Type` , `Mobile`, `Total Fees`, `New Payment Amount` FROM `Certified Natural Health Ambassador Program Registration` WHERE `Email ID` = ?");
+$stmt = $conn->prepare("SELECT `Name`, `Email ID`, `Program_Type` , `Mobile`, `Total Fees`, `New Payment Amount` FROM `Certified Natural Health Ambassador Program Registration` WHERE `Email ID` = ?");
 $stmt->bind_param("s", $en_email);
 $stmt->execute();
 $result = $stmt->get_result();

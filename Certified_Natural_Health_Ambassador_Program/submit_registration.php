@@ -40,9 +40,9 @@ $insert = $conn->prepare("
         `Mobile`,
         `Email ID`,
         `Qualification`,
-        `Program Type`,
+        `Program_Type`,
         `Total Fees`,
-        `Registration Time`
+        `Registration_Time`
     )
     VALUES (?, ?, ?, ?, ?, ?, NOW())
 ");

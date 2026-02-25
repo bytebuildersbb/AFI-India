@@ -21,7 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $basefare      = (int) filter_var($basefare, FILTER_SANITIZE_NUMBER_INT);
 
     // Validation
-    if (!$name || !$mobile || !$email) {
+    if (!$name || !$mobile || !$email || !$programType || !$qualification || !$address) {
         echo json_encode([
             "success" => false,
             "message" => "Required fields missing"
@@ -59,9 +59,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             `Address`,
             `Email ID`,
             `Qualification`,
-            `Program Type`,
+            `Program_Type`,
             `Total Fees`,
-            `Registration Time`
+            `Registration_Time`
         )
         VALUES (?,?, ?, ?, ?, ?, ?, NOW())
     ");
@@ -490,16 +490,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         <input type="email" class="form-control" name="email" value="<?= $_POST['email'] ?? '' ?>"
                             required>
                     </div>
-                    <div class="form-group">
+                      <div class="form-group">
                         <label> <span class="required">*</span> Qualification</label>
                         <select class="form-control" name="qualification" required>
-                            <option>Select an option</option>
-                            <option>Post Graduated</option>
-                            <option>Graduated</option>
-                            <option>Intermediate</option>
-                            <option>High School</option>
+                            <option value="">Select an option</option>
+                            <option value="Post Graduated" >Post Graduated</option>
+                            <option value="Graduated" >Graduated</option>
+                            <option value="Intermediate" >Intermediate</option>
+                            <option value="High School" >High School</option>
                         </select>
                     </div>
+
 
                     <div class="form-group">
                         <label><span class="required">*</span> City State</label>
@@ -513,10 +514,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         
                        <input type="radio" id="Level1" name="programType" value="Level 1"
                             <?= (($_POST['programType'] ?? '') === 'Level 1') ? 'checked' : '' ?>
-                            onchange="calculateFee()">
+                            onchange="calculateFee()" required>
                         <label for="Level1">Level 1</label><br>
                         
-                        <input type="radio" id="Level2" name="programType" value="Level 2"
+                        <input type="radio" id="Level2" name="programType" value="Level 2" required
                             <?= (($_POST['programType'] ?? '') === 'Level 2') ? 'checked' : '' ?>
                             onchange="calculateFee()">
                         <label for="Level2">Level 2</label><br>

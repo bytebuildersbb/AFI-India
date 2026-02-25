@@ -10,12 +10,12 @@ session_start();
 
 // Razorpay credentials
 // // test
- $api_key = 'rzp_test_q0ypOYTjC1D936';
- $api_secret = 'N5HQC8Y1H4GR42wMo1HFYH8Z';
+//  $api_key = 'rzp_test_q0ypOYTjC1D936';
+//  $api_secret = 'N5HQC8Y1H4GR42wMo1HFYH8Z';
 
 // Live
-// $api_key = 'rzp_live_oBF2mGQndN1fo2';
-// $api_secret = 'c1noXnO4Qrj9G7BXaXFXj3V5';
+$api_key = 'rzp_live_oBF2mGQndN1fo2';
+$api_secret = 'c1noXnO4Qrj9G7BXaXFXj3V5';
 
 
 $razorpay_payment_id = $_POST['razorpay_payment_id'];
